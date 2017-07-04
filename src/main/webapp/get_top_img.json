@@ -1,0 +1,26 @@
+{
+  "status": 0,
+  "data": [
+    {
+      "id": 1,
+      "img": "static/img/index_bn001.jpg",
+      "url": ""
+    },
+    {
+      "id": 2,
+      "img": "static/img/index_bn002.jpg",
+      "url": "sh.html"
+    },
+    {
+      "id": 3,
+      "img": "static/img/index_bn003.jpg",
+      "url": ""
+    },
+    {
+      "id": 4,
+      "img": "static/img/index_bn004.jpg",
+      "url": "http://www.kylinclub.org/"
+    }
+  ],
+  "msg": ""
+}

@@ -1,0 +1,150 @@
+{
+  "status": 0,
+  "data": [
+    {
+      "id": 1,
+      "alias": "C",
+      "img": "static/img/home_ph001.jpg",
+      "name": "陈 华",
+      "company": "唱吧",
+      "title": "CEO",
+      "info": ""
+    },
+    {
+      "id": 2,
+      "alias": "C",
+      "img": "static/img/home_ph002.jpg",
+      "name": "崔宝秋",
+      "company": "小米",
+      "title": "首席架构师",
+      "info": ""
+    },
+    {
+      "id": 3,
+      "alias": "F",
+      "img": "static/img/home_ph003.jpg",
+      "name": "冯中茜",
+      "company": "万达集团",
+      "title": "信息管理中心副总经理",
+      "info": ""
+    },
+    {
+      "id": 4,
+      "alias": "L",
+      "img": "static/img/home_ph004.jpg",
+      "name": "刘栓林",
+      "company": "阿里巴巴",
+      "title": "技术副总裁",
+      "info": ""
+    },
+    {
+      "id": 5,
+      "alias": "Q",
+      "img": "static/img/home_ph005.jpg",
+      "name": "邱岳鹏",
+      "company": "腾讯",
+      "title": "副总裁",
+      "info": ""
+    },
+    {
+      "id": 6,
+      "alias": "S",
+      "img": "static/img/home_ph006.jpg",
+      "name": "宋维君",
+      "company": "中国网络电视台",
+      "title": "总工程师<br>技术事业群总经理",
+      "info": ""
+    },
+    {
+      "id": 7,
+      "alias": "T",
+      "img": "static/img/home_ph007.jpg",
+      "name": "谭晓生",
+      "company": "奇虎360",
+      "title": "技术副总裁<br>首席安全官",
+      "info": ""
+    },
+    {
+      "id": 8,
+      "alias": "W",
+      "img": "static/img/home_ph008.jpg",
+      "name": "汪 源",
+      "company": "网易",
+      "title": "网易杭州研究院执行院长浙江省计算机学会理事",
+      "info": ""
+    },
+    {
+      "id": 9,
+      "alias": "W",
+      "img": "static/img/home_ph009.jpg",
+      "name": "王育林",
+      "company": "金山云",
+      "title": "总裁",
+      "info": ""
+    },
+    {
+      "id": 10,
+      "alias": "W",
+      "img": "static/img/home_ph010.jpg",
+      "name": "吴永强",
+      "company": "去哪儿",
+      "title": "CTO",
+      "info": ""
+    },
+    {
+      "id": 11,
+      "alias": "X",
+      "img": "static/img/home_ph011.jpg",
+      "name": "邢宏宇",
+      "company": "58同城",
+      "title": "CTO",
+      "info": ""
+    },
+    {
+      "id": 12,
+      "alias": "Y",
+      "img": "static/img/home_ph012.jpg",
+      "name": "于 旸",
+      "company": "腾讯",
+      "title": "玄武实验室负责人",
+      "info": ""
+    },
+    {
+      "id": 13,
+      "alias": "Y",
+      "img": "static/img/home_ph013.jpg",
+      "name": "袁 斌",
+      "company": "乐视网",
+      "title": "联席CTO",
+      "info": ""
+    },
+    {
+      "id": 14,
+      "alias": "Z",
+      "img": "static/img/home_ph014.jpg",
+      "name": "张亚勤",
+      "company": "百度",
+      "title": "总裁",
+      "info": ""
+    },
+    {
+      "id": 15,
+      "alias": "Z",
+      "img": "static/img/home_ph015.jpg",
+      "name": "周霖",
+      "company": "搜易贷",
+      "title": "联合创始人&CTO",
+      "info": ""
+    },
+    {
+      "id": 16,
+      "alias": "Z",
+      "img": "static/img/home_ph016.jpg",
+      "name": "祝效国",
+      "company": "加州大学终身教授",
+      "title": "美国总统奖得主<br>斯坦福大学博士",
+      "info": ""
+    }
+  ],
+  "msg": ""
+}
