@@ -17,6 +17,7 @@ public class _MappingKit {
 
 	public static void mapping(ActiveRecordPlugin arp) {
 		arp.addMapping("confrence", "id", Confrence.class);
+		arp.addMapping("contact", "id", Contact.class);
 		arp.addMapping("gitc", "id", Gitc.class);
 		arp.addMapping("guest", "id", Guest.class);
 		arp.addMapping("opt", "id", Opt.class);

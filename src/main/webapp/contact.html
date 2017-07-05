@@ -124,13 +124,13 @@
         <label><input name="interest" type="radio" value="6" /> 供应商 </label>
         <label><input name="interest" type="radio" value="7" /> 其他 </label>
         <br>
-        <label><input name="interest" type="radio" value="8" /> <input type="text" class="other" placeholder="添加其他内容..." name="other"></label>
+        <label><input name="interest_other" type="radio" value="8" /> <input type="text" class="other" placeholder="添加其他内容..." id="interest_other" name="interest_other"></label>
       </div>
     </div>
   </div>
   <div class="row g-margin-b-20--xs g-margin-b-20--md">
     <div style="padding: 0 15px">
-      <textarea placeholder="留下您宝贵的建议..." id="text"></textarea>
+      <textarea placeholder="留下您宝贵的建议..." id="suggest"></textarea>
     </div>
   </div>
   <div class="row">
@@ -256,18 +256,30 @@
       _data.company = $('#company').val();
       _data.department = $('#department').val();
       _data.position = $('#position').val();
+
       var chkRadio = $('input:radio[name="interest"]:checked').val();
       if (chkRadio != null) {
         _data.interest = chkRadio;
-        if(chkRadio==8) _data.other = $('#other').val();
       }
-      _data.text = $('#text').val();
-      $.ajax('get_people.json',{method:'post',data:_data}).then(function(v){
-        if(0==v.status){
-          alert('提交成功');
-        }
-      });
 
+      var chkRadioOther = $('input:radio[name="interest_other"]:checked').val();
+      if (chkRadioOther != null ) {
+            _data.interest_other = $('#interest_other').val();
+      }
+
+      _data.suggest = $('#suggest').val();
+
+        $.ajax({
+            async:false,
+            url: 'data/contacts',
+            data: _data,
+            type: "POST",
+            success: function(result){
+                alert('提交成功');
+            },error:function(){
+                alert('提交失败');
+            }
+        });
     });
 
   });

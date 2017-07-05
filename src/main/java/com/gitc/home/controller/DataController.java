@@ -5,12 +5,9 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-import com.gitc.home.model.Guest;
-import com.gitc.home.model.Opt;
-import com.gitc.home.model.Schedule;
-import com.gitc.home.model.Speaker;
-import com.gitc.home.model.UserSh;
+import com.gitc.home.model.*;
 import com.jfinal.core.Controller;
+import com.jfinal.render.Render;
 
 public class DataController extends Controller{
 	
@@ -124,6 +121,37 @@ public class DataController extends Controller{
 			result.put("status", -1);
 			result.put("msg", e.getMessage());
 			renderJson(result);
+		}
+	}
+
+	public void contacts() {
+		try {
+		    String name = getPara("name");
+		    String tel = getPara("tel");
+			String email = getPara("email");
+			String company = getPara("company");
+			String department = getPara("department");
+			String position = getPara("position");
+			String interest = getPara("interest");
+			String interest_other = getPara("interest_other");
+			String suggest = getPara("suggest");
+
+			Contact cu = getModel(Contact.class);
+			cu.setName(name);
+			cu.setTel(tel);
+			cu.setEmail(email);
+			cu.setCompany(company);
+			cu.setDepartment(department);
+			cu.setPosition(position);
+			cu.setInterest(interest);
+			cu.setInterestOther(interest_other);
+			cu.setSuggest(suggest);
+
+			Contact.dao.saveContact(cu);
+			renderText("ok");
+		}catch (Exception e) {
+			e.printStackTrace();
+			renderError(400);
 		}
 	}
 }
