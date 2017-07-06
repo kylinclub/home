@@ -7,6 +7,7 @@
   <meta http-equiv="x-ua-compatible" content="ie=edge" />
   <title>GITC官网首页</title>
   <meta content="" name="description" />
+  <meta http-equiv=”X-UA-Compatible” content=”IE=edge,chrome=1″ />
   <link href="static/css/bootstrap.min.css?v=5a636d7" rel="stylesheet" />
   <link href="static/css/animate.css?v=5a636d7" rel="stylesheet" />
   <link href="static/css/themify.css?v=5a636d7" rel="stylesheet" />
@@ -16,6 +17,146 @@
   <link href="static/css/global.css?v=5a636d7" rel="stylesheet" />
   <link href="static/css/blue.css?v=5a636d7" rel="stylesheet" />
 </head>
+<style>
+  /*index 页 img图片适配*/
+.clearfix:after{content:'.';display:block;height:0;clear:both;visibility:hidden}
+.clearfix{display:inline-block;}
+.img-content{
+  width: 100%;
+  background: red;
+  margin-bottom: 2%  
+}
+.img-content div{
+  float: right
+}
+/*手机端*/
+/*.img-content .img-content-img:nth-child(1){
+  margin-right: 2%
+}*/
+.box-both{
+  width: 100%;
+  height: 0.2rem;
+  float: left
+}
+.box-both-bottom{
+  width: 100%;
+  height: 2rem;
+  float: left
+}
+.img-content-img {
+    width: 48%;
+    height: 25vw;
+    background: yellow;
+    margin-right: 3px;
+}
+.img-content-img h4 {
+    font-size: 0.6rem;
+    margin: 40% 0 0 0.5rem;
+    color: #fff;
+    text-shadow: 0em 0.2em 0.22em #000;
+}
+.img-content-img p {
+    font-size: 0.6rem;
+    margin-left:0.5rem;
+    color: #fff;
+    margin-top:0.1rem;
+    text-shadow: 0em 0.2em 0.22em #000;
+}
+
+/* 小屏幕（平板，大于等于 768px） */
+ @media screen and (min-width: 768px) {
+   .img-content div{
+     margin-bottom: 0.3%;
+   }
+   .img-content-img h4 {
+    font-size: 0.4rem;
+    margin: 38% 0 0 0.5rem;
+    color: #fff;
+    text-shadow: 0em 0.2em 0.22em #000;
+}
+.img-content-img p {
+    font-size: 0.4rem;
+    margin-left:0.5rem;
+    color: #fff;
+    margin-top:0.1rem;
+    text-shadow: 0em 0.2em 0.22em #000;
+}
+   
+   .box-both{
+     display: none
+   }
+   .img-content-img {
+    width:24%;
+    height: 24%;
+    margin-right: 3px;
+}
+    .box-both{
+    width: 24%;
+    height: 0.2rem;
+    float: left
+  }
+  .box-both-bottom{
+    width: 100%;
+    height: 2rem;
+    float: left;
+  }
+}
+/* 中等屏幕（桌面显示器，大于等于 992px） */
+@media (min-width:992px) { 
+  .img-content div {
+    margin-bottom: 1%;
+    margin-right: 1%
+}
+   .img-content-img h4 {
+    font-size: 1rem;
+    margin: 54% 0 0 0.5rem;
+    color: #fff;
+    text-shadow: 0em 0.2em 0.22em #000;
+}
+.img-content-img p {
+    font-size: 1rem;
+    margin-left:0.5rem;
+    color: #fff;
+    margin-top:0.1rem;
+    text-shadow: 0em 0.2em 0.22em #000;
+}
+ }
+
+/**/
+.banner-img1{
+  background: url(static/img/b2.png);
+  background-size: cover
+}
+.banner-img2{
+  background: url(static/img/b1.png);
+  background-size: cover
+}
+.banner-img3{
+  background: url(static/img/b4.png);
+  background-size: cover
+}
+.banner-img4{
+  background: url(static/img/b3.png);
+  background-size: cover
+}
+.banner-img5{
+  background: url(static/img/b6.png);
+  background-size: cover
+}
+.banner-img6{
+  background: url(static/img/b5.png);
+  background-size: cover
+}
+.banner-img7{
+  background: url(static/img/b8.png);
+  background-size: cover
+}
+.banner-img8{
+  background: url(static/img/b7.png);
+  background-size: cover
+}
+</style>
+
 <body>
   <header class="navbar-fixed-top s-header js__header-sticky js__header-overlay">
     <div class="s-header__navbar">
@@ -43,7 +184,7 @@
             <ul class="list-unstyled s-header__nav-menu">
               <li class="s-header__nav-menu-item">
                 <a class="s-header__nav-menu-link s-header__nav-menu-link-divider" href="sh.html">GITC上海站</a></li>
-                <li class="s-header__nav-menu-item">
+              <li class="s-header__nav-menu-item">
                 <a class="s-header__nav-menu-link s-header__nav-menu-link-divider" href="download.html">上海站资料下载</a></li>
               <!-- <li class="s-header__nav-menu-item">
                 <a class="s-header__nav-menu-link s-header__nav-menu-link-divider" id="toggle_btn">现场直播</a>
@@ -82,7 +223,7 @@
       <div class="g-fullheight--xs g-bg-position--center swiper-slide">
       </div>
       <div class="g-bg-position--center g-fullheight--xs swiper-slide">
-        <div class="container" style="height: 100%"><a style="display: block; height: 100%" href="sh.html"></a></div>
+        <div class="container"><a style="display: block; " href="sh.html"></a></div>
       </div>
       <div class="g-fullheight--xs g-bg-position--center swiper-slide">
       </div>
@@ -160,10 +301,53 @@
         </div>
       </div>
 
-      <div class="g-text-center--xs g-margin-b-40--xs g-margin-b-80--md">
+      <!--<div class="g-text-center--xs g-margin-b-40--xs g-margin-b-80--md">
         <img class="img-responsive g-width-100-percent--xs" src="static/img/index_ph001.jpg" alt="">
+      </div>-->
+      <div class="img-content ">
+        <div class="img-content-img banner-img1">
+          <h4>GITC PARTY</h4>
+          <p>邀请晚宴</p>
+        </div>
+        <div class="img-content-img banner-img2">
+          <h4>OPENING GEROMONEY</h4>
+          <p>万人开幕式</p>
+        </div>
       </div>
-
+      <div class="box-both"></div>
+      <div class="img-content ">
+        <div class="img-content-img banner-img3">
+          <h4>AWARD CEREMONY</h4>
+          <p>颁奖典礼</p>
+        </div>
+        <div class="img-content-img banner-img4">
+          <h4>BLOCK TECH PLAYGROUND</h4>
+          <p>黑科技游乐园</p>
+        </div>
+      </div>
+      <div class="box-both"></div>
+      <div class="img-content ">
+        <div class="img-content-img banner-img5">
+          <h4>EXPERT LINEUP</h4>
+          <p>专家整容</p>
+        </div>
+        <div class="img-content-img banner-img6">
+          <h4>DISPLAY AREA</h4>
+          <p>精彩展区</p>
+        </div>
+      </div>
+      <div class="box-both"></div>
+      <div class="img-content ">
+        <div class="img-content-img banner-img7">
+          <h4>PODASHOW INTERACTION</h4>
+          <p>路演互动</p>
+        </div>
+        <div class="img-content-img banner-img8">
+          <h4>KEYNOTE</h4>
+          <p>主题演讲</p>
+        </div>
+      </div>
+      <div class="box-both-bottom"></div>
     </div>
 
   </div>
@@ -173,25 +357,29 @@
       <div class="row">
         <div class="col-md-2 col-xs-3 g-margin-b-0--xs g-margin-b-0--lg">
           <div class="g-text-center--xs">
-            <figure class="g-display-block--xs g-font-size-40--xs g-font-size-60--md g-color--white g-margin-b-0--xs js__counter" data-num="609">609</figure>
+            <!--<figure class="g-display-block--xs g-font-size-40--xs g-font-size-60--md g-color--white g-margin-b-0--xs " data-num="609"><span>111</span></figure>-->
+            <span class="g-display-block--xs g-font-size-40--xs g-font-size-60--md g-color--white g-margin-b-0--xs  counter1"> 690</span>
             <h4 class="g-font-size-12--xs g-font-size-14--md g-color--white">Speakers<br>演讲嘉宾</h4>
           </div>
         </div>
         <div class="col-md-3 col-xs-4 g-margin-b-0--xs g-margin-b-0--lg">
           <div class="g-text-center--xs">
-            <figure class="g-display-block--xs g-font-size-40--xs g-font-size-60--md g-color--white g-margin-b-0--xs js__counter" data-num="1700">1700</figure>
+            <!--<figure class="g-display-block--xs g-font-size-40--xs g-font-size-60--md g-color--white g-margin-b-0--xs " data-num="1700">1700</figure>-->
+            <span class="g-display-block--xs g-font-size-40--xs g-font-size-60--md g-color--white g-margin-b-0--xs  counter2">1,700</span>
             <h4 class="g-font-size-12--xs g-font-size-14--md g-color--white">Companies<br>参会企业</h4>
           </div>
         </div>
         <div class="col-md-3 col-xs-5 g-margin-b-0--xs g-margin-b-0--sm">
           <div class="g-text-center--xs">
-            <figure class="g-display-block--xs g-font-size-40--xs g-font-size-60--md g-color--white g-margin-b-0--xs js__counter" data-num="50156">50156</figure>
+            <!--<figure class="g-display-block--xs g-font-size-40--xs g-font-size-60--md g-color--white g-margin-b-0--xs " data-num="50156">50156</figure>-->
+            <span class="g-display-block--xs g-font-size-40--xs g-font-size-60--md g-color--white g-margin-b-0--xs  counter3">50,156</span>
             <h4 class="g-font-size-12--xs g-font-size-14--md g-color--white">Participants<br>与会者</h4>
           </div>
         </div>
         <div class="col-md-4 col-xs-6 g-full-width--xs g-margin-b-0--xs g-margin-b-0--sm">
           <div class="g-text-center--xs">
-            <figure class="g-display-block--xs g-font-size-40--xs g-font-size-60--md g-color--white g-margin-b-0--xs js__counter" data-num="207953712">207953712</figure>
+            <!--<figure class="g-display-block--xs g-font-size-40--xs g-font-size-60--md g-color--white g-margin-b-0--xs " data-num="207953712">207953712</figure>-->
+            <span class="g-display-block--xs g-font-size-40--xs g-font-size-60--md g-color--white g-margin-b-0--xs  counter4">207,953,712</span>
             <h4 class="g-font-size-12--xs g-font-size-14--md g-color--white">Online Communications<br>线上传播人次</h4>
           </div>
         </div>
@@ -199,26 +387,30 @@
       <div class="row">
         <div class="col-md-2 col-xs-4 g-margin-b-0--xs g-margin-b-0--lg">
           <div class="g-text-center--xs">
-            <figure class="g-display-block--xs g-font-size-40--xs g-font-size-60--md g-color--white g-margin-b-0--xs js__counter" data-num="57">57</figure>
+            <!--<figure class="g-display-block--xs g-font-size-40--xs g-font-size-60--md g-color--white g-margin-b-0--xs " data-num="57">57</figure>-->
+            <span class="g-display-block--xs g-font-size-40--xs g-font-size-60--md g-color--white g-margin-b-0--xs  counter5">57</span>
             <h4 class="g-font-size-12--xs g-font-size-14--md g-color--white">Summit Forums <br>会场</h4>
           </div>
         </div>
         <div class="col-md-3 col-xs-4 g-margin-b-0--xs g-margin-b-0--lg">
           <div class="g-text-center--xs">
-            <figure class="g-display-block--xs g-font-size-40--xs g-font-size-60--md g-color--white g-margin-b-0--xs js__counter" data-num="228">228</figure>
+            <!--<figure class="g-display-block--xs g-font-size-40--xs g-font-size-60--md g-color--white g-margin-b-0--xs " data-num="228">228</figure>-->
+            <span class="g-display-block--xs g-font-size-40--xs g-font-size-60--md g-color--white g-margin-b-0--xs  counter6">228</span>
             <h4 class="g-font-size-12--xs g-font-size-14--md g-color--white">Sponsors<br>合作伙伴</h4>
           </div>
         </div>
         <div class="col-md-3 col-xs-4 g-margin-b-0--xs g-margin-b-0--sm">
           <div class="g-text-center--xs">
-            <figure class="g-display-block--xs g-font-size-40--xs g-font-size-60--md g-color--white g-margin-b-0--xs js__counter" data-num="700">700</figure>
+            <!--<figure class="g-display-block--xs g-font-size-40--xs g-font-size-60--md g-color--white g-margin-b-0--xs " data-num="700">700</figure>-->
+            <span class="g-display-block--xs g-font-size-40--xs g-font-size-60--md g-color--white g-margin-b-0--xs  counter7"> 700</span>
             <h4 class="g-font-size-12--xs g-font-size-14--md g-color--white">Medias<br>合作媒体</h4>
           </div>
         </div>
         <div class="col-md-4 col-xs-6 g-full-width--xs g-margin-b-0--xs g-margin-b-0--sm">
           <div class="g-text-center--xs">
             <div class="g-margin-b-0--xs">
-              <figure class="g-display-inline-block--xs g-font-size-40--xs g-font-size-60--md g-color--white js__counter" data-num="52994">52994</figure>
+              <!--<figure class="g-display-inline-block--xs g-font-size-40--xs g-font-size-60--md g-color--white " data-num="52994">52994</figure>-->
+              <span class="g-display-inline-block--xs g-font-size-40--xs g-font-size-60--md g-color--white  counter8">52,994</span>
               <span class="g-font-size-40--xs g-color--white">m<sup>2</sup></span>
             </div>
             <h4 class="g-font-size-12--xs g-font-size-14--md g-color--white">Venue Area<br>展览场馆</h4>
@@ -289,8 +481,6 @@
 
     </div>
   </div>
-
-
   <div class="container g-padding-y-40--xs g-padding-y-100--md" style="padding-bottom: 0">
     <div class="row g-row-col--0 g-overflow--hidden">
       <div class="g-text-center--xs g-margin-b-20--xs g-margin-b-40--md">
@@ -357,7 +547,6 @@
     </div>
 
   </div>
-
   <footer class="g-bg-color--dark">
     <div class="g-hor-divider__dashed--white-opacity-lightest">
       <div class="container g-padding-y-30--xs g-padding-y-50--md">
@@ -419,7 +608,6 @@
       </div>
     </div>
   </footer>
-
   <a href="javascript:void(0);" class="s-back-to-top js__back-to-top"></a>
   <script type="text/javascript">
     var GMM_APP_PATH = '';
@@ -448,22 +636,59 @@
         if (0 == v.status) {
           var rs = v.data, xml = '', _spilt = $(window).width() > 768 ? 8 : 4;
           for (var i = 0; i < rs.length; i++) {
-            xml += '<p class="js-info' + (i % _spilt == 0 ? ' cll' : '') + '"><img src="' + rs[i].img + '" alt="" class="img-circle" data-info=\'' + JSON.stringify(rs[i]) + '\'><b>'
+            xml += '<p class="js-info' + (i % _spilt == 0 ? ' cll' : '') + '"><img src="' + rs[i].img + '" style="width:100%" alt="" class="img-circle" data-info=\'' + JSON.stringify(rs[i]) + '\'><b>'
               + rs[i].name + '</b><span>' + rs[i].company + '<br>' + rs[i].title + '</span></p>';
           }
           $('.swiper-container-people').html(xml);
         }
       });
-      // $('#toggle_btn').click(){
-      //   $('.nav-select').toggle()
-      // }
-        $('#toggle_btn').on('click', function (){
-          $('.nav-select').toggle();
-        });
-      }
+      $('#toggle_btn').on('click', function () {
+        $('.nav-select').toggle();
+      });
+    }
     );
   </script>
   <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-591fe0c2662cc83b"></script>
+  <script src="static/js/waypoints.min.js"></script>
+  <script type="text/javascript" src="static/js/countUp.js"></script>
+  <script>
+    function startRun() {
+      $('.counter1').countUp({
+        // delay: 10,
+        time: 2000
+      });
+      $('.counter2').countUp({
+        // delay: 10,
+        time: 3000
+      });
+      $('.counter3').countUp({
+        // delay: 10,
+        time: 3800
+      });
+      $('.counter4').countUp({
+        // delay: 10,
+        time: 6000
+      });
+      $('.counter5').countUp({
+        // delay: 10,
+        time: 1000
+      });
+      $('.counter6').countUp({
+        // delay: 10,
+        time: 1200
+      });
+      $('.counter7').countUp({
+        // delay: 10,
+        time: 2600
+      });
+      $('.counter8').countUp({
+        // delay: 10,
+        time: 5000
+      });
+      timer1 = setTimeout(startRun, 10000);
+    }
+    startRun()
+  </script>
 </body>
 
 </html>

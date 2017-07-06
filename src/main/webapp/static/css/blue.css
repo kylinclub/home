@@ -734,3 +734,26 @@ body,html{
 .lv-nav-list{
   background: #fff
 }
+.clearfix:after{content:'.';display:block;height:0;clear:both;visibility:hidden}
+.clearfix{display:inline-block;}
+/*index 页 img图片适配*/
+/*.clearfix:after{content:'.';display:block;height:0;clear:both;visibility:hidden}
+.clearfix{display:inline-block;}
+.img-content{
+  width: 100%;
+  height: 200PX;
+  background: #cdcdcd
+}
+.img-content div{
+  float: left
+}*/
+/*手机端*/
+ /*@media (min-width: 768px) {
+    .img-content div{
+        width: 100px;
+        height: 100px;
+        background: red
+    }
+}*/
+
+/**/
