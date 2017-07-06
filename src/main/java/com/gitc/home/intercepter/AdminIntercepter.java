@@ -13,7 +13,7 @@ public class AdminIntercepter implements Interceptor {
 		if(obj!=null && "admin".equals(obj.toString())){
 			in.invoke();
 		}else{
-			in.getController().redirect("/admin/login");
+			in.getController().redirect("login.jsp");
 		}
 	}
 

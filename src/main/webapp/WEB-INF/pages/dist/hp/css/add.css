@@ -1,0 +1,587 @@
+.pop-content{
+	margin: 20px 0 0 60px;
+}
+.pop-content .pop-head{
+	bottom: auto;
+    height: 90px;
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: auto;
+    padding-bottom: 0;
+    padding-left: 20px;
+    padding-right: 0;
+    padding-top: 13px
+}
+.pop-content .pop-head .buttons{
+	margin-bottom: 10px;
+}
+.pop-content .pop-head .buttons button{
+	color: #6a7479;
+    font-size: 14px;
+    border-bottom-width: 0;
+    border-left-width: 0;
+    border-right-width: 0;
+    border-top-width: 0;
+    cursor: pointer !important;
+    padding-bottom: 0;
+    padding-left: 0;
+    padding-right: 0;
+    padding-top: 0;
+    background-color: transparent;
+}
+.pop-content .pop-head .buttons button:hover{
+	color: #000000;	
+}
+.pop-content .pop-head .buttons button .sign{
+	font-weight: bold;
+	font-size: 15px;
+	padding-right: 5px;
+}
+.pop-content .pop-head .inputs{
+/*	border-bottom-style: solid;
+    border-bottom-width: 1px;
+    border-bottom-color: #a6a6a6;*/
+    clear: both;
+    margin-right: 15px;
+    width: 98%;
+    display: table;
+}
+.pop-content .pop-head .inputs .text{
+	display: block;
+    font-size: 12px;
+    font-weight: bold;
+    margin-left: 0;
+    margin-right: 8px;
+    margin-top: 0;
+    position: relative;
+    white-space: nowrap;
+    color:#000;
+    top:1px;
+}
+._ph_U2 {
+	margin-top:10px;
+    max-height: 60px;
+    overflow-x: hidden;
+    overflow-y: auto;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    line-height: 18px;
+    outline-color: -moz-use-text-color;
+    outline-style: none;
+    outline-width: medium;
+    position: relative;
+    cursor: text;
+    display: block;
+    height: 64px;
+    border: 1px solid #c8c8c8;
+    background-color:#fff;
+    border-radius:4px;
+}
+.findControlWrapper {
+    display: inline-block;
+    font-size: 0;
+    vertical-align: top;
+    padding: 2px 3px;
+}
+._fp_i{
+	cursor: pointer;
+}
+._fp_i:hover{
+	background-color: #f2f8fc;
+}
+._fp_t {
+    display: inline-block;
+    font-size: 0;
+    vertical-align: middle;
+    white-space: nowrap;
+}
+._fp_v {
+    display: inline-block;
+}
+
+.allowTextSelection {
+    -moz-user-select: text;
+    cursor: auto;
+}
+.placeholderText {
+    -x-system-font: none;
+}
+._fp_u {
+    -x-system-font: none;
+    background-attachment: scroll;
+    background-clip: border-box;
+    background-color: transparent;
+    background-image: none;
+    background-origin: padding-box;
+    background-position: 0 0;
+    background-repeat: repeat;
+    background-size: auto auto;
+    border-bottom-color: transparent;
+    border-bottom-style: hidden;
+    border-bottom-width: 0;
+    border-left-color: transparent;
+    border-left-style: hidden;
+    border-left-width: 0;
+    border-right-color: transparent;
+    border-right-style: hidden;
+    border-right-width: 0;
+    border-top-color: transparent;
+    border-top-style: hidden;
+    border-top-width: 0;
+    display: table-cell;
+    height: auto;
+    margin-bottom: 0;
+    margin-left: 0;
+    margin-right: 5px;
+    margin-top: 2px;
+    outline-color: -moz-use-text-color;
+    outline-style: none;
+    outline-width: medium;
+    vertical-align: middle;
+    width: 50px;
+    color: #666;
+    font-feature-settings: normal;
+    font-kerning: auto;
+    font-language-override: normal;
+    font-size: 12px;
+    font-size-adjust: none;
+    font-stretch: normal;
+    font-style: normal;
+    font-synthesis: weight style;
+    font-variant-alternates: normal;
+    font-variant-caps: normal;
+    font-variant-east-asian: normal;
+    font-variant-ligatures: normal;
+    font-variant-numeric: normal;
+    font-variant-position: normal;
+    font-weight: normal;
+    line-height: normal;
+    padding-bottom: 0;
+    padding-left: 1px;
+    padding-right: 1px;
+    padding-top: 0;
+}
+.dynamicResizingElement{
+	-x-system-font: none;
+    font-family: "Microsoft YaHei UI","Microsoft YaHei",SimSun,sans-serif;
+	font-feature-settings: normal;
+    font-kerning: auto;
+    font-language-override: normal;
+    font-size: 12px;
+    font-size-adjust: none;
+    font-stretch: normal;
+    font-style: normal;
+    font-synthesis: weight style;
+    font-variant-alternates: normal;
+    font-variant-caps: normal;
+    font-variant-east-asian: normal;
+    font-variant-ligatures: normal;
+    font-variant-numeric: normal;
+    font-variant-position: normal;
+    font-weight: normal;
+    left: 10px;
+    line-height: normal;
+    opacity: 0;
+    position: absolute;
+    top: 10px;
+    visibility: hidden;
+    white-space: nowrap;
+    width: auto;
+    z-index: -1024;
+}
+._fp_7{
+	width: 300px;
+	box-shadow: 0 0 7px #666;
+}
+.o365button {
+    -x-system-font: none;
+    background-attachment: scroll;
+    background-clip: border-box;
+    background-image: none;
+    background-origin: padding-box;
+    background-position: 0 0;
+    background-repeat: repeat;
+    background-size: auto auto;
+    border-left-width: 0;
+    border-right-width: 0;
+    border-top-width: 0;
+    cursor: pointer !important;
+    font-feature-settings: normal;
+    font-kerning: auto;
+    font-language-override: normal;
+    font-size-adjust: none;
+    font-stretch: normal;
+    font-style: normal;
+    font-synthesis: weight style;
+    font-variant-alternates: normal;
+    font-variant-caps: normal;
+    font-variant-east-asian: normal;
+    font-variant-ligatures: normal;
+    font-variant-numeric: normal;
+    font-variant-position: normal;
+    font-weight: normal;
+    line-height: normal;
+}
+._fp_b{
+	border-bottom-style: solid;
+    border-bottom-width: 1px;
+    font-size: 12px;
+    margin-bottom: 0;
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 0;
+    padding-bottom: 6px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 6px;
+    position: relative;
+    text-align: center;
+    z-index: 1;
+    border-bottom-color: #a6a6a6;
+    border-left-color: #a6a6a6;
+    border-right-color: #a6a6a6;
+    border-top-color: #a6a6a6;
+    background-color: #e4eee6;
+    font-family: "Segoe UI","Segoe WP","Segoe UI WPC",Tahoma,Arial,sans-serif;
+}
+._fp_m {
+    height: 25px;
+    max-width: 290px;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+._fp_p {
+    display: inline-block;
+}
+._fp_o{
+	vertical-align: top;
+	margin-top: 5px;
+	margin-bottom: 5px;
+	line-height: 12px;
+}
+._fp_9{
+	color: #369f47;
+	margin-top: 4px;
+    vertical-align: middle;
+    margin-left: 4px;
+}
+._fp_f {
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+._fp_21 {
+    margin-right: 4px;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    position: relative;
+    padding-left: 10px;
+    border-bottom-color: #eaeaea;
+    border-bottom-style: solid;
+    border-bottom-width: 1px;
+}
+._fp_name{
+	-x-system-font: none;
+    color: #333;
+    font-family: "Microsoft YaHei UI","Microsoft YaHei";
+    font-feature-settings: normal;
+    font-kerning: auto;
+    font-language-override: normal;
+    font-size: 16px;
+    font-size-adjust: none;
+    font-stretch: normal;
+    font-style: normal;
+    font-synthesis: weight style;
+    font-variant-alternates: normal;
+    font-variant-caps: normal;
+    font-variant-east-asian: normal;
+    font-variant-ligatures: normal;
+    font-variant-numeric: normal;
+    font-variant-position: normal;
+    font-weight: normal;
+    line-height: normal;
+    display: block;
+}
+._fp_email{
+	-x-system-font: none;
+    color: #666;
+    font-family: "Microsoft YaHei UI","Microsoft YaHei";
+    font-feature-settings: normal;
+    font-kerning: auto;
+    font-language-override: normal;
+    font-size: 12px;
+    font-size-adjust: none;
+    font-stretch: normal;
+    font-style: normal;
+    font-synthesis: weight style;
+    font-variant-alternates: normal;
+    font-variant-caps: normal;
+    font-variant-east-asian: normal;
+    font-variant-ligatures: normal;
+    font-variant-numeric: normal;
+    font-variant-position: normal;
+    font-weight: normal;
+    line-height: normal;
+}
+._fp_selected{
+	background-color: #e4eee6;
+}
+._rw_a {
+    -x-system-font: none;
+    display: inline-block;
+    font-family: "Microsoft YaHei UI","Microsoft YaHei";
+    font-feature-settings: normal;
+    font-kerning: auto;
+    font-language-override: normal;
+    font-size: 12px;
+    font-size-adjust: none;
+    font-stretch: normal;
+    font-style: normal;
+    font-synthesis: weight style;
+    font-variant-alternates: normal;
+    font-variant-caps: normal;
+    font-variant-east-asian: normal;
+    font-variant-ligatures: normal;
+    font-variant-numeric: normal;
+    font-variant-position: normal;
+    font-weight: normal;
+    line-height: normal;
+    padding-right: 8px;
+    vertical-align: middle;
+    white-space: nowrap;
+    cursor: pointer;
+    padding: 2px 3px;
+}
+._rw_dn{
+	color: #369f47;
+}
+._rw_un{
+	color:#a80f22 !important;
+}
+.pop-content .pop-body{
+	bottom: 0;
+    height: auto;
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 120px;
+    width: auto;
+}
+.pop-body .pop-left{
+	bottom: 0;
+    height: auto;
+    left: 20px;
+    position: absolute;
+    right: auto;
+    top: 0;
+    width: 300px;
+}
+.pop-body .pop-left .find-p{
+	bottom: auto;
+    height: 106px;
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: auto;
+}
+.find-p ._ph_Y {
+    height: 30px;
+    position: relative;
+    width: 100%;
+}
+._ph_k1{
+	bottom: 0;
+    height: auto;
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 50px;
+    width: auto;
+    border-left-color: #e5e3e3;
+    border-left-style: solid;
+    border-left-width: 1px;
+    border-right-color: #e5e3e3;
+    border-right-style: solid;
+    border-right-width: 1px;
+    box-shadow: -2px 2px 4px rgba(150, 152, 154, 0.2);
+}
+._ph_W{
+	height: 100%;
+    position: absolute;
+    width: 100%;
+}
+._ph_I1{
+	height: 100%;
+    overflow-x: hidden;
+    overflow-y: auto;
+    position: absolute;
+    width: 100%;
+}
+._ph_K1{
+	border-bottom-style: solid;
+    border-bottom-width: 1px;
+    position: relative;
+    border-bottom-color: #eaeaea;
+    border-left-color: #eaeaea;
+    border-right-color: #eaeaea;
+    border-top-color: #eaeaea;
+    padding: 5px 5px;
+}
+._ph_I1 .selected{
+	background-color: #e4eee6;
+}
+._ph_P1{
+	display: block;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    white-space: nowrap;
+    max-width: 88%;
+    padding-left: 10px;
+    cursor: default;
+}
+._ph_O1{
+	height: 100%;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 40px;
+    z-index: 1000;
+    text-align: center;
+    vertical-align: middle;
+    font-size: 25px;
+    font-weight: bold;
+    cursor: pointer;
+    color: #777;
+    margin-top: 5px;
+}
+._ph_O1:hover{
+	color:#000;
+}
+._ph_P1 span{
+	-x-system-font: none;
+    color: #333;
+    font-family: "Microsoft YaHei UI","Microsoft YaHei",sans-serif;
+    font-feature-settings: normal;
+    font-kerning: auto;
+    font-language-override: normal;
+    font-size-adjust: none;
+    font-stretch: normal;
+    font-style: normal;
+    font-synthesis: weight style;
+    font-variant-alternates: normal;
+    font-variant-caps: normal;
+    font-variant-east-asian: normal;
+    font-variant-ligatures: normal;
+    font-variant-numeric: normal;
+    font-variant-position: normal;
+    font-weight: normal;
+    line-height: normal;
+    display: block;
+}
+._ph_P1 .name{
+	font-size: 16px;
+}
+._ph_P1 .email{
+    font-size: 12px;
+}
+.pop-right{
+	bottom: 0;
+    height: auto;
+    left: 15px;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: auto;
+}
+._pepole{
+	
+}
+._rpc_2 {
+    background-color: #f1f1f1;
+    left: 5px;
+    position: absolute;
+    width: 97%;
+}
+._pe_7{
+	 background-repeat: no-repeat;
+    margin-bottom: 0;
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 0;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    position: relative;
+    vertical-align: top;
+    white-space: nowrap;
+    display: table-cell;
+}
+._rpc_2 .avatar{
+	height: 80px;
+}
+._pe_b{
+	padding-left: 14px;
+	display: table-cell;
+	font-family: "Microsoft YaHei UI","Microsoft YaHei",sans-serif;
+}
+._pe_b .name{
+	font-size: 28px;
+	display: block;
+}
+._pe_b .dep{
+	font-size: 20px;
+	color: #aaa;
+}
+._p_menu{
+	width: 90%;
+	left: 5px;
+    position: absolute;
+    top:90px;
+}
+._p_menu .item{
+	font-size: 20px;
+	color: #369f47;
+}
+._p_content{
+	width: 90%;
+	left: 5px;
+    position: absolute;
+    top:120px;
+}
+._p_content span{
+	width: 90%;
+	display: block;
+}
+._p_content span._tt{
+	font-size: 15px;
+	margin: 10px 0 0 0;
+}
+._p_content span._cc{
+	font-size: 12px;
+}
+._group ._p_scroll{
+	top: 130px;
+	bottom: 20px;
+    left: 0;
+    position: absolute;
+    right: 0;
+    width: 97%;
+}
+._group ._p_scroll .scrollContainer{
+	bottom: 0;
+    left: 0;
+    overflow-x: hidden;
+    overflow-y: auto;
+    position: absolute;
+    right: 0;
+    top: 0;
+    height:250px;
+}
+.group{
+	font-weight: bold;
+}

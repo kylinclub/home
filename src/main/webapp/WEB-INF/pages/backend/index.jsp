@@ -1,6 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
 	pageEncoding="UTF-8"%>
-<%@ include file="/WEB-INF/pages/backend/commons/header.jsp"%>
+<%@ include file="./commons/header.jsp"%>
 <div class="wrapper wrapper-content animated fadeInDown">
 	<div class="row">
 		<div class="col-sm-12">
@@ -11,4 +11,4 @@
 <script>
 $("#index").addClass("active")
 </script>
-<%@ include file="/WEB-INF/pages/backend/commons/footer.jsp"%>
+<%@ include file="./commons/footer.jsp"%>

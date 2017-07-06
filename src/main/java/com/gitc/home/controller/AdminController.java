@@ -8,6 +8,7 @@ import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
 
+import com.gitc.home.model.*;
 import org.apache.commons.io.FileUtils;
 import org.apache.poi.hssf.usermodel.HSSFCell;
 import org.apache.poi.hssf.usermodel.HSSFRow;
@@ -15,12 +16,6 @@ import org.apache.poi.hssf.usermodel.HSSFSheet;
 import org.apache.poi.hssf.usermodel.HSSFWorkbook;
 
 import com.gitc.home.intercepter.AdminIntercepter;
-import com.gitc.home.model.Guest;
-import com.gitc.home.model.Opt; 
-import com.gitc.home.model.Region;
-import com.gitc.home.model.Schedule;
-import com.gitc.home.model.Speaker;
-import com.gitc.home.model.UserSh;
 import com.gitc.home.util.ChineseToPinyinUtil;
 import com.gitc.home.util.MiStringUtil;
 import com.jfinal.aop.Before;
@@ -56,7 +51,7 @@ public class AdminController extends Controller{
 			renderJsp("login.jsp");
 		}
 	}
-	
+
 	public void speaker_list(){
 		setAttr("speakers", Speaker.dao.getAllSpeakersFromDb());
 		renderJsp("speaker/speaker_list.jsp");
@@ -605,5 +600,16 @@ public class AdminController extends Controller{
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
+	}
+
+	public void contact_list() {
+		setAttr("contacts", Contact.dao.getAllContactsFromDb());
+		renderJsp("contact/contact_list.jsp");
+	}
+
+	public void delete_contact() {
+		int id = getParaToInt("id");
+		Contact.dao.deleteContact(id);
+		renderJson("{\"code\":200}");
 	}
 }

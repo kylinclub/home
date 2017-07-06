@@ -55,7 +55,7 @@
 	<div class="wrapper wrapper-content animated fadeInRight">
 		<div class="row">
 			<div class="col-lg-12 tools">
-				<a class="btn btn-w-m btn-primary" href="/admin/add_banner">新增</a>
+				<a class="btn btn-w-m btn-primary" href="add_banner">新增</a>
 			</div>
 			<div class="col-lg-12 contents">
 				<div class="ibox float-e-margins">
@@ -65,11 +65,11 @@
 							<c:forEach var="banner" items="${banners }">
 								<tr id="banner${banner.id }">
 									<td>
-										<img src="${banner.image }" height="50">
+										<img src="..${banner.image }" height="50">
 									</td>
 									<td>${banner.url }</td>
 									<td>
-										<a href="/admin/edit_banner/${banner.id}">编辑</a>&nbsp;
+										<a href="edit_banner/${banner.id}">编辑</a>&nbsp;
 										<a href="javascript:void(0)" onclick="del(${banner.id})">删除</a>
 									</td>
 								</tr>
@@ -84,7 +84,7 @@
 function del(sid){
 	layer.confirm('确认删除该条记录?', {icon: 3, title:'提示'}, function(index){
 		$.ajax({
-    	    url: "/admin/delete_banner",
+    	    url: "delete_banner",
     	    data: "id="+sid,
     	    cache: false,
     	    type: "get",
@@ -113,7 +113,7 @@ $().ready(function () {
 	$(".update-redis").click(function(){
 		var index = layer.msg('正在更新缓存，请稍候...', {icon: 16,shade: [0.1,'#000'],time:0});
 		$.ajax({
-    	    url: "/admin/refresh",
+    	    url: "refresh",
     	    data: "type=speaker",
     	    cache: false,
     	    type: "get",

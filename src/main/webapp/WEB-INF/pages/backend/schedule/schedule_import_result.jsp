@@ -20,8 +20,8 @@
 		<div class="col-lg-10">
 			<h2>导入大会议程</h2>
 			<ol class="breadcrumb">
-				<li><a href="/admin/index">首页</a></li>
-                <li><a href="/admin/schedule_list">大会议程</a></li>
+				<li><a href="index">首页</a></li>
+                <li><a href="schedule_list">大会议程</a></li>
                 <li><a>导入结果</a></li>
             </ol>
 		</div>
@@ -49,7 +49,7 @@
 			</div>
 		</div>
 	</div>
-<script src="/dist/hp/js/layer/layer.js"></script>
+<script src="../dist/hp/js/layer/layer.js"></script>
     <script>
         $().ready(function () {
         	$("#schedule").addClass("active");

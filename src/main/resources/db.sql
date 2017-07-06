@@ -1,0 +1,16 @@
+CREATE TABLE `contact` (
+  `id` INT(11) NOT NULL AUTO_INCREMENT,
+  `name` VARCHAR(100) DEFAULT '',
+  `tel` VARCHAR(30) DEFAULT '',
+  `email` VARCHAR(100) DEFAULT '',
+  `company` VARCHAR(100) DEFAULT '',
+  `department` VARCHAR(100) DEFAULT '',
+  `position` VARCHAR(100) DEFAULT '',
+  `interest` VARCHAR(20) DEFAULT '',
+  `interest_other` VARCHAR(100) DEFAULT '',
+  `suggest` VARCHAR(500) DEFAULT '',
+  `add_time` DATE NOT NULL,
+  `if_close` BOOLEAN NOT NULL DEFAULT FALSE,
+  `if_delete` BOOLEAN NOT NULL DEFAULT FALSE,
+  PRIMARY KEY (`id`)
+)ENGINE=InnoDB AUTO_INCREMENT=128 DEFAULT CHARSET=utf8;

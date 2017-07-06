@@ -19,8 +19,8 @@
 		<div class="col-lg-10">
 			<h2>${banner.id==null?"新增":"编辑" }banner</h2>
 			<ol class="breadcrumb">
-				<li><a href="/admin/index">首页</a></li>
-                <li><a href="/admin/banner_list">banner</a></li>
+				<li><a href="index">首页</a></li>
+                <li><a href="banner_list">banner</a></li>
                 <li><a>${banner.id==null?"新增":"编辑" }</a></li>
             </ol>
 		</div>
@@ -33,7 +33,7 @@
 						<h5>上传banner</h5>
 					</div>
 					<div class="ibox-content">
-						<form action="/admin/save_banner" class="form-horizontal m-t" id="commentForm" enctype="multipart/form-data" method="post">
+						<form action="save_banner" class="form-horizontal m-t" id="commentForm" enctype="multipart/form-data" method="post">
 							<div class="form-group">
 								<label class="col-sm-3 control-label">图片：</label>
 								<div class="col-sm-3">
@@ -58,7 +58,7 @@
 									<input type="hidden" name="banner.type" value="${banner.type }">
 									<input type="hidden" name="banner.image" value="${banner.image }">
 									<button class="btn btn-primary" type="submit">提交保存</button>
-									<a class="btn btn-default" href="/admin/banner_list">返回列表</a>
+									<a class="btn btn-default" href="banner_list">返回列表</a>
 								</div>
 							</div>
 						</form>
@@ -68,8 +68,8 @@
 		</div>
 	</div>
 	<!-- jQuery Validation plugin javascript-->
-    <script src="/dist/hp/js/plugins/validate/jquery.validate.min.js"></script>
-    <script src="/dist/hp/js/plugins/validate/messages_zh.min.js"></script>
+    <script src="../dist/hp/js/plugins/validate/jquery.validate.min.js"></script>
+    <script src="../dist/hp/js/plugins/validate/messages_zh.min.js"></script>
     <script>
         $.validator.setDefaults({
             highlight: function (element) {

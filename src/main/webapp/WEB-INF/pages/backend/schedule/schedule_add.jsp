@@ -19,8 +19,8 @@
 		<div class="col-lg-10">
 			<h2>${schedule.id==null?"新增":"编辑" }大会议程</h2>
 			<ol class="breadcrumb">
-				<li><a href="/admin/index">首页</a></li>
-                <li><a href="/admin/schedule_list">大会议程</a></li>
+				<li><a href="index">首页</a></li>
+                <li><a href="schedule_list">大会议程</a></li>
                 <li><a>${schedule.id==null?"新增":"编辑" }大会议程</a></li>
             </ol>
 		</div>
@@ -33,7 +33,7 @@
 						<h5>填写大会议程资料，请注意右侧的说明文字</h5>
 					</div>
 					<div class="ibox-content">
-						<form action="/admin/save_schedule" class="form-horizontal m-t" id="commentForm" method="post">
+						<form action="save_schedule" class="form-horizontal m-t" id="commentForm" method="post">
 							<div class="form-group">
 								<label class="col-sm-3 control-label">姓名：</label>
 								<div class="col-sm-8">
@@ -94,7 +94,7 @@
 								<div class="col-sm-8 col-sm-offset-3">
 									<input type="hidden" name="schedule.id" value="${schedule.id }">
 									<button class="btn btn-primary" type="submit">提交保存</button>
-									<a class="btn btn-default" href="/admin/schedule_list">返回列表</a>
+									<a class="btn btn-default" href="schedule_list">返回列表</a>
 								</div>
 							</div>
 						</form>
@@ -112,8 +112,8 @@
 		</div>
 	</div>
 	<!-- jQuery Validation plugin javascript-->
-    <script src="/dist/hp/js/plugins/validate/jquery.validate.min.js"></script>
-    <script src="/dist/hp/js/plugins/validate/messages_zh.min.js"></script>
+    <script src="../dist/hp/js/plugins/validate/jquery.validate.min.js"></script>
+    <script src="../dist/hp/js/plugins/validate/messages_zh.min.js"></script>
     <script>
         $.validator.setDefaults({
             highlight: function (element) {

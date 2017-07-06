@@ -19,8 +19,8 @@
 		<div class="col-lg-10">
 			<h2>${speaker.id==null?"新增":"编辑" }演讲嘉宾</h2>
 			<ol class="breadcrumb">
-				<li><a href="/admin/index">首页</a></li>
-                <li><a href="/admin/speaker_list">演讲嘉宾</a></li>
+				<li><a href="index">首页</a></li>
+                <li><a href="speaker_list">演讲嘉宾</a></li>
                 <li><a>${speaker.id==null?"新增":"编辑" }演讲嘉宾</a></li>
             </ol>
 		</div>
@@ -33,7 +33,7 @@
 						<h5>填写演讲嘉宾资料，请注意右侧的说明文字</h5>
 					</div>
 					<div class="ibox-content">
-						<form action="/admin/save_speaker" class="form-horizontal m-t" id="commentForm" enctype="multipart/form-data" method="post">
+						<form action="save_speaker" class="form-horizontal m-t" id="commentForm" enctype="multipart/form-data" method="post">
 							<div class="form-group">
 								<label class="col-sm-3 control-label">姓名：</label>
 								<div class="col-sm-8">
@@ -115,7 +115,7 @@
 									<input type="hidden" name="speaker.id" value="${speaker.id }">
 									<input type="hidden" name="speaker.image" value="${speaker.image }">
 									<button class="btn btn-primary" type="submit">提交保存</button>
-									<a class="btn btn-default" href="/admin/speaker_list">返回列表</a>
+									<a class="btn btn-default" href="speaker_list">返回列表</a>
 								</div>
 							</div>
 						</form>
@@ -135,8 +135,8 @@
 		</div>
 	</div>
 	<!-- jQuery Validation plugin javascript-->
-    <script src="/dist/hp/js/plugins/validate/jquery.validate.min.js"></script>
-    <script src="/dist/hp/js/plugins/validate/messages_zh.min.js"></script>
+    <script src="../dist/hp/js/plugins/validate/jquery.validate.min.js"></script>
+    <script src="../dist/hp/js/plugins/validate/messages_zh.min.js"></script>
     <script>
         $.validator.setDefaults({
             highlight: function (element) {

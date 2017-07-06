@@ -1,9 +1,6 @@
 package com.gitc.home.controller;
 
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
+import java.util.*;
 
 import com.gitc.home.model.*;
 import com.jfinal.core.Controller;
@@ -146,6 +143,7 @@ public class DataController extends Controller{
 			cu.setInterest(interest);
 			cu.setInterestOther(interest_other);
 			cu.setSuggest(suggest);
+			cu.setAddTime(new Date());
 
 			Contact.dao.saveContact(cu);
 			renderText("ok");

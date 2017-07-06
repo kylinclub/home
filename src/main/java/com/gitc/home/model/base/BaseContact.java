@@ -89,4 +89,28 @@ public abstract class BaseContact<M extends BaseContact<M>> extends Model<M> imp
 		return get("suggest");
 	}
 
+	public void setAddTime(java.util.Date addTime) {
+		set("add_time", addTime);
+	}
+
+	public java.util.Date getAddTime() {
+		return get("add_time");
+	}
+
+	public void setIfClose(java.lang.Boolean ifClose) {
+		set("if_close", ifClose);
+	}
+
+	public java.lang.Boolean getIfClose() {
+		return get("if_close");
+	}
+
+	public void setIfDelete(java.lang.Boolean ifDelete) {
+		set("if_delete", ifDelete);
+	}
+
+	public java.lang.Boolean getIfDelete() {
+		return get("if_delete");
+	}
+
 }

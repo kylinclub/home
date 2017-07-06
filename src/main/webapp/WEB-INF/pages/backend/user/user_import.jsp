@@ -28,7 +28,7 @@
 						<h5>导入excel，请注意右侧的说明文字</h5>
 					</div>
 					<div class="ibox-content">
-						<form action="/admin/user_import" class="form-horizontal m-t" id="commentForm" enctype="multipart/form-data" method="post">
+						<form action="user_import" class="form-horizontal m-t" id="commentForm" enctype="multipart/form-data" method="post">
 							<div class="form-group">
 								<label class="col-sm-3 control-label">上传excel文件：</label>
 								<div class="col-sm-3">
@@ -39,7 +39,7 @@
 								<div class="col-sm-8 col-sm-offset-3">
 									<input type="hidden" name="type" value="${type }">
 									<button class="btn btn-primary" type="submit">提交保存</button>
-									<a class="btn btn-default" href="/admin/user_list?type=${type }">返回列表</a>
+									<a class="btn btn-default" href="user_list?type=${type }">返回列表</a>
 								</div>
 							</div>
 						</form>
@@ -53,7 +53,7 @@
 					<ol class="tips">
 						<li>只支持导入后缀为.xls的excel文件</li>
 						<li>会完全覆盖原有数据</li>
-						<li><a href="/xls/guest.xls">点击下载</a>模板</li>
+						<li><a href="..xls/guest.xls">点击下载</a>模板</li>
 					</ol>
 				</div>
 			</div>

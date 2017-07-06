@@ -1,0 +1,135 @@
+a,button,input{
+  outline:0 none !important;
+}
+.it-nav{
+	background-attachment: scroll;
+    background-clip: border-box;
+    background-color: #2f4050;
+    /*background-image: url("../../img/hd-bg.png");*/
+    background-origin: padding-box;
+    background-position: 0 0;
+    background-repeat: repeat-x;
+    background-size: auto auto;
+    border-bottom-color: #2f4050;
+    border-bottom-style: solid;
+    border-bottom-width: 2px;
+    height: 59px;	
+}
+.it-nav-brand{
+	color: #fff;
+    font-family: "Microsoft YaHei",SimSun,"Righteous",cursive;
+    font-size: 20px;
+    line-height: 50px;
+    transition-delay: 0s;
+    transition-duration: 0.5s;
+    transition-property: all;
+    transition-timing-function: ease;
+}
+.navbar-brand {
+    float: left;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    margin-right: -1rem;
+    font-size: 1.25rem;
+}
+.logo-img{
+    border-bottom-left-radius: 4px;
+    border-bottom-right-radius: 4px;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+    box-shadow: none;
+    height: 40px;
+    width: 40px;
+}
+.it-nav-tool{
+	position: fixed;
+	bottom: 0;
+}
+.it-table{
+	background-color: #fff;
+}
+.it-form{
+	background-color: #fff;
+	border-right-color: #e7eaec;
+    border-right-style: solid;
+    border-right-width: 1px;
+    border-left-color: #e7eaec;
+    border-left-style: solid;
+    border-left-width: 1px;
+    border-top-color: #e7eaec;
+    border-top-style: solid;
+    border-top-width: 1px;
+    border-bottom-color: #e7eaec;
+    border-bottom-style: solid;
+    border-bottom-width: 1px;
+    padding: 20px 10px 10px;
+    margin-bottom: 100px;
+}
+.mi_logo{
+	background-color: #ff6700;
+    border-bottom-left-radius: 4px;
+    border-bottom-right-radius: 4px;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+    height: 60px;
+    width: 60px;
+	line-height:60px;
+	text-align: center;
+	cursor:default;
+}
+.mi_logo_mi{
+	font-size:36px;
+	color:#ffffff;
+}
+.logo{
+	border-bottom-left-radius: 4px;
+    border-bottom-right-radius: 4px;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+}
+.gray-bg {
+    background-color: #f3f3f4;
+    color: #676a6c;
+    font-family: "微软雅黑","open sans","Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size: 13px;
+    overflow-x: hidden;
+	margin-top: 80px;
+}
+.middle-box {
+    margin-bottom: 0;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0;
+    max-width: 400px;
+    padding-top: 40px;
+    z-index: 100;
+}
+.text-center {
+    text-align: center;
+}
+.middle-box  .code{
+    font-size: 170px;
+	height:170px;
+	line-height: 170px;
+}
+.middle-box .msg{
+	font-size: 20px;
+	height:30px;
+	line-height: 30px;
+}
+.error-desc .desc{
+	height:30px;
+	line-height: 30px;
+}
+.employee-status1{
+	color:#3e8f3e;
+}
+.employee-status2{
+	color:#aaa;
+}
+.employee-status3{
+	color:#FFB90F;
+}
+.employee-status4{
+	color:#ff0000;
+}

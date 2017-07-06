@@ -57,10 +57,10 @@
 		<div class="row">
 			<div class="col-lg-6 tools">
 			<!--  
-				<a class="btn btn-w-m btn-primary" href="/admin/add_person?type=${type }">新增</a>
+				<a class="btn btn-w-m btn-primary" href="add_person?type=${type }">新增</a>
 			-->
-				<a class="btn btn-w-m btn-primary" href="/admin/add_guest?type=${type}">新增</a>
-				<a class="btn btn-w-m btn-info" href="/admin/import_guest?type=${type}">导入</a>
+				<a class="btn btn-w-m btn-primary" href="add_guest?type=${type}">新增</a>
+				<a class="btn btn-w-m btn-info" href="import_guest?type=${type}">导入</a>
 			</div>
 			<div class="col-lg-6 about">
 				<span class="text-info">
@@ -74,9 +74,9 @@
 						 <div class="person" id="person${s.id }">
 							<div class="panel panel-default">
 								<div class="panel-heading name">${s.name} <br> ${s.company }</div>
-								<div class="panel-body"><img src="${s.image}"></div>
+								<div class="panel-body"><img src="..${s.image}"></div>
 								<div class="panel-footer">
-									<a href="/admin/edit_guest?id=${s.id}">编辑</a>
+									<a href="edit_guest?id=${s.id}">编辑</a>
 									<a href="javascript:void(0)" onclick="del(${s.id})">删除</a>
 								</div>
 							</div>
@@ -91,7 +91,7 @@
 function del(sid){
 	layer.confirm('确认删除该条记录?', {icon: 3, title:'提示'}, function(index){
 		$.ajax({
-    	    url: "/admin/delete_guest",
+    	    url: "delete_guest",
     	    data: "id="+sid,
     	    cache: false,
     	    type: "get",
@@ -119,7 +119,7 @@ $().ready(function () {
 	$(".update-redis").click(function(){
 		var index = layer.msg('正在更新缓存，请稍候...', {icon: 16,shade: [0.1,'#000'],time:0});
 		$.ajax({
-    	    url: "/admin/refresh",
+    	    url: "refresh",
     	    data: "type=guest",
     	    cache: false,
     	    type: "get",

@@ -48,7 +48,7 @@
 		<div class="col-lg-10">
 			<h2>演讲嘉宾列表</h2>
 			<ol class="breadcrumb">
-				<li><a href="/admin/index">首页</a></li>
+				<li><a href="index">首页</a></li>
                 <li><a>演讲嘉宾</a></li>
             </ol>
 		</div>
@@ -56,8 +56,8 @@
 	<div class="wrapper wrapper-content animated fadeInRight">
 		<div class="row">
 			<div class="col-lg-12 tools">
-				<a class="btn btn-w-m btn-primary" href="/admin/add_speaker">新增</a>
-				<a class="btn btn-w-m btn-info" href="/admin/import_speaker">导入</a>
+				<a class="btn btn-w-m btn-primary" href="add_speaker">新增</a>
+				<a class="btn btn-w-m btn-info" href="import_speaker">导入</a>
 			</div>
 			<!--  
 			<div class="col-lg-6 about">
@@ -74,9 +74,9 @@
 							<div class="panel panel-default">
 								<div class="panel-heading name">${s.name} <br> ${s.company }
 								</div>
-								<div class="panel-body"><img src="${s.image}"></div>
+								<div class="panel-body"><img src="..${s.image}"></div>
 								<div class="panel-footer">
-									<a href="/admin/edit_speaker?id=${s.id}">编辑</a>
+									<a href="edit_speaker?id=${s.id}">编辑</a>
 									<a href="javascript:void(0)" onclick="del(${s.id})">删除</a>
 								</div>
 							</div>
@@ -91,7 +91,7 @@
 function del(sid){
 	layer.confirm('确认删除该条记录?', {icon: 3, title:'提示'}, function(index){
 		$.ajax({
-    	    url: "/admin/delete_speaker",
+    	    url: "delete_speaker",
     	    data: "id="+sid,
     	    cache: false,
     	    type: "get",
@@ -120,7 +120,7 @@ $().ready(function () {
 	$(".update-redis").click(function(){
 		var index = layer.msg('正在更新缓存，请稍候...', {icon: 16,shade: [0.1,'#000'],time:0});
 		$.ajax({
-    	    url: "/admin/refresh",
+    	    url: "refresh",
     	    data: "type=speaker",
     	    cache: false,
     	    type: "get",

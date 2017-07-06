@@ -44,7 +44,7 @@
 		<div class="col-lg-10">
 			<h2>大会议程列表</h2>
 			<ol class="breadcrumb">
-				<li><a href="/admin/index.html">首页</a></li>
+				<li><a href="index.html">首页</a></li>
                 <li><a>大会议程</a></li>
             </ol>
 		</div>
@@ -53,8 +53,8 @@
 		<div class="row">
 			<div class="col-lg-12 tools">
 			<!-- 
-				<a class="btn btn-w-m btn-primary" href="/admin/add_schedule.html">新增</a>-->
-				<a class="btn btn-w-m btn-info" href="/admin/import_schedule.html">导入</a>
+				<a class="btn btn-w-m btn-primary" href="add_schedule.html">新增</a>-->
+				<a class="btn btn-w-m btn-info" href="import_schedule.html">导入</a>
 			</div>
 			<!--  
 			<div class="col-lg-6 about">
@@ -93,7 +93,7 @@
 function del(sid){
 	layer.confirm('确认删除该条记录?', {icon: 3, title:'提示'}, function(index){
 		$.ajax({
-    	    url: "/admin/delete_schedule",
+    	    url: "delete_schedule",
     	    data: "id="+sid,
     	    cache: false,
     	    type: "get",
@@ -122,7 +122,7 @@ $().ready(function () {
 	$(".update-redis").click(function(){
 		var index = layer.msg('正在更新缓存，请稍候...', {icon: 16,shade: [0.1,'#000'],time:0});
 		$.ajax({
-    	    url: "/admin/refresh",
+    	    url: "refresh",
     	    data: "type=schedule",
     	    cache: false,
     	    type: "get",

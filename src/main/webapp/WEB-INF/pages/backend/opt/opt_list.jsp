@@ -50,7 +50,7 @@
 		<div class="col-lg-10">
 			<h2>其他信息管理</h2>
 			<ol class="breadcrumb">
-				<li><a href="/admin/index">首页</a></li>
+				<li><a href="index">首页</a></li>
                 <li><a>合作伙伴&媒体&参会指南</a></li>
             </ol>
 		</div>
@@ -62,7 +62,7 @@
 					<div class="ibox-content row">
 						<div class="person">
 							<div class="panel panel-default">
-								<div class="panel-heading name"><a href="/admin/edit_opt?id=${sponsor.id}">编辑合作伙伴</a></div>
+								<div class="panel-heading name"><a href="edit_opt?id=${sponsor.id}">编辑合作伙伴</a></div>
 								<div class="panel-body"><img src="${sponsor.image}"></div>
 							</div>
 						 </div>
@@ -73,7 +73,7 @@
 				<div class="ibox-content row">
 					<div class="person">
 						<div class="panel panel-default">
-							<div class="panel-heading name"><a href="/admin/edit_opt?id=${media.id}">编辑合作媒体</a></div>
+							<div class="panel-heading name"><a href="edit_opt?id=${media.id}">编辑合作媒体</a></div>
 							<div class="panel-body"><img src="${media.image}"></div>
 						</div>
 					</div>
@@ -83,7 +83,7 @@
 				<div class="ibox-content row">
 					<div class="person">
 						<div class="panel panel-default">
-							<div class="panel-heading name"><a href="/admin/edit_opt?id=${guide.id}">编辑参会指南</a></div>
+							<div class="panel-heading name"><a href="edit_opt?id=${guide.id}">编辑参会指南</a></div>
 							<div class="panel-body"><img src="${guide.image}"></div>
 						</div>
 					</div>

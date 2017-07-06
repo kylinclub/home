@@ -18,8 +18,8 @@
 		<div class="col-lg-10">
 			<h2>编辑${p.type=='media'?'合作媒体':p.type=='guide'?'参会指南':'合作伙伴' }</h2>
 			<ol class="breadcrumb">
-				<li><a href="/admin/index">首页</a></li>
-                <li><a href="/admin/person_list">合作</a></li>
+				<li><a href="index">首页</a></li>
+                <li><a href="person_list">合作</a></li>
                 <li><a>${p.type=='media'?'合作媒体':p.type=='guide'?'参会指南':'合作伙伴' }</a></li>
             </ol>
 		</div>
@@ -32,7 +32,7 @@
 						<h5>上传${p.type=='media'?'合作媒体':p.type=='guide'?'参会指南':'合作伙伴' }图片，请注意右侧说明</h5>
 					</div>
 					<div class="ibox-content">
-						<form action="/admin/save_opt" class="form-horizontal m-t" id="commentForm" enctype="multipart/form-data" method="post">
+						<form action="save_opt" class="form-horizontal m-t" id="commentForm" enctype="multipart/form-data" method="post">
 							<div class="form-group">
 								<div class="col-sm-3">
 									<input type="file"  name="pic">
@@ -44,7 +44,7 @@
 									<input type="hidden" name="opt.image" value="${p.image }">
 									<input type="hidden" name="opt.type" value="${p.type }">
 									<button class="btn btn-primary" type="submit">提交保存</button>
-									<a class="btn btn-default" href="/admin/opt_list">返回</a>
+									<a class="btn btn-default" href="opt_list">返回</a>
 								</div>
 							</div>
 						</form>

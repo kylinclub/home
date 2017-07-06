@@ -28,7 +28,7 @@
 						<h5>填写特邀嘉宾成员资料，请注意右侧说明</h5>
 					</div>
 					<div class="ibox-content">
-						<form action="/admin/save_user" class="form-horizontal m-t" id="commentForm" enctype="multipart/form-data" method="post">
+						<form action="save_user" class="form-horizontal m-t" id="commentForm" enctype="multipart/form-data" method="post">
 							<div class="form-group">
 								<label class="col-sm-3 control-label">姓名：</label>
 								<div class="col-sm-8">
@@ -81,7 +81,7 @@
 									<input type="hidden" name="guest.type" value="${guest.type }">
 									<input type="hidden" name="guest.image" value="${guest.image }">
 									<button class="btn btn-primary" type="submit">提交保存</button>
-									<a class="btn btn-default" href="/admin/user_list?type=${type }">返回列表</a>
+									<a class="btn btn-default" href="user_list?type=${type }">返回列表</a>
 								</div>
 							</div>
 						</form>
@@ -101,8 +101,8 @@
 		</div>
 	</div>
 	<!-- jQuery Validation plugin javascript-->
-    <script src="/dist/hp/js/plugins/validate/jquery.validate.min.js"></script>
-    <script src="/dist/hp/js/plugins/validate/messages_zh.min.js"></script>
+    <script src="../dist/hp/js/plugins/validate/jquery.validate.min.js"></script>
+    <script src="../dist/hp/js/plugins/validate/messages_zh.min.js"></script>
     <script>
         $.validator.setDefaults({
             highlight: function (element) {

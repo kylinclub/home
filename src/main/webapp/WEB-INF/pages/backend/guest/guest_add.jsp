@@ -19,8 +19,8 @@
 		<div class="col-lg-10">
 			<h2>${guest.id==null?"新增":"编辑" }${guest.type==1?'大会主席团':'专家顾问团' }成员</h2>
 			<ol class="breadcrumb">
-				<li><a href="/admin/index">首页</a></li>
-                <li><a href="/admin/guest_list">${guest.type==1?'大会主席团':'专家顾问团' }</a></li>
+				<li><a href="index">首页</a></li>
+                <li><a href="guest_list">${guest.type==1?'大会主席团':'专家顾问团' }</a></li>
                 <li><a>${guest.id==null?"新增":"编辑" }</a></li>
             </ol>
 		</div>
@@ -33,7 +33,7 @@
 						<h5>填写特邀嘉宾成员资料，请注意右侧说明</h5>
 					</div>
 					<div class="ibox-content">
-						<form action="/admin/save_guest" class="form-horizontal m-t" id="commentForm" enctype="multipart/form-data" method="post">
+						<form action="save_guest" class="form-horizontal m-t" id="commentForm" enctype="multipart/form-data" method="post">
 							<div class="form-group">
 								<label class="col-sm-3 control-label">姓名：</label>
 								<div class="col-sm-8">
@@ -86,7 +86,7 @@
 									<input type="hidden" name="guest.type" value="${guest.type }">
 									<input type="hidden" name="guest.image" value="${guest.image }">
 									<button class="btn btn-primary" type="submit">提交保存</button>
-									<a class="btn btn-default" href="/admin/guest_list">返回列表</a>
+									<a class="btn btn-default" href="guest_list">返回列表</a>
 								</div>
 							</div>
 						</form>
@@ -106,8 +106,8 @@
 		</div>
 	</div>
 	<!-- jQuery Validation plugin javascript-->
-    <script src="/dist/hp/js/plugins/validate/jquery.validate.min.js"></script>
-    <script src="/dist/hp/js/plugins/validate/messages_zh.min.js"></script>
+    <script src="../dist/hp/js/plugins/validate/jquery.validate.min.js"></script>
+    <script src="../dist/hp/js/plugins/validate/messages_zh.min.js"></script>
     <script>
         $.validator.setDefaults({
             highlight: function (element) {
