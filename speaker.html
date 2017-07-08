@@ -185,12 +185,11 @@
   <script type="text/javascript">
     $(function () {
 
-      $.ajax('data/users?type=speaker&count=100').then(function (v) {
+      $.ajax('/data/users?type=speaker&count=100').then(function (v) {
         if (0 == v.status) {
           var rs = v.data, xml = '', _spilt = $(window).width() > 768 ? 8 : 4;
-         
           for (var i = 0; i < rs.length; i++) {
- xml += '<p class="js-info' + (i % _spilt == 0 ? ' cll' : '') + '"><img src="' + rs[i].img.substring(1) + '" alt="" class="img-circle" data-info=\'' + JSON.stringify(rs[i]) + '\'><b>'
+            xml += '<p class="js-info' + (i % _spilt == 0 ? ' cll' : '') + '"><img src="' + rs[i].img + '" alt="" class="img-circle" data-info=\'' + JSON.stringify(rs[i]) + '\'><b>'
               + rs[i].name + '</b><span>' + rs[i].company + '<br>' + rs[i].title + '</span></p>';
           }
           $('.swiper-container-people').html(xml);
@@ -203,7 +202,7 @@
 
             var _data = JSON.parse($(this).attr('data-info'));
             var _xml = '<div class="box" id="lp"><div class="section">'
-              + '<div class="cl"><img src="' + _data.img.substring(1) + '" alt="" class="img-circle"><b>' + _data.name + '</b><span>' + _data.company + '<br>' + _data.title + '</span></div>'
+              + '<div class="cl"><img src="' + _data.img + '" alt="" class="img-circle"><b>' + _data.name + '</b><span>' + _data.company + '<br>' + _data.title + '</span></div>'
               + '<div class="cr">'
               + '<b>个人简介</b>'
               + '<span class="hr"></span>'

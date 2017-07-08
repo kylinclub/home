@@ -1,0 +1,150 @@
+*{
+    margin:0;
+    padding: 0;
+    font-family: '微软雅黑/ARIAL';
+}
+ul{
+    list-style: none;
+}
+i{
+    font-style: normal;
+}
+b{
+    font-weight: normal;
+}
+img{
+    border: none;
+    vertical-align: top;
+}
+#member #to{
+    display: block;
+    width: 100%;
+    text-align: center;
+}
+#to i{
+    display: block;
+    font-size: 22px;
+    font-weight: bold;
+}
+#to span{
+    font-weight: 500;
+    font-size: 20px;
+}
+
+#member div{
+    margin-top: 50px;
+    height: 300px;
+    text-align:center;
+    margin-bottom: 70px;
+}
+#member div{
+    padding: 0 80px;
+}
+
+#member div img{
+    margin:0 auto;
+    overflow: hidden;
+    margin-bottom: 10px;
+}
+
+#member div p{
+    font-size: 12px;
+}
+#member div span{
+    margin:0 ;
+}
+
+#member p{
+    margin-top: 30px;
+    text-align:left;
+}
+#member div span:hover{
+    color: #00a0e9;
+}
+
+#member div img:hover{
+    color: #00a0e9;
+}
+
+
+#enter {
+    width: 100%;
+    padding: 0 140px;
+}
+#enter .enter-L{
+    float: left;
+}
+#enter .enter-R{
+    float: right;
+}
+/*#enter .temp{
+    position: relative;
+}*/
+/*
+#enter .enter-L .temp span{
+    float: left;
+}
+#enter .enter-L .temp input {
+    float: right;
+
+
+
+}*/
+/*#enter .enter-L .temp i{
+    position: absolute;
+    right: 0;
+}*/
+/*#enter .temp{
+    margin-top: 30px;
+    position: relative;
+}*/
+/*#enter span{
+    float: left;
+    font-size: 14px;
+}*/
+/*#enter i{
+    display: inline-block;
+    float: right;
+}*/
+/*#enter input{
+    position: absolute;
+    right: 30px;
+    border-radius: 10px;
+    line-height: 8px;
+
+
+}*/
+/*#enter{
+    width: 100%;
+    margin-top: 100px;
+}
+#enter .temp{
+    font-size: 14px;
+    font-weight: 500;
+    position: relative;
+}
+#enter .temp div{
+    margin-top: 20px;
+}*/
+/*#enter .temp-L{
+    float: left;
+    display: inline-block;
+}
+#enter .temp-R{
+    float: right;
+    display: block;
+}
+#enter #temp span{
+    float: left;
+}
+#enter #temp .list-T{
+    float: right;
+}*/
+/*#enter .Name{
+    float: left;
+}
+#enter .Comp{
+    float: right;
+}*/
+
+

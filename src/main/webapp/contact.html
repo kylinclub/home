@@ -14,8 +14,27 @@
   <link href="static/css/style.css" rel="stylesheet"/>
   <link href="static/css/global.css" rel="stylesheet"/>
   <link href="static/css/blue.css" rel="stylesheet"/>
+  <link href="static/css/family.css" rel="stylesheet" >
+  <script src="static/js/jquery.js"></script>
+  <style>
+    .checkbox label, .radio label {
+      min-height: 20px;
+      padding-left: 20px;
+      margin-bottom: 0;
+      font-weight: 400;
+      cursor: pointer;
+    }
+    .hidden{
+      display: none;
+    }
+
+  </style>
+
 </head>
-<body class="page-speaker">
+<body class="page-speaker" >
+
+
+
 <header class="navbar-fixed-top s-header js__header-sticky js__header-overlay">
   <div class="s-header__navbar">
     <div class="s-header__container">
@@ -71,75 +90,295 @@
   </div>
 </header>
 
-<div><img style="width: 100%" src="static/img/contact_ph001.jpg" alt=""></div>
+<div><img  style="width: 100%" src="static/img/jrwm-sp.jpg" alt=""></div>
 
-<div class="container g-padding-y-40--xs g-padding-y-40--xsm">
-  <div class="g-text-center--xs g-margin-b-0--xs">
-    <img class="img-responsive g-width-100-percent--xs" src="static/img/contact_ph003.png" alt="">
+
+<div class="container">
+
+
+  <!-- Columns start at 50% wide on mobile and bump up to 33.3% wide on desktop -->
+  <div id="member" class="row">
+    <p id="to">
+      <span>COOPERATION MODE</span>
+      <i>合作形式</i>
+
+    </p>
+    <div class="vip-A col-xs-12 col-sm-6 col-md-4" >
+      <img class=" img-responsive " src="static/img/icon-1.png" alt="" >
+      <span class="col-xs-offset-4 col-sm-offset-4 col-md-offset-4">个人会员</span>
+      <p>申请麒麟会个人会员请于官网填写申请表后直接申请注册即可。<br>
+        1.参与会员活动，与互联网同行业技术高管、商务精英进行交流分享；<br>
+        2.对于行业技术难点，可以互相交流并快速找到工作中需要的行业资源及建议；<br>
+        3.参与行业前沿思维、热点技术实时分享；<br>
+        4.GITC大会及其他麒麟会主办的活动名额、会员福利 <br>
+      </p>
+    </div>
+    <div class="vip-B col-xs-12 col-sm-6 col-md-4" >
+      <img class=" img-responsive " src="static/img/2.jpg" alt="" >
+      <span class="col-xs-offset-4 col-sm-offset-4 col-md-offset-4">企业会员</span>
+      <p>1.享有GITC全球互联网技术大会赞助权；<br>
+        2.麒麟会可以为企业会员提供“走进企业”<br>系列活动定制化服务，实现企业间的商务<br>交流、促成商务合作；<br>
+        3.与麒麟会达成全年系列活动的战略合作<br>（GITC、技术沙龙、精英面对面等），并<br>享有优惠权益。
+      </p>
+    </div>
+    <div class="vip-C col-xs-12 col-sm-6 col-md-4" >
+      <img class=" img-responsive " src="static/img/icon-3.png" alt="" >
+      <span class="col-xs-offset-4 col-sm-offset-4 col-md-offset-4">讲 师</span>
+      <p>1.讲师可在GITC大会、麒麟会系列活动现场<br>进行演讲，拓展个人品牌形象；<br>
+        2.讲师可享受麒麟会会员的所有权益；<br>
+        3.可优先参与麒麟会组织的技术沙龙、精英<br>交流会等活动；<br>
+        4.享有GITC福利赠票，可受邀参与讲师线下<br>交流会等。
+      </p>
+    </div>
+    <div class="vip-D col-xs-12 col-sm-6 col-md-4" >
+      <img class=" img-responsive " src="static/img/icon-4.png" alt="" >
+      <span class="col-xs-offset-3 col-sm-offset-3 col-md-offset-3">赞助商/产展商</span>
+      <p>1.通过线上传播和现场展览展示，让品牌形象遍布媒体网站及大会会场，提升品牌曝光度和认知度；<br>
+        2.通过演讲分享，输出企业/团队的技术实力，提升品牌好感度和美誉度；<br>
+        3.通过展位与社交活动，为产品/服务吸引精准用户，提升品牌关注度；<br>
+        4.麒麟会可以企业会员提供“走进企业”系列活动定制化服务，实现企业间的商务交流、促成商务合作。
+      </p>
+    </div>
+    <!--<div class="vip-E col-sx-12 col-sm-6 col-md-4">
+      <img class="img-responsive" src="static/img/icon-5.png" alt="">
+      <span>媒体合作伙伴</span>
+      <p>
+        1、 媒体伙伴可受邀参加GITC大会并进行
+        现场报道；<br>
+        2、  享有GITC大会官网、会刊、现场的
+        LOGO展示权；<br>
+        3、  媒体伙伴可参与演讲嘉宾、参会大咖的
+        一对一专访。
+      </p>
+
+    </div>-->
+    <div class="vip-E col-xs-12 col-sm-6 col-md-4" >
+
+      <img class=" img-responsive " src="static/img/icon-5.png" alt="" >
+      <span class="col-xs-offset-3 col-sm-offset-3 col-md-offset-3">媒体合作伙伴</span>
+      <p>1.媒体伙伴可受邀参加GITC大会并进行现场<br>报道；<br>
+        2.享有GITC大会官网、会刊、现场的LOGO<br>展示权；<br>
+        3.媒体伙伴可参与演讲嘉宾、参会大咖的一<br>对一专访。
+      </p>
+    </div>
+    <div class="vip-F col-xs-12 col-sm-6 col-md-4" >
+
+      <img class=" img-responsive " src="static/img/icon-6.png" alt="" >
+      <span class="col-xs-offset-4 col-sm-offset-4 col-md-offset-4">供应商</span>
+      <p>1.有机会参与活动主场的运营合作、执行及<br>线上传播；<br>
+        2.有权参与麒麟会所组织活动的竞标；<br>
+        3.有机会成为GITC大会指定的搭建供应商。
+      </p>
+    </div>
   </div>
+
+
 </div>
+
+
 
 <div style="width: 100%;">
   <img class="img-responsive g-width-100-percent--xs" src="static/img/contact_ph002.jpg" alt="">
 </div>
+<form class="form-horizontal fonts">
+  <!--几个表单-->
+  <div style="float: left;margin: 50px 70px 30px 70px; " >
 
-<div id="contact-box" class="container g-padding-y-70--xs g-padding-y-40--sm">
-  <div class="row g-margin-b-10--xs g-margin-b-20--md">
-    <div class="col-sm-4 g-margin-b-10--xs">
-      <input type="text" placeholder="姓名／Name" id="name" name="name">
-      <i>*</i>
+  <div class="form-group col-sm-6 col-lg-4 text-left">
+    <label for="name" class="col-sm-5 control-label fonts" style="font-weight: 500;.fonts" name="name">姓名 / Name</label>
+    <div class="col-sm-6">
+      <input type="text" class="form-control" name="name" id="name" >
     </div>
-    <div class="col-sm-4 g-margin-b-10--xs">
-      <input type="text" placeholder="手机／Tel" id="tel" name="tel">
-      <i>*</i>
-    </div>
-    <div class="col-sm-4">
-      <input type="text" placeholder="邮箱／E-mail" id="email" name="email">
-      <i>*</i>
-    </div>
+    <!--<span style="position: relative;left: 0;top: 1px;font-size: 19px;color:#00a0e9;">*</span>-->
   </div>
-  <div class="row g-margin-b-20--xs g-margin-b-20--md">
-    <div class="col-sm-4 g-margin-b-10--xs">
-      <input type="text" placeholder="公司／Company" id="company" name="company">
-      <i>*</i>
+  <div class="form-group col-sm-6 col-lg-4">
+    <label for="company" class="col-sm-5 control-label fonts" style="font-weight: 500;font-size: 14px" name="company">公司 / Company</label>
+    <div class="col-sm-6  ">
+      <input type="text" class="form-control" name="company" id="company" >
     </div>
-    <div class="col-sm-4 g-margin-b-10--xs">
-      <input type="text" placeholder="部门／Department" id="department" name="department">
-      <i>*</i>
-    </div>
-    <div class="col-sm-4">
-      <input type="text" placeholder="职位／Position" id="position" name="position">
-      <i>*</i>
-    </div>
+    <!--<span style="position: relative;left: 0;top: 1px;font-size: 19px;color:#00a0e9;">*</span>-->
   </div>
-  <div class="row g-margin-b-20--xs g-margin-b-20--md">
-    <div style="padding: 0 15px">
-      添加您感兴趣的内容
-      <div class="box">
-        <label><input name="interest" type="radio" value="讲师" checked /> 讲师 </label>
-        <label><input name="interest" type="radio" value="个人会员" /> 个人会员 </label>
-        <label><input name="interest" type="radio" value="企业会员" /> 企业会员 </label>
-        <label><input name="interest" type="radio" value="赞助商/展商" /> 赞助商/展商 </label>
-        <label><input name="interest" type="radio" value="媒体合作" /> 媒体合作 </label>
-        <label><input name="interest" type="radio" value="供应商" /> 供应商 </label>
-        <label><input name="interest" type="radio" value="其他" /> 其他 </label>
-        <br>
-        <label><input name="interest_other" type="radio" value="8" /> <input type="text" class="other" placeholder="添加其他内容..." id="interest_other" name="interest_other"></label>
+  <div class="form-group col-sm-6 col-lg-4 ">
+    <label for="tel" class="col-sm-5 control-label fonts" style="font-weight: 500;font-size: 14px"  name="tel">手机 / Tel</label>
+    <div class="col-sm-6">
+      <input type="tel" name="tel" maxlength="11" id="tel" class="form-control " >
+    </div>
+    <!--<span style="position: relative;left: 0;top: 1px;font-size: 19px;color:#00a0e9;">*</span>-->
+  </div>
+  <div class="form-group col-sm-6 col-lg-4">
+    <label for="email" class="col-sm-5 control-label fonts" style="font-weight: 500;font-size: 14px"  name="email">邮箱 / E-mail</label>
+    <div class="col-sm-6 ">
+      <input type="email" name="email" class="form-control" id="email" >
+    </div>
+    <!--<span style="position: relative;left: 0;top: 1px;font-size: 19px;color:#00a0e9;">*</span>-->
+  </div>
+  <div class="form-group col-sm-6 col-lg-4">
+    <label for="department" class="col-sm-5 control-label fonts" style="font-weight: 500;font-size: 14px"  name="department">部门 / Dept</label>
+    <div class="col-sm-6">
+      <input type="text" name="department" class="form-control" id="department" >
+    </div>
+    <!--<span style="position: relative;left: 0;top: 1px;font-size: 19px;color:#00a0e9;">*</span>-->
+  </div>
+  <div class="form-group col-sm-6 col-lg-4">
+    <label for="position" class="col-sm-5  control-label fonts" style="font-weight: 500;font-size: 14px;"  name="position">职位 / Position</label>
+    <div class="col-sm-6  ">
+      <input type="text" name="position" class="form-control" id="position" >
+    </div>
+    <!--<span style="position: relative;left: 0;top: 1px;font-size: 19px;color:#00a0e9;">*</span>-->
+  </div>
+
+</div>
+  <!--感兴趣的内容 -->
+  <div style="margin: 10px 120px;font-size: 14px;">
+  <label class="fonts" style="color: #00a0e9;font-size: 18px;font-weight: 500">添加你感兴趣的内容</label>
+  <div class="checkbox" id="nbcheckbox">
+    <div class="select-box" style="display: inline-block;">
+      <div style="border: 2px solid #00a0e9;width: 18px;height: 18px;border-radius: 50%;display: inline-block;vertical-align: middle">
+        <div class="select-checked" style="border: 2px solid #00a0e9;width: 10px;height: 10px;border-radius: 50%;margin:2px auto;background-color: #00a0e9">
+          <input type="checkbox" id="interest-1"  status="1" checked="checked" style="display: none" value="讲师" name="interest">
+        </div>
+
       </div>
+      <span class="fonts">讲师</span>
     </div>
-  </div>
-  <div class="row g-margin-b-20--xs g-margin-b-20--md">
-    <div style="padding: 0 15px">
-      <textarea placeholder="留下您宝贵的建议..." id="suggest"></textarea>
+    <div class="select-box" style="display: inline-block;margin-left: 20px">
+      <div style="border: 2px solid #00a0e9;width: 18px;height: 18px;border-radius: 50%;display: inline-block;vertical-align: middle">
+        <div style="border: 2px solid #00a0e9;width: 10px;height: 10px;border-radius: 50%;margin:2px auto;background-color: #00a0e9;" class="hidden select-checked" >
+          <input type="checkbox"  id="interest-2" status="0" style="display: none;" value="个人会员"  name="interest">
+        </div>
+      </div>
+      <span class="fonts">个人会员</span>
     </div>
-  </div>
-  <div class="row">
-    <div style="padding: 0 14px">
-      <span class="note">注意：*为必填项，所填信息请务必真实有效</span>
-      <button id="js-btn">提交</button>
+    <div class="select-box" style="display: inline-block;margin-left: 20px">
+      <div style="border: 2px solid #00a0e9;width: 18px;height: 18px;border-radius: 50%;display: inline-block;vertical-align: middle">
+        <div style="border: 2px solid #00a0e9;width: 10px;height: 10px;border-radius: 50%;margin:2px auto;background-color: #00a0e9" class="hidden select-checked" >
+          <input type="checkbox" id="interest-3"   status="0" style="display: none" value="企业会员" name="interest">
+        </div>
+      </div>
+      <span class="fonts">企业会员</span>
+    </div>
+    <div class="select-box" style="display: inline-block;margin-left: 20px">
+      <div style="border: 2px solid #00a0e9;width: 18px;height: 18px;border-radius: 50%;display: inline-block;vertical-align: middle">
+        <div style="border: 2px solid #00a0e9;width: 10px;height: 10px;border-radius: 50%;margin:2px auto;background-color: #00a0e9" class="hidden select-checked" >
+          <input type="checkbox" id="interest-4" status="0" style="display: none" value="赞助商/展商" name="interest">
+        </div>
+      </div>
+      <span class="fonts">赞助商/展商</span>
+    </div>
+    <div class="select-box" style="display: inline-block;margin-left: 20px">
+      <div style="border: 2px solid #00a0e9;width: 18px;height: 18px;border-radius: 50%;display: inline-block;vertical-align: middle">
+        <div style="border: 2px solid #00a0e9;width: 10px;height: 10px;border-radius: 50%;margin:2px auto;background-color: #00a0e9" class="hidden select-checked" >
+          <input type="checkbox" id="interest-5"  status="0" style="display: none" value="媒体合作" name="interest">
+        </div>
+      </div>
+      <span class="fonts">媒体合作</span>
+    </div>
+    <div class="select-box" style="display: inline-block;margin-left: 20px">
+      <div style="border: 2px solid #00a0e9;width: 18px;height: 18px;border-radius: 50%;display: inline-block;vertical-align: middle">
+        <div style="border: 2px solid #00a0e9;width: 10px;height: 10px;border-radius: 50%;margin:2px auto;background-color: #00a0e9" class="hidden select-checked">
+          <input type="checkbox" id="interest-6"  status="0" style="display: none" value="供应商" name="interest">
+        </div>
+      </div>
+      <span class="fonts">供应商</span>
+    </div>
+    <div class="select-box" style="display: inline-block;margin-left: 20px">
+      <div style="border:2px solid #00a0e9;width:18px;height:18px;border-radius:50%;display:inline-block;vertical-align:middle">
+        <div style="border:2px solid #00a0e9;width:10px;height:10px;border-radius:50%;margin:2px auto;background-color: #00a0e9" class="hidden select-checked">
+          <input type="checkbox" status="0" style="display: none" value="其他" name="interest">
+        </div>
+      </div>
+      <span>其他</span>
+    </div>
+    <div class="select-box" style="display:inline-block;margin-left: 20px">
+      <div style="border: 2px solid #00a0e9;width: 18px;height: 18px;border-radius: 50%;display: inline-block;vertical-align: middle">
+        <div style="border: 2px solid #00a0e9;width: 10px;height: 10px;border-radius: 50%;margin:2px auto;background-color: #00a0e9" class="hidden select-checked">
+          <input type="checkbox"   status="0" style="display: none"  name="interest">
+        </div>
+      </div>
+      <input type="text" placeholder="添加其他内容" status="1" style=" display: inline-block;border-radius: 6px;border: 1px solid #ccc;text-align:center;font-size: 14px" name="interest_other" id="rest">
+    </div>
+    <div class="detal " style="margin: 30px 0;width: 92%;">
+      <textarea name="suggest" class="form-control" cols="30" rows="10" style="border-radius: 6px;border: 1px solid #ccc;font-size: 14px;height: 50px;" id="suggest"></textarea>
+      <span style="color: #00a0e9;line-height: 20px;display: inline-block;margin-top: 20px" class="fonts-a">注意：填写时请谨慎填写，所填信息请务必真实有效</span>
+      <button type="button" id="js-ptn" class="btn btn-primary" style="display: block;width: 140px;margin-top: 30px;border: none">提交</button>
+
     </div>
   </div>
 </div>
+</form>
+
+<script>
+    function textdata(that) {
+        if ($('#name').val() == '') {
+            alert('请输入姓名／Name');
+            return false;
+        }
+        else if ($('#tel').val() == '') {
+            alert('请输入手机／Tel');
+            return false;
+        }
+        else if ($('#email').val() =='') {
+            alert('请输入邮箱／E-mail');
+            return false;
+        }
+        else if ($('#company').val() == '') {
+            alert('请输入公司／Company');
+            return false;
+        }
+        else if ($('#department').val() =='') {
+            alert('请输入部门／Department');
+            return false;
+        }
+        else if ($('#position').val() =='') {
+            alert('请输入职位／Position');
+            return false;
+        }else {
+            return true
+        }
+    }
+
+    $('.select-box').click(function () {
+        var temp = $(this).find('input').attr('status');
+        if (temp == '0'){
+            $(this).find('.select-checked').removeClass('hidden');
+            $(this).find('input').attr('checked',true);
+            $(this).find('input').attr('status',1)
+
+        }else {
+            $(this).find('.select-checked').addClass('hidden');
+            $(this).find('input').attr('checked',false);
+            $(this).find('input').attr('status',0)
+        }
+    })
+    $('#tel').change(function () {
+        var key = $(this).val();
+        if (key.length == 11){
+            if((/^1[3|4|5|7|8][0-9]\d{4,8}$/.test(key))){
+                $(this).parent().parent().removeClass('has-error')
+            }
+        }
+        else {
+            $(this).parent().parent().addClass('has-error')
+        }
+    });
+    $('#tel').keydown(function () {
+        var key = $(this).val();
+        if((/[a-zA-Z]+$/.test(key))){
+            $(this).parent().parent().addClass('has-error')
+            }
+    })
+    $('#email').change(function () {
+       var ret = $(this).val();
+       var reg=/^(?:\w+\.?)*\w+@(?:\w+\.)+\w+$/.test(ret);
+       if(reg){
+           $(this).parent().parent().removeClass('has-error')
+       }else{
+           $(this).parent().parent().addClass('has-error')
+       }
+
+    })
+
+</script>
 
 <footer class="g-bg-color--dark">
   <div class="g-hor-divider__dashed--white-opacity-lightest">
@@ -223,67 +462,67 @@
 <script type="text/javascript" src="static/js/counter.min.js"></script>
 <script type="text/javascript" src="static/js/parallax.min.js"></script>
 <script type="text/javascript">
+
   $(function () {
-    $('#js-btn').on('click', function () {
-      var _data = {};
-      if($('#name').val()==''){
-        alert('请输入姓名／Name');
-        return false;
-      }
-      else if($('#tel').val()==''){
-        alert('请输入手机／Tel');
-        return false;
-      }
-      else if($('#email').val()==''){
-        alert('请输入邮箱／E-mail');
-        return false;
-      }
-      else if($('#company').val()==''){
-        alert('请输入公司／Company');
-        return false;
-      }
-      else if($('#department').val()==''){
-        alert('请输入部门／Department');
-        return false;
-      }
-      else if($('#position').val()==''){
-        alert('请输入职位／Position');
-        return false;
-      }
-      _data.name = $('#name').val();
-      _data.tel = $('#tel').val();
-      _data.email = $('#email').val();
-      _data.company = $('#company').val();
-      _data.department = $('#department').val();
-      _data.position = $('#position').val();
+      $('#js-ptn').on('click', function () {
+          var _data = {};
 
-      var chkRadio = $('input:radio[name="interest"]:checked').val();
-      if (chkRadio != null) {
-        _data.interest = chkRadio;
-      }
+          if ($('#name').val() == '') {
+              alert('请输入姓名／Name');
+              return false;
+          }
+          else if ($('#tel').val() == '') {
+              alert('请输入手机／Tel');
+              return false;
+          }
+          else if ($('#email').val() =='') {
+              alert('请输入邮箱／E-mail');
+              return false;
+          }
+          else if ($('#company').val() == '') {
+              alert('请输入公司／Company');
+              return false;
+          }
+          else if ($('#department').val() =='') {
+              alert('请输入部门／Department');
+              return false;
+          }
+          else if ($('#position').val() =='') {
+              alert('请输入职位／Position');
+              return false;
+          }
+          _data.name = $('#name').val();
+          _data.tel = $('#tel').val();
+          _data.email = $('#email').val();
+          _data.company = $('#company').val();
+          _data.department = $('#department').val();
+          _data.position = $('#position').val();
+          _data.suggest = $('#suggest').val();
+          _data.interest_other = $('input[name="interest_other"]').val()
+          var tmp = ''
+          $(':checkbox[name="interest"]:checked').each(function () {
+              tmp += $(this).val()
+              tmp += ","
+          })
+          _data.interest = tmp
 
-      var chkRadioOther = $('input:radio[name="interest_other"]:checked').val();
-      if (chkRadioOther != null ) {
-            _data.interest_other = $('#interest_other').val();
-      }
 
-      _data.suggest = $('#suggest').val();
 
-        $.ajax({
-            async:false,
-            url: 'data/contacts',
-            data: _data,
-            type: "POST",
-            success: function(result){
-                alert('提交成功');
-            },error:function(){
-                alert('提交失败');
-            }
-        });
-    });
-
+          $.ajax({
+              async: false,
+              url: 'data/contacts',
+              data:_data,
+              type: "POST",
+              success: function (result) {
+                  alert('提交成功');
+              }, error: function () {
+                  alert('提交失败');
+              }
+          });
+      })
   });
 </script>
+
 <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-591fe0c2662cc83b"></script>
 </body>
 </html>
