@@ -27,12 +27,39 @@
     .hidden{
       display: none;
     }
+    .ziti{color: #00a0e9}
+    .mycheckbox{border: 1px solid #00a0e9;
+      width: 16px;
+      height: 16px;
+      border-radius: 50%;
+      display: inline-block;
+      position: relative;
+      vertical-align: middle}
+    .checkbox1{border: 2px solid #00a0e9;
+      width: 9px;
+      height: 9px;
+      border-radius: 50%;
+      position: absolute;
+      left: 50%;
+      top:50%;
+      margin: -4.5px;
 
+      background-color: #00a0e9}
+    #suggest{border-radius: 6px;border: 1px solid #ccc;font-size: 14px;height: 70px;}
+    .maindw{
+      position: relative;}
+    .mainx{
+      position: absolute;
+      right: -4px;
+      top: 1px;
+      font-size: 22px;
+      color:#00a0e9;}
+    #nbcheckbox{margin-left: 34px;}
+    .other{display: inline-block;border-radius: 6px;border: 1px solid #ccc;text-align:center;font-size: 14px}
   </style>
 
 </head>
 <body class="page-speaker" >
-
 
 
 <header class="navbar-fixed-top s-header js__header-sticky js__header-overlay">
@@ -92,37 +119,38 @@
 
 <div><img  style="width: 100%" src="static/img/jrwm-sp.jpg" alt=""></div>
 
-
+<!-- 合作形式开始 -->
 <div class="container">
-
-
-  <!-- Columns start at 50% wide on mobile and bump up to 33.3% wide on desktop -->
   <div id="member" class="row">
     <p id="to">
       <span>COOPERATION MODE</span>
       <i>合作形式</i>
 
     </p>
-    <div class="vip-A col-xs-12 col-sm-6 col-md-4" >
-      <img class=" img-responsive " src="static/img/icon-1.png" alt="" >
-      <span class="col-xs-offset-4 col-sm-offset-4 col-md-offset-4">个人会员</span>
+    <div class="vip-A col-xs-12 col-sm-6 col-md-4 xiaoguo">
+        <img class="img-responsive " src="static/img/icon-1.png" alt="" >
+        <img class="img-responsive hide" src="static/img/icon-1-1.png" alt="" >
+        <span class="col-xs-offset-4 col-sm-offset-4 col-md-offset-4">个人会员</span>
+
       <p>申请麒麟会个人会员请于官网填写申请表后直接申请注册即可。<br>
         1.参与会员活动，与互联网同行业技术高管、商务精英进行交流分享；<br>
         2.对于行业技术难点，可以互相交流并快速找到工作中需要的行业资源及建议；<br>
         3.参与行业前沿思维、热点技术实时分享；<br>
-        4.GITC大会及其他麒麟会主办的活动名额、会员福利 <br>
+        4.GITC大会及其他麒麟会主办的活动名额、会员福利。 <br>
       </p>
     </div>
-    <div class="vip-B col-xs-12 col-sm-6 col-md-4" >
-      <img class=" img-responsive " src="static/img/2.jpg" alt="" >
+    <div class="vip-B col-xs-12 col-sm-6 col-md-4 xiaoguo" >
+      <img class=" img-responsive " src="static/img/icon-2.png" alt="" >
+      <img class=" img-responsive hide" src="static/img/icon-2-2.png" alt="" >
       <span class="col-xs-offset-4 col-sm-offset-4 col-md-offset-4">企业会员</span>
       <p>1.享有GITC全球互联网技术大会赞助权；<br>
         2.麒麟会可以为企业会员提供“走进企业”<br>系列活动定制化服务，实现企业间的商务<br>交流、促成商务合作；<br>
         3.与麒麟会达成全年系列活动的战略合作<br>（GITC、技术沙龙、精英面对面等），并<br>享有优惠权益。
       </p>
     </div>
-    <div class="vip-C col-xs-12 col-sm-6 col-md-4" >
+    <div class="vip-C col-xs-12 col-sm-6 col-md-4 xiaoguo" >
       <img class=" img-responsive " src="static/img/icon-3.png" alt="" >
+      <img class=" img-responsive hide " src="static/img/icon-3-3.png" alt="" >
       <span class="col-xs-offset-4 col-sm-offset-4 col-md-offset-4">讲 师</span>
       <p>1.讲师可在GITC大会、麒麟会系列活动现场<br>进行演讲，拓展个人品牌形象；<br>
         2.讲师可享受麒麟会会员的所有权益；<br>
@@ -130,8 +158,9 @@
         4.享有GITC福利赠票，可受邀参与讲师线下<br>交流会等。
       </p>
     </div>
-    <div class="vip-D col-xs-12 col-sm-6 col-md-4" >
+    <div class="vip-D col-xs-12 col-sm-6 col-md-4 xiaoguo" >
       <img class=" img-responsive " src="static/img/icon-4.png" alt="" >
+      <img class=" img-responsive hide" src="static/img/icon-4-4.png" alt="" >
       <span class="col-xs-offset-3 col-sm-offset-3 col-md-offset-3">赞助商/产展商</span>
       <p>1.通过线上传播和现场展览展示，让品牌形象遍布媒体网站及大会会场，提升品牌曝光度和认知度；<br>
         2.通过演讲分享，输出企业/团队的技术实力，提升品牌好感度和美誉度；<br>
@@ -139,31 +168,18 @@
         4.麒麟会可以企业会员提供“走进企业”系列活动定制化服务，实现企业间的商务交流、促成商务合作。
       </p>
     </div>
-    <!--<div class="vip-E col-sx-12 col-sm-6 col-md-4">
-      <img class="img-responsive" src="static/img/icon-5.png" alt="">
-      <span>媒体合作伙伴</span>
-      <p>
-        1、 媒体伙伴可受邀参加GITC大会并进行
-        现场报道；<br>
-        2、  享有GITC大会官网、会刊、现场的
-        LOGO展示权；<br>
-        3、  媒体伙伴可参与演讲嘉宾、参会大咖的
-        一对一专访。
-      </p>
-
-    </div>-->
-    <div class="vip-E col-xs-12 col-sm-6 col-md-4" >
-
+    <div class="vip-E col-xs-12 col-sm-6 col-md-4 xiaoguo" >
       <img class=" img-responsive " src="static/img/icon-5.png" alt="" >
+      <img class=" img-responsive hide" src="static/img/icon-5-5.png" alt="" >
       <span class="col-xs-offset-3 col-sm-offset-3 col-md-offset-3">媒体合作伙伴</span>
       <p>1.媒体伙伴可受邀参加GITC大会并进行现场<br>报道；<br>
         2.享有GITC大会官网、会刊、现场的LOGO<br>展示权；<br>
         3.媒体伙伴可参与演讲嘉宾、参会大咖的一<br>对一专访。
       </p>
     </div>
-    <div class="vip-F col-xs-12 col-sm-6 col-md-4" >
-
+    <div class="vip-F col-xs-12 col-sm-6 col-md-4 xiaoguo" >
       <img class=" img-responsive " src="static/img/icon-6.png" alt="" >
+      <img class=" img-responsive hide" src="static/img/icon-6-6.png" alt="" >
       <span class="col-xs-offset-4 col-sm-offset-4 col-md-offset-4">供应商</span>
       <p>1.有机会参与活动主场的运营合作、执行及<br>线上传播；<br>
         2.有权参与麒麟会所组织活动的竞标；<br>
@@ -171,143 +187,156 @@
       </p>
     </div>
   </div>
-
-
 </div>
-
-
-
+<!-- 合作形式结束 -->
 <div style="width: 100%;">
   <img class="img-responsive g-width-100-percent--xs" src="static/img/contact_ph002.jpg" alt="">
 </div>
-<form class="form-horizontal fonts">
-  <!--几个表单-->
-  <div style="float: left;margin: 50px 70px 30px 70px; " >
+<!--表单开始-->
+<div  style="margin: 50px auto;font-size: 14px; width: 80%">
+  <form class="form-horizontal">
 
-  <div class="form-group col-sm-6 col-lg-4 text-left">
-    <label for="name" class="col-sm-5 control-label fonts" style="font-weight: 500;.fonts" name="name">姓名 / Name</label>
-    <div class="col-sm-6">
-      <input type="text" class="form-control" name="name" id="name" >
-    </div>
-    <!--<span style="position: relative;left: 0;top: 1px;font-size: 19px;color:#00a0e9;">*</span>-->
-  </div>
-  <div class="form-group col-sm-6 col-lg-4">
-    <label for="company" class="col-sm-5 control-label fonts" style="font-weight: 500;font-size: 14px" name="company">公司 / Company</label>
-    <div class="col-sm-6  ">
-      <input type="text" class="form-control" name="company" id="company" >
-    </div>
-    <!--<span style="position: relative;left: 0;top: 1px;font-size: 19px;color:#00a0e9;">*</span>-->
-  </div>
-  <div class="form-group col-sm-6 col-lg-4 ">
-    <label for="tel" class="col-sm-5 control-label fonts" style="font-weight: 500;font-size: 14px"  name="tel">手机 / Tel</label>
-    <div class="col-sm-6">
-      <input type="tel" name="tel" maxlength="11" id="tel" class="form-control " >
-    </div>
-    <!--<span style="position: relative;left: 0;top: 1px;font-size: 19px;color:#00a0e9;">*</span>-->
-  </div>
-  <div class="form-group col-sm-6 col-lg-4">
-    <label for="email" class="col-sm-5 control-label fonts" style="font-weight: 500;font-size: 14px"  name="email">邮箱 / E-mail</label>
-    <div class="col-sm-6 ">
-      <input type="email" name="email" class="form-control" id="email" >
-    </div>
-    <!--<span style="position: relative;left: 0;top: 1px;font-size: 19px;color:#00a0e9;">*</span>-->
-  </div>
-  <div class="form-group col-sm-6 col-lg-4">
-    <label for="department" class="col-sm-5 control-label fonts" style="font-weight: 500;font-size: 14px"  name="department">部门 / Dept</label>
-    <div class="col-sm-6">
-      <input type="text" name="department" class="form-control" id="department" >
-    </div>
-    <!--<span style="position: relative;left: 0;top: 1px;font-size: 19px;color:#00a0e9;">*</span>-->
-  </div>
-  <div class="form-group col-sm-6 col-lg-4">
-    <label for="position" class="col-sm-5  control-label fonts" style="font-weight: 500;font-size: 14px;"  name="position">职位 / Position</label>
-    <div class="col-sm-6  ">
-      <input type="text" name="position" class="form-control" id="position" >
-    </div>
-    <!--<span style="position: relative;left: 0;top: 1px;font-size: 19px;color:#00a0e9;">*</span>-->
-  </div>
+      <div>
+        <div class="form-group col-xs-12 col-sm-6 col-lg-4 text-left">
+        <label for="name" class="col-sm-3 control-label fonts" style="font-weight: 500;.fonts" name="name">姓名</label>
+        <div class="col-sm-9 maindw">
+          <input type="text" class="form-control" name="name" id="name" >
+          <span class="col-sm-1 mainx">*</span>
+        </div>
 
+      </div>
+        <div class="form-group col-sm-6 col-lg-4 ">
+        <label for="tel" class="col-sm-3 control-label fonts" style="font-weight: 500;font-size: 14px"  name="tel">手机</label>
+        <div class="col-sm-9">
+          <input type="tel" name="tel" maxlength="11" id="tel" class="form-control " >
+          <span class="col-sm-1 mainx">*</span>
+        </div>
+        <!--<span style="position: relative;left: 0;top: 1px;font-size: 19px;color:#00a0e9;">*</span>-->
+      </div>
+        <div class="form-group col-sm-6 col-lg-4">
+        <label for="email" class="col-sm-3 control-label fonts" style="font-weight: 500;font-size: 14px"  name="email">邮箱</label>
+        <div class="col-sm-9 ">
+          <input type="email" name="email" class="form-control" id="email" >
+          <span class="col-sm-1 mainx">*</span>
+        </div>
+        <!--<span style="position: relative;left: 0;top: 1px;font-size: 19px;color:#00a0e9;">*</span>-->
+      </div>
+        <div class="form-group col-sm-6 col-lg-4">
+          <label for="company" class="col-sm-3 control-label fonts" style="font-weight: 500;font-size: 14px" name="company">公司</label>
+          <div class="col-sm-9  ">
+            <input type="text" class="form-control" name="company" id="company" >
+            <span class="col-sm-1 mainx">*</span>
+          </div>
+          <!--<span style="position: relative;left: 0;top: 1px;font-size: 19px;color:#00a0e9;">*</span>-->
+        </div>
+        <div class="form-group col-sm-6 col-lg-4">
+        <label for="department" class="col-sm-3 control-label fonts" style="font-weight: 500;font-size: 14px"  name="department">部门</label>
+        <div class="col-sm-9">
+          <input type="text" name="department" class="form-control" id="department" >
+          <span class="col-sm-1 mainx">*</span>
+        </div>
+        <!--<span style="position: relative;left: 0;top: 1px;font-size: 19px;color:#00a0e9;">*</span>-->
+      </div>
+        <div class="form-group col-sm-6 col-lg-4">
+        <label for="position" class="col-sm-3  control-label fonts" style="font-weight: 500;font-size: 14px;"  name="position">职位</label>
+        <div class="col-sm-9  ">
+          <input type="text" name="position" class="form-control" id="position" >
+          <span class="col-sm-1 mainx">*</span>
+        </div>
+        <!--<span style="position: relative;left: 0;top: 1px;font-size: 19px;color:#00a0e9;">*</span>-->
+      </div>
+
+    </div>
+    <!--感兴趣的内容 -->
+      <div style="margin: 50px auto;">
+          <label style="color: #00a0e9;font-size: 18px;font-weight: 500;margin-left: 34px;">添加你感兴趣的内容</label>
+          <div class="checkbox" id="nbcheckbox">
+            <div class="select-box" style="display: inline-block;">
+              <div class="mycheckbox">
+                <div class="select-checked checkbox1">
+                  <input type="checkbox" id="interest-1"  status="1" checked="checked" style="display: none" value="讲师" name="interest">
+                </div>
+              </div>
+              <span class="fonts">讲师</span>
+            </div>
+            <div class="select-box" style="display: inline-block;margin-left: 20px">
+              <div class="mycheckbox">
+                <div  class="hidden select-checked checkbox1" >
+                  <input type="checkbox"  id="interest-2" status="0" style="display: none;" value="个人会员"  name="interest">
+                </div>
+              </div>
+              <span class="fonts">个人会员</span>
+            </div>
+            <div class="select-box" style="display: inline-block;margin-left: 20px">
+              <div class="mycheckbox">
+                <div class="hidden select-checked checkbox1" >
+                  <input type="checkbox" id="interest-3"   status="0" style="display: none" value="企业会员" name="interest">
+                </div>
+              </div>
+              <span class="fonts">企业会员</span>
+            </div>
+            <div class="select-box" style="display: inline-block;margin-left: 20px">
+              <div class="mycheckbox">
+                <div class="hidden select-checked checkbox1" >
+                  <input type="checkbox" id="interest-4" status="0" style="display: none" value="赞助商/展商" name="interest">
+                </div>
+              </div>
+              <span class="fonts">赞助商/展商</span>
+            </div>
+            <div class="select-box" style="display: inline-block;margin-left: 20px">
+              <div class="mycheckbox">
+                <div class="hidden select-checked checkbox1" >
+                  <input type="checkbox" id="interest-5"  status="0" style="display: none" value="媒体合作" name="interest">
+                </div>
+              </div>
+              <span class="fonts">媒体合作</span>
+            </div>
+            <div class="select-box" style="display: inline-block;margin-left: 20px">
+              <div class="mycheckbox">
+                <div class="hidden select-checked checkbox1">
+                  <input type="checkbox" id="interest-6"  status="0" style="display: none" value="供应商" name="interest">
+                </div>
+              </div>
+              <span class="fonts">供应商</span>
+            </div>
+            <div class="" style="display: inline-block;margin-left: 20px">
+              <div class="mycheckbox select-box">
+                <div  class="hidden select-checked checkbox1">
+                  <input type="checkbox" status="0" style="display: none" kk="1" value="其他" name="interest">
+                </div>
+              </div>
+              <span>其他</span>
+              <input type="text" placeholder="添加其他内容" status="1" class="other hide" name="interest_other" id="rest">
+            </div>
+
+
+            <div class="detal " style="margin: 30px 0;width: 92%;">
+              <textarea name="suggest" class="form-control" cols="30" rows="10" placeholder="请输入您宝贵意见..." id="suggest"></textarea>
+              <span style="color: #00a0e9;line-height: 20px;display: inline-block;margin-top: 18px" class="fonts-a">注意：*为必选项，所填信息请务必真实有效</span>
+              <button type="button" id="js-ptn" class="btn btn-primary" style="display: block;width: 140px;margin-top: 18px;border: none">提交</button>
+            </div>
+
+          </div>
+      </div>
+  </form>
 </div>
-  <!--感兴趣的内容 -->
-  <div style="margin: 10px 120px;font-size: 14px;">
-  <label class="fonts" style="color: #00a0e9;font-size: 18px;font-weight: 500">添加你感兴趣的内容</label>
-  <div class="checkbox" id="nbcheckbox">
-    <div class="select-box" style="display: inline-block;">
-      <div style="border: 2px solid #00a0e9;width: 18px;height: 18px;border-radius: 50%;display: inline-block;vertical-align: middle">
-        <div class="select-checked" style="border: 2px solid #00a0e9;width: 10px;height: 10px;border-radius: 50%;margin:2px auto;background-color: #00a0e9">
-          <input type="checkbox" id="interest-1"  status="1" checked="checked" style="display: none" value="讲师" name="interest">
-        </div>
 
-      </div>
-      <span class="fonts">讲师</span>
-    </div>
-    <div class="select-box" style="display: inline-block;margin-left: 20px">
-      <div style="border: 2px solid #00a0e9;width: 18px;height: 18px;border-radius: 50%;display: inline-block;vertical-align: middle">
-        <div style="border: 2px solid #00a0e9;width: 10px;height: 10px;border-radius: 50%;margin:2px auto;background-color: #00a0e9;" class="hidden select-checked" >
-          <input type="checkbox"  id="interest-2" status="0" style="display: none;" value="个人会员"  name="interest">
-        </div>
-      </div>
-      <span class="fonts">个人会员</span>
-    </div>
-    <div class="select-box" style="display: inline-block;margin-left: 20px">
-      <div style="border: 2px solid #00a0e9;width: 18px;height: 18px;border-radius: 50%;display: inline-block;vertical-align: middle">
-        <div style="border: 2px solid #00a0e9;width: 10px;height: 10px;border-radius: 50%;margin:2px auto;background-color: #00a0e9" class="hidden select-checked" >
-          <input type="checkbox" id="interest-3"   status="0" style="display: none" value="企业会员" name="interest">
-        </div>
-      </div>
-      <span class="fonts">企业会员</span>
-    </div>
-    <div class="select-box" style="display: inline-block;margin-left: 20px">
-      <div style="border: 2px solid #00a0e9;width: 18px;height: 18px;border-radius: 50%;display: inline-block;vertical-align: middle">
-        <div style="border: 2px solid #00a0e9;width: 10px;height: 10px;border-radius: 50%;margin:2px auto;background-color: #00a0e9" class="hidden select-checked" >
-          <input type="checkbox" id="interest-4" status="0" style="display: none" value="赞助商/展商" name="interest">
-        </div>
-      </div>
-      <span class="fonts">赞助商/展商</span>
-    </div>
-    <div class="select-box" style="display: inline-block;margin-left: 20px">
-      <div style="border: 2px solid #00a0e9;width: 18px;height: 18px;border-radius: 50%;display: inline-block;vertical-align: middle">
-        <div style="border: 2px solid #00a0e9;width: 10px;height: 10px;border-radius: 50%;margin:2px auto;background-color: #00a0e9" class="hidden select-checked" >
-          <input type="checkbox" id="interest-5"  status="0" style="display: none" value="媒体合作" name="interest">
-        </div>
-      </div>
-      <span class="fonts">媒体合作</span>
-    </div>
-    <div class="select-box" style="display: inline-block;margin-left: 20px">
-      <div style="border: 2px solid #00a0e9;width: 18px;height: 18px;border-radius: 50%;display: inline-block;vertical-align: middle">
-        <div style="border: 2px solid #00a0e9;width: 10px;height: 10px;border-radius: 50%;margin:2px auto;background-color: #00a0e9" class="hidden select-checked">
-          <input type="checkbox" id="interest-6"  status="0" style="display: none" value="供应商" name="interest">
-        </div>
-      </div>
-      <span class="fonts">供应商</span>
-    </div>
-    <div class="select-box" style="display: inline-block;margin-left: 20px">
-      <div style="border:2px solid #00a0e9;width:18px;height:18px;border-radius:50%;display:inline-block;vertical-align:middle">
-        <div style="border:2px solid #00a0e9;width:10px;height:10px;border-radius:50%;margin:2px auto;background-color: #00a0e9" class="hidden select-checked">
-          <input type="checkbox" status="0" style="display: none" value="其他" name="interest">
-        </div>
-      </div>
-      <span>其他</span>
-    </div>
-    <div class="select-box" style="display:inline-block;margin-left: 20px">
-      <div style="border: 2px solid #00a0e9;width: 18px;height: 18px;border-radius: 50%;display: inline-block;vertical-align: middle">
-        <div style="border: 2px solid #00a0e9;width: 10px;height: 10px;border-radius: 50%;margin:2px auto;background-color: #00a0e9" class="hidden select-checked">
-          <input type="checkbox"   status="0" style="display: none"  name="interest">
-        </div>
-      </div>
-      <input type="text" placeholder="添加其他内容" status="1" style=" display: inline-block;border-radius: 6px;border: 1px solid #ccc;text-align:center;font-size: 14px" name="interest_other" id="rest">
-    </div>
-    <div class="detal " style="margin: 30px 0;width: 92%;">
-      <textarea name="suggest" class="form-control" cols="30" rows="10" style="border-radius: 6px;border: 1px solid #ccc;font-size: 14px;height: 50px;" id="suggest"></textarea>
-      <span style="color: #00a0e9;line-height: 20px;display: inline-block;margin-top: 20px" class="fonts-a">注意：填写时请谨慎填写，所填信息请务必真实有效</span>
-      <button type="button" id="js-ptn" class="btn btn-primary" style="display: block;width: 140px;margin-top: 30px;border: none">提交</button>
-
-    </div>
-  </div>
-</div>
-</form>
-
+<!--表单结束-->
 <script>
+
+    $('.xiaoguo').mouseover(function () {
+        console.log($(this))
+        $(this).find('.img-responsive').eq(0).addClass('hide');
+        $(this).find('.img-responsive').eq(1).removeClass('hide');
+        $(this).find('span').addClass('ziti')
+    });
+    $('.xiaoguo').mouseout(function () {
+        console.log($(this))
+        $(this).find('.img-responsive').eq(1).addClass('hide');
+        $(this).find('.img-responsive').eq(0).removeClass('hide');
+        $(this).find('span').removeClass('ziti')
+    });
+
     function textdata(that) {
         if ($('#name').val() == '') {
             alert('请输入姓名／Name');
@@ -336,18 +365,25 @@
             return true
         }
     }
-
     $('.select-box').click(function () {
         var temp = $(this).find('input').attr('status');
         if (temp == '0'){
             $(this).find('.select-checked').removeClass('hidden');
             $(this).find('input').attr('checked',true);
             $(this).find('input').attr('status',1)
+            var tt = $(this).find('input[kk="1"]').attr('status');
+            if (tt == '1'){
+                $(this).parent().find('input[name="interest_other"]').removeClass('hide')
+            }
 
         }else {
             $(this).find('.select-checked').addClass('hidden');
             $(this).find('input').attr('checked',false);
             $(this).find('input').attr('status',0)
+            var tt = $(this).find('input[kk="1"]').attr('status');
+            if (tt == '0'){
+                $(this).parent().find('input[name="interest_other"]').addClass('hide')
+            }
         }
     })
     $('#tel').change(function () {
@@ -377,9 +413,7 @@
        }
 
     })
-
 </script>
-
 <footer class="g-bg-color--dark">
   <div class="g-hor-divider__dashed--white-opacity-lightest">
     <div class="container g-padding-y-30--xs g-padding-y-50--md">
@@ -438,7 +472,6 @@
     </div>
   </div>
 </footer>
-
 <div id="info-box">
 </div>
 <a href="javascript:void(0);" class="s-back-to-top js__back-to-top"></a>
@@ -462,7 +495,6 @@
 <script type="text/javascript" src="static/js/counter.min.js"></script>
 <script type="text/javascript" src="static/js/parallax.min.js"></script>
 <script type="text/javascript">
-
   $(function () {
       $('#js-ptn').on('click', function () {
           var _data = {};
@@ -511,7 +543,7 @@
           $.ajax({
               async: false,
               url: 'data/contacts',
-              data:_data,
+              data: _data,
               type: "POST",
               success: function (result) {
                   alert('提交成功');
@@ -522,7 +554,6 @@
       })
   });
 </script>
-
 <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-591fe0c2662cc83b"></script>
 </body>
 </html>

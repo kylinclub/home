@@ -16,19 +16,21 @@
   <link href="static/css/global.css?v=5a636d7" rel="stylesheet" />
   <link href="static/css/blue.css?v=5a636d7" rel="stylesheet" />
   <style>
-  .banner-img-sh{
-    width: 100%;
-    height: 344px
-  }
-  @media (min-width:992px) { 
-    .banner-img-sh{
+    .banner-img-sh {
       width: 100%;
-      height: 100%;
+      height: 344px
     }
-  }
-  .lv-nav a{
+
+    @media (min-width:992px) {
+      .banner-img-sh {
+        width: 100%;
+        height: 100%;
+      }
+    }
+
+    .lv-nav a {
       font-size: 15px
-  }
+    }
   </style>
 </head>
 
@@ -71,13 +73,12 @@
             <li><a href="javascript:;" style="margin-left: 60px"><span class="ti-user"></span> 注册</a></li>
             <li><a href="javascript:;">登录</a></li>
             <li><span id="js-space" class="round-btn-space">&nbsp;<br>&nbsp;</span></li>
-            <li><span id="js-ticket" class="round-btn2" style="width: 233px; background-image: url(" static/img/hd_bt001.png
-                ");"></span></li>
+            <li><span id="js-ticket" class="round-btn2" style="width: 233px; background-image: url("static/img/hd_bt001.png");"></span></li>
           </ul>
         </div>
       </div>
     </div>
-    <div  class="s-header-bg-overlay js__bg-overlay">
+    <div class="s-header-bg-overlay js__bg-overlay">
       <nav class="s-header__nav js__scrollbar">
         <div id="navmenu" class="container-fluid">
           <div class="col-md-5 col-xs-12 g-margin-b-30--xs g-pull-right--xs">
@@ -86,7 +87,7 @@
                 <a class="s-header__nav-menu-link s-header__nav-menu-link-divider" href="index.html">首页</a></li>
               <li class="s-header__nav-menu-item">
                 <a class="s-header__nav-menu-link s-header__nav-menu-link-divider" href="sh.html">GITC上海站</a></li>
-             <!--  <li class="s-header__nav-menu-item">
+              <!--  <li class="s-header__nav-menu-item">
                 <a class="s-header__nav-menu-link s-header__nav-menu-link-divider" id="toggle_btn">现场直播</a>
                 <div class="nav-select">
                    <a href="live.html">
@@ -116,7 +117,7 @@
     </div>
   </header>
 
-  <div ><img style="width: 100%;height:100%" src="static/img/sh_bn001.jpg" alt="" /></div>
+  <div><img style="width: 100%;height:100%" src="static/img/sh_bn001.jpg" alt="" /></div>
   <!--<div class="g-fullheight--xs g-bg-position--center swiper-slide swiper-slide-active hidden-xs banner-img-sh" style="background-image: url('static/img/sh_bn001.jpg'); margin-right: 50px; transform: translate3d(0px, 0px, 0px) rotateX(0deg) rotateY(0deg); z-index: 1; transition-duration: 0ms;"
     data-swiper-slide-index="1">
   </div>-->
@@ -357,71 +358,94 @@
       _timer = setInterval(_set, 1000 * 60);
 
 
-      $.ajax('/data/guests?type=1&count=100').then(function (v) {
+
+
+
+
+      function ajaximg(urls) {
+         $.ajax(urls).then(function (v) {
         if (0 == v.status) {
           var rs = v.data, xml = '', _spilt = $(window).width() > 768 ? 8 : 4;
           for (var i = 0; i < rs.length; i++) {
-            xml += '<p class="js-info' + (i % _spilt == 0 ? ' cll' : '') + '"><img src="' + rs[i].img + '" alt="" class="img-circle" data-info=\'' + JSON.stringify(rs[i]) + '\'><b>'
+            xml += '<p class="js-info' + (i % _spilt == 0 ? ' cll' : '') + '"><img src="' + rs[i].img.substring(1) + '" alt="" class="img-circle" data-info=\'' + JSON.stringify(rs[i]) + '\'><b>'
               + rs[i].name + '</b><span>' + rs[i].company + '<br>' + rs[i].title + '</span></p>';
           }
-          $('#js-speaker').html(xml);
+          $('.swiper-container-people').html(xml);
           var $box = $('#info-box');
-          setTimeout(function () {
-            $('#js-speaker').find('.js-info img').hover(function () {
-              var _data = JSON.parse($(this).attr('data-info'));
-              var _xml = '<div class="box"><div class="section">'
-                + '<div class="cl"><img src="' + _data.img + '" alt="" class="img-circle"><b>' + _data.name + '</b><span>' + _data.company + '<br>' + _data.title + '</span></div>'
-                + '<div class="cr">'
-                + '<b>个人简介</b>'
-                + '<span class="hr"></span>'
-                + '<div class="info">' + _data.info + '</div>'
-                + '</div></div>';
-              $box.html(_xml).show();
-            }, function () {
-              $box.html('').hide();
-            })
-          }, 100);
+          var timers = null;
+          $box.mouseenter = $('.js-info img').mouseenter(function (event) {
+            event.stopPropagation();
+            clearTimeout(timers)
+            var _data = JSON.parse($(this).attr('data-info'));
+            var _xml = '<div class="box" id="lp"><div class="section">'
+              + '<div class="cl"><img src="' + _data.img.substring(1) + '" alt="" class="img-circle"><b>' + _data.name + '</b><span>' + _data.company + '<br>' + _data.title + '</span></div>'
+              + '<div class="cr">'
+              + '<b>个人简介</b>'
+              + '<span class="hr"></span>'
+              + '<div class="info">' + _data.info + '</div>'
+              + '</div></div>';
+            $box.html(_xml);
+            timers = setTimeout(function () {
+            $box.css('display', 'block')
+            }, 350)
+          })
+          $box.mouseout = $('.js-info img').mouseout(function (event) {
+            event.stopPropagation();
+            clearTimeout(timers);         
+            $box.css('display', 'none')
+          })
+          $box.on('mouseout', function (event) {
+            event.stopPropagation();
+            clearTimeout(timers);
+            $box.css('display', 'none')
+          })
+          $box.on('mouseenter', function (event) {
+            event.stopPropagation();
+            clearTimeout(timers);
+            $box.css('display', 'block')
+            
+          })
         }
       });
+      }
 
-      $.ajax('/data/guests?type=0&count=100').then(function (v) {
-        if (0 == v.status) {
-          var rs = v.data, xml = '', _spilt = $(window).width() > 768 ? 8 : 4;
-          for (var i = 0; i < rs.length; i++) {
-            xml += '<p class="js-info' + (i % _spilt == 0 ? ' cll' : '') + '"><img src="' + rs[i].img + '" alt="" class="img-circle" data-info=\'' + JSON.stringify(rs[i]) + '\'><b>'
-              + rs[i].name + '</b><span>' + rs[i].company + '<br>' + rs[i].title + '</span></p>';
-          }
-          $('#js-guest').html(xml);
-          var $box = $('#info-box');
-          setTimeout(function () {
-            $('#js-guest').find('.js-info img').hover(function () {
-              var _data = JSON.parse($(this).attr('data-info'));
-              var _xml = '<div class="box"><div class="section">'
-                + '<div class="cl"><img src="' + _data.img + '" alt="" class="img-circle"><b>' + _data.name + '</b><span>' + _data.company + '<br>' + _data.title + '</span></div>'
-                + '<div class="cr">'
-                + '<b>个人简介</b>'
-                + '<span class="hr"></span>'
-                + '<div class="info">' + _data.info + '</div>'
-                + '</div></div>';
-              $box.html(_xml).show();
-            }, function () {
-              $box.html('').hide();
-            })
-          }, 100);
-        }
-      });
+      var ulr1 = 'data/guests?type=1&count=100';
+      var ulr2 = 'data/guests?type=0&count=100';
+      ajaximg(ulr1);
+      ajaximg(ulr2)
 
-      $('.js-buy-info').hover(function () {
-        //      $('.js-left-circle').show();
-      }, function () {
-        $('.js-buy-info').hide();
-      });
 
-      $('.js-left-circle').hover(function () {
-        $('.js-buy-info').show();
-      }, function () {
-        //      $('.js-buy-info').hide();
-      });
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      // $('.js-buy-info').hover(function () {
+      //   //      $('.js-left-circle').show();
+      // }, function () {
+      //   $('.js-buy-info').hide();
+      // });
+
+      // $('.js-left-circle').hover(function () {
+      //   $('.js-buy-info').show();
+      // }, function () {
+      //   //      $('.js-buy-info').hide();
+      // });
       $('#toggle_btn').on('click', function () {
         $('.nav-select').toggle();
       });
@@ -430,7 +454,6 @@
         $('.lv-nav-list').toggle()
       });
     });
-
   </script>
   <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-591fe0c2662cc83b"></script>
 </body>

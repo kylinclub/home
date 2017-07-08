@@ -184,23 +184,19 @@
 
   <script type="text/javascript">
     $(function () {
-
       $.ajax('data/users?type=speaker&count=100').then(function (v) {
         if (0 == v.status) {
           var rs = v.data, xml = '', _spilt = $(window).width() > 768 ? 8 : 4;
-         
           for (var i = 0; i < rs.length; i++) {
- xml += '<p class="js-info' + (i % _spilt == 0 ? ' cll' : '') + '"><img src="' + rs[i].img.substring(1) + '" alt="" class="img-circle" data-info=\'' + JSON.stringify(rs[i]) + '\'><b>'
+            xml += '<p class="js-info' + (i % _spilt == 0 ? ' cll' : '') + '"><img src="' + rs[i].img.substring(1) + '" alt="" class="img-circle" data-info=\'' + JSON.stringify(rs[i]) + '\'><b>'
               + rs[i].name + '</b><span>' + rs[i].company + '<br>' + rs[i].title + '</span></p>';
           }
           $('.swiper-container-people').html(xml);
           var $box = $('#info-box');
           var timers = null;
-
           $box.mouseenter = $('.js-info img').mouseenter(function (event) {
             event.stopPropagation();
             clearTimeout(timers)
-
             var _data = JSON.parse($(this).attr('data-info'));
             var _xml = '<div class="box" id="lp"><div class="section">'
               + '<div class="cl"><img src="' + _data.img.substring(1) + '" alt="" class="img-circle"><b>' + _data.name + '</b><span>' + _data.company + '<br>' + _data.title + '</span></div>'
@@ -210,39 +206,29 @@
               + '<div class="info">' + _data.info + '</div>'
               + '</div></div>';
             $box.html(_xml);
+            timers = setTimeout(function () {
             $box.css('display', 'block')
+            }, 350)
           })
           $box.mouseout = $('.js-info img').mouseout(function (event) {
             event.stopPropagation();
-            clearTimeout(timers);
-            timers = setTimeout(function () {
-              $box.css('display', 'none')
-            }, 100)
-
+            clearTimeout(timers);         
+            $box.css('display', 'none')
           })
-
           $box.on('mouseout', function (event) {
-
             event.stopPropagation();
             clearTimeout(timers);
-            timers = setTimeout(function () {
-              $box.css('display', 'none')
-            }, 100)
-
+            $box.css('display', 'none')
           })
           $box.on('mouseenter', function (event) {
-
             event.stopPropagation();
             clearTimeout(timers);
-
             $box.css('display', 'block')
-
-
+            
           })
         }
       });
     });
-
   </script>
   <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-591fe0c2662cc83b"></script>
 </body>
