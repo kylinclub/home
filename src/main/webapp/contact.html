@@ -53,18 +53,21 @@
       font-weight: 500;
       display:inline-block;
       float: left;
-      width: 15%;
+      width: 20%;
       vertical-align: bottom;
       padding-top: 5px;
 
     }
     .sub{
-       display: inline-block;
-       float: left;
-       width: 65%;
-       border-radius: 10px;
-       border:1px solid #eee;
-       height: 34px;
+      display: inline-block;
+      float: left;
+      width: 65%;
+      border-radius: 10px;
+      height: 34px;
+      border-color: #eee;
+      outline: none;
+      box-shadow: 0 0 0 0 ;
+
      }
     .mainx{
       display: inline-block;
@@ -87,6 +90,10 @@
       margin-left: -30%;
       height: 100%;
     }
+    .box-ls img{
+      margin-top: 20px;
+
+    }
     #member div{
       margin-top: 0px;
       padding: 0;
@@ -95,7 +102,7 @@
 
 
 </head>
-<body class="page-speaker" style="height: 3000px">
+<body class="page-speaker">
 
 
 
@@ -144,7 +151,7 @@
             <li class="s-header__nav-menu-item">
               <a class="s-header__nav-menu-link s-header__nav-menu-link-divider" href="http://www.kylinclub.org/">关于主办方</a></li>
             <li class="s-header__nav-menu-item">
-              <a class="s-header__nav-menu-link s-header__nav-menu-link-divider" href="contact.html">加入我们</a></li>
+              <a class="s-header__nav-menu-link s-header__nav-menu-link-divider" href="contact.html">联系我们</a></li>
             <li class="s-header__nav-menu-item">
               <a class="s-header__nav-menu-link s-header__nav-menu-link-divider" href="http://www.bagevent.com/event/549700?bag_track=bagevent">点击购票</a></li>
           </ul>
@@ -154,7 +161,7 @@
   </div>
 </header>
 
-<div><img  style="width: 100%" src="static/img/jrwm-sp.jpg" alt=""></div>
+<div><img  style="width: 100%" src="static/img/jrwm.jpg" alt=""></div>
 
 <!-- 合作形式开始 -->
 <div class="container">
@@ -196,10 +203,10 @@
       <img class=" img-responsive xiaoguo" src="static/img/icon-3.png" alt="" >
       <img class=" img-responsive hide qxxiaoguo" src="static/img/icon-3-3.png" alt="" >
       <span class="col-xs-offset-4 col-sm-offset-4 col-md-offset-4">讲 师</span>
-      <p>1.讲师可在GITC大会、麒麟会系列活动现场<br>进行演讲，拓展个人品牌形象；<br>
+      <p>1.讲师可在GITC大会、麒麟会系列活动现场进行演讲，拓展个人品牌形象；<br>
         2.讲师可享受麒麟会会员的所有权益；<br>
-        3.可优先参与麒麟会组织的技术沙龙、精英<br>交流会等活动；<br>
-        4.享有GITC福利赠票，可受邀参与讲师线下<br>交流会等。
+        3.可优先参与麒麟会组织的技术沙龙、精英交流会等活动；<br>
+        4.享有GITC福利赠票，可受邀参与讲师线下交流会等。
       </p>
       </div>
     </div>
@@ -220,9 +227,9 @@
       <img class=" img-responsive xiaoguo" src="static/img/icon-5.png" alt="" >
       <img class=" img-responsive hide qxxiaoguo" src="static/img/icon-5-5.png" alt="" >
       <span class="col-xs-offset-3 col-sm-offset-3 col-md-offset-3">媒体合作伙伴</span>
-      <p>1.媒体伙伴可受邀参加GITC大会并进行现场<br>报道；<br>
-        2.享有GITC大会官网、会刊、现场的LOGO<br>展示权；<br>
-        3.媒体伙伴可参与演讲嘉宾、参会大咖的一<br>对一专访。
+      <p>1.媒体伙伴可受邀参加GITC大会并进行现场报道；<br>
+        2.享有GITC大会官网、会刊、现场的LOGO展示权；<br>
+        3.媒体伙伴可参与演讲嘉宾、参会大咖的一对一专访。
       </p>
       </div>
     </div>
@@ -231,7 +238,7 @@
       <img class=" img-responsive xiaoguo" src="static/img/icon-6.png" alt="" >
       <img class=" img-responsive hide qxxiaoguo" src="static/img/icon-6-6.png" alt="" >
       <span class="col-xs-offset-4 col-sm-offset-4 col-md-offset-4">供应商</span>
-      <p>1.有机会参与活动主场的运营合作、执行及<br>线上传播；<br>
+      <p>1.有机会参与活动主场的运营合作、执行及线上传播；<br>
         2.有权参与麒麟会所组织活动的竞标；<br>
         3.有机会成为GITC大会指定的搭建供应商。
       </p>
@@ -352,13 +359,13 @@
               <span class="fonts">供应商</span>
             </div>
             <div class="" style="display: inline-block;">
-              <div class="mycheckbox select-box">
+              <div class="mycheckbox select-box" >
                 <div  class="hidden select-checked checkbox1">
-                  <input  style="display: none" type="checkbox" status="0" kk="1" value="其他" name="interest">
+                  <input  style="display: none" type="checkbox" status="0"  kk="1" value="其他" name="interest">
                 </div>
               </div>
               <span>其他</span>
-              <input style="display: none" type="text" placeholder="添加其他内容" status="1" class="other hide" name="interest_other" id="rest">
+              <input type="text" placeholder="添加其他内容" status="1" class="other hide" name="interest_other" id="rest">
             </div>
 
 
@@ -375,7 +382,6 @@
 
 <!--表单结束-->
 <script>
-
     $('.box-ls').mouseover(function () {
         $(this).parent().find('.img-responsive').eq(0).addClass('hide');
         $(this).parent().find('.img-responsive').eq(1).removeClass('hide');
@@ -386,36 +392,6 @@
         $(this).parent().find('.img-responsive').eq(0).removeClass('hide');
         $(this).parent().find('span').removeClass('ziti')
     });
-
-    function textdata(that) {
-        if ($('#name').val() == '') {
-            alert('请输入姓名');
-            return false;
-        }
-        else if ($('#tel').val() == '') {
-            alert('请输入手机');
-            return false;
-        }
-        else if ($('#email').val() =='') {
-            alert('请输入邮箱');
-            return false;
-        }
-        else if ($('#company').val() == '') {
-            alert('请输入公司');
-            return false;
-        }
-        else if ($('#department').val() =='') {
-            alert('请输入部门');
-            return false;
-        }
-        else if ($('#position').val() =='') {
-            alert('请输入职位');
-            return false;
-        }else {
-            return true
-        }
-    }
-
     $('.select-box').click(function () {
         var temp = $(this).find('input').attr('status');
         if (temp == '0'){
@@ -438,8 +414,7 @@
                 $(this).parent().find('input[name="interest_other"]').addClass('hide')
             }*/
         }
-    })
-
+    });
     $('input[name="tel"]').change(function () {
         var key = $(this).val();
         if (key.length == 11){
@@ -456,7 +431,7 @@
         if((/[a-zA-Z]+$/.test(key))){
             $(this).parent().parent().addClass('has-error')
             }
-    })
+    });
     $('input[name="email"]').change(function () {
        var ret = $(this).val();
        var reg=/^(?:\w+\.?)*\w+@(?:\w+\.)+\w+$/.test(ret);
@@ -468,6 +443,7 @@
 
     })
 </script>
+
 <footer class="g-bg-color&#45;&#45;dark">
   <div class="g-hor-divider__dashed&#45;&#45;white-opacity-lightest">
     <div class="container g-padding-y-30&#45;&#45;xs g-padding-y-50&#45;&#45;md">
@@ -534,29 +510,28 @@
     $(function () {
         $('#js-ptn').on('click', function () {
             var _data = {};
-
             if ($('input[name="name"]').val() == '') {
-                alert('请输入姓名／Name');
+                alert('请输入姓名');
                 return false;
             }
             else if ($('input[name="tel"]').val() == '') {
-                alert('请输入手机／Tel');
+                alert('请输入手机');
                 return false;
             }
             else if ($('input[name="email"]').val() =='') {
-                alert('请输入邮箱／E-mail');
+                alert('请输入邮箱');
                 return false;
             }
             else if ($('input[name="company"]').val() == '') {
-                alert('请输入公司／Company');
+                alert('请输入公司');
                 return false;
             }
             else if ($('input[name="department"]').val() =='') {
-                alert('请输入部门／Department');
+                alert('请输入部门');
                 return false;
             }
             else if ($('input[name="position"]').val() =='') {
-                alert('请输入职位／Position');
+                alert('请输入职位');
                 return false;
             }
             _data.name = $('input[name="name"]').val();
@@ -566,16 +541,13 @@
             _data.department = $('input[name="department"]').val();
             _data.position = $('input[name="position"]').val();
             _data.suggest = $('#suggest').val();
-            _data.interest_other = $('input[name="interest_other"]').val()
-            var tmp = ''
+            _data.interest_other = $('input[name="interest_other"]').val();
+            var tmp = '';
             $(':checkbox[name="interest"]:checked').each(function () {
-                tmp += $(this).val()
+                tmp += $(this).val();
                 tmp += ","
-            })
-            _data.interest = tmp
-
-
-
+            });
+            _data.interest = tmp;
             $.ajax({
                 async: false,
                 url: 'data/contacts',
@@ -611,8 +583,6 @@
 <script type="text/javascript" src="static/js/counter.min.js"></script>
 <script type="text/javascript" src="static/js/parallax.min.js"></script>
 
-<!--
 <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-591fe0c2662cc83b"></script>
--->
 </body>
 </html>

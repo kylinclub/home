@@ -882,13 +882,16 @@
   Fullheight
 ------------------------------------*/
 .g-fullheight--xs {
-  height: 100vh;
+  height: 26vh;
 }
 
 /* Small screen / phone */
 @media (min-width: 34em) {
   .g-fullheight--sm {
     height: 100vh;
+  }
+  .g-fullheight--xs {
+    height:100vh;
   }
 }
 
@@ -985,6 +988,7 @@
 .g-bg-position--center {
   background-size: cover !important;
   background-position: center center !important;
+  background-repeat: no-repeat!important;
 }
 
 .g-bg--fixed {
@@ -1951,6 +1955,7 @@
   .g-height-600--sm {
     height: 37.5rem;
   }
+
 }
 
 /* Medium screen / tablet */
