@@ -4,7 +4,7 @@
 
 <div class="row wrapper border-bottom white-bg page-heading">
 		<div class="col-lg-10">
-			<h2>联系我们列表</h2>
+			<h2>加入我们列表</h2>
 			<ol class="breadcrumb">
 				<li><a href="/admin/index">首页</a></li>
             </ol>

@@ -4,7 +4,7 @@
   <meta charset="utf-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
   <meta http-equiv="x-ua-compatible" content="ie=edge"/>
-  <title>联系我们 - GITC官网</title>
+  <title>加入我们 - GITC官网</title>
   <meta content="" name="description"/>
   <link href="static/css/bootstrap.min.css" rel="stylesheet"/>
   <link href="static/css/animate.css" rel="stylesheet"/>
@@ -19,7 +19,7 @@
   <style>
     .checkbox label, .radio label {
       min-height: 20px;
-      padding-left: 20px;
+      padding-right: 20px;
       margin-bottom: 0;
       font-weight: 400;
       cursor: pointer;
@@ -35,31 +35,68 @@
       display: inline-block;
       position: relative;
       vertical-align: middle}
-    .checkbox1{border: 2px solid #00a0e9;
-      width: 9px;
-      height: 9px;
+    .checkbox1{
+      border: 2px solid #00a0e9;
+      width: 8px;
+      height: 8px;
       border-radius: 50%;
-      position: absolute;
-      left: 50%;
-      top:50%;
-      margin: -4.5px;
+      margin: 3px auto;
+
 
       background-color: #00a0e9}
-    #suggest{border-radius: 6px;border: 1px solid #ccc;font-size: 14px;height: 70px;}
-    .maindw{
-      position: relative;}
+    #suggest{border-radius: 6px;
+      border: 1px solid #ccc;
+      font-size: 14px;
+      height: 70px;
+    }
+    .cas{
+      font-weight: 500;
+      display:inline-block;
+      float: left;
+      width: 15%;
+      vertical-align: bottom;
+      padding-top: 5px;
+
+    }
+    .sub{
+       display: inline-block;
+       float: left;
+       width: 65%;
+       border-radius: 10px;
+       border:1px solid #eee;
+       height: 34px;
+     }
     .mainx{
+      display: inline-block;
+      float: left;
+      width: 8%;
+      color: #00a0e9;
+      margin-left: 10px
+    }
+    .other{
+      display: inline-block;
+      border-radius: 6px;
+      border: 1px solid #ccc;
+      text-align:center;
+      font-size: 14px
+    }
+    .box-ls{
+      width: 60%;
       position: absolute;
-      right: -4px;
-      top: 1px;
-      font-size: 22px;
-      color:#00a0e9;}
-    #nbcheckbox{margin-left: 34px;}
-    .other{display: inline-block;border-radius: 6px;border: 1px solid #ccc;text-align:center;font-size: 14px}
+      left: 50%;
+      margin-left: -30%;
+      height: 100%;
+    }
+    #member div{
+      margin-top: 0px;
+      padding: 0;
+    }
   </style>
 
+
 </head>
-<body class="page-speaker" >
+<body class="page-speaker" style="height: 3000px">
+
 
 
 <header class="navbar-fixed-top s-header js__header-sticky js__header-overlay">
@@ -87,7 +124,7 @@
           <a href="index.html">首页</a>
           <a href="sh.html">GITC上海站</a>
           <a href="http://www.kylinclub.org/" target="_blank">关于主办方</a>
-          <a href="contact.html">联系我们</a>
+          <a href="contact.html">加入我们</a>
           <a href="javascript:;" style="margin-left: 60px"><span class="ti-user"></span> 注册</a>
           <a href="javascript:;">登录</a>
           <a href="http://www.bagevent.com/event/549700?bag_track=bagevent" target="_blank" class="round-btn">点击<br>购票</a>
@@ -107,7 +144,7 @@
             <li class="s-header__nav-menu-item">
               <a class="s-header__nav-menu-link s-header__nav-menu-link-divider" href="http://www.kylinclub.org/">关于主办方</a></li>
             <li class="s-header__nav-menu-item">
-              <a class="s-header__nav-menu-link s-header__nav-menu-link-divider" href="contact.html">联系我们</a></li>
+              <a class="s-header__nav-menu-link s-header__nav-menu-link-divider" href="contact.html">加入我们</a></li>
             <li class="s-header__nav-menu-item">
               <a class="s-header__nav-menu-link s-header__nav-menu-link-divider" href="http://www.bagevent.com/event/549700?bag_track=bagevent">点击购票</a></li>
           </ul>
@@ -122,69 +159,83 @@
 <!-- 合作形式开始 -->
 <div class="container">
   <div id="member" class="row">
-    <p id="to">
+    <p id="to" style="margin-bottom: 50px">
       <span>COOPERATION MODE</span>
       <i>合作形式</i>
 
     </p>
-    <div class="vip-A col-xs-12 col-sm-6 col-md-4 xiaoguo">
-        <img class="img-responsive " src="static/img/icon-1.png" alt="" >
-        <img class="img-responsive hide" src="static/img/icon-1-1.png" alt="" >
-        <span class="col-xs-offset-4 col-sm-offset-4 col-md-offset-4">个人会员</span>
+    <div class="vip-A col-xs-12 col-sm-6 col-md-4 " >
+        <div class="box-ls">
 
-      <p>申请麒麟会个人会员请于官网填写申请表后直接申请注册即可。<br>
-        1.参与会员活动，与互联网同行业技术高管、商务精英进行交流分享；<br>
-        2.对于行业技术难点，可以互相交流并快速找到工作中需要的行业资源及建议；<br>
-        3.参与行业前沿思维、热点技术实时分享；<br>
-        4.GITC大会及其他麒麟会主办的活动名额、会员福利。 <br>
-      </p>
+
+          <img class="img-responsive xiaoguo" src="static/img/icon-1.png" alt="" >
+          <img class="img-responsive hide qxxiaoguo" src="static/img/icon-1-1.png" alt="" >
+          <span class="col-xs-offset-4 col-sm-offset-4 col-md-offset-4">个人会员</span>
+
+          <p>申请麒麟会个人会员请于官网填写申请表后直接申请注册即可。<br>
+            1.参与会员活动，与互联网同行业技术高管、商务精英进行交流分享；<br>
+            2.对于行业技术难点，可以互相交流并快速找到工作中需要的行业资源及建议；<br>
+            3.参与行业前沿思维、热点技术实时分享；<br>
+            4.GITC大会及其他麒麟会主办的活动名额、会员福利。 <br>
+          </p>
+        </div>
     </div>
-    <div class="vip-B col-xs-12 col-sm-6 col-md-4 xiaoguo" >
-      <img class=" img-responsive " src="static/img/icon-2.png" alt="" >
-      <img class=" img-responsive hide" src="static/img/icon-2-2.png" alt="" >
+    <div class="vip-B col-xs-12 col-sm-6 col-md-4" >
+      <div class="box-ls">
+      <img class=" img-responsive xiaoguo" src="static/img/icon-2.png" alt="" >
+      <img class=" img-responsive hide qxxiaoguo" src="static/img/icon-2-2.png" alt="" >
       <span class="col-xs-offset-4 col-sm-offset-4 col-md-offset-4">企业会员</span>
       <p>1.享有GITC全球互联网技术大会赞助权；<br>
         2.麒麟会可以为企业会员提供“走进企业”<br>系列活动定制化服务，实现企业间的商务<br>交流、促成商务合作；<br>
         3.与麒麟会达成全年系列活动的战略合作<br>（GITC、技术沙龙、精英面对面等），并<br>享有优惠权益。
       </p>
+      </div>
     </div>
-    <div class="vip-C col-xs-12 col-sm-6 col-md-4 xiaoguo" >
-      <img class=" img-responsive " src="static/img/icon-3.png" alt="" >
-      <img class=" img-responsive hide " src="static/img/icon-3-3.png" alt="" >
+    <div class="vip-C col-xs-12 col-sm-6 col-md-4" >
+      <div class="box-ls">
+      <img class=" img-responsive xiaoguo" src="static/img/icon-3.png" alt="" >
+      <img class=" img-responsive hide qxxiaoguo" src="static/img/icon-3-3.png" alt="" >
       <span class="col-xs-offset-4 col-sm-offset-4 col-md-offset-4">讲 师</span>
       <p>1.讲师可在GITC大会、麒麟会系列活动现场<br>进行演讲，拓展个人品牌形象；<br>
         2.讲师可享受麒麟会会员的所有权益；<br>
         3.可优先参与麒麟会组织的技术沙龙、精英<br>交流会等活动；<br>
         4.享有GITC福利赠票，可受邀参与讲师线下<br>交流会等。
       </p>
+      </div>
     </div>
-    <div class="vip-D col-xs-12 col-sm-6 col-md-4 xiaoguo" >
-      <img class=" img-responsive " src="static/img/icon-4.png" alt="" >
-      <img class=" img-responsive hide" src="static/img/icon-4-4.png" alt="" >
+    <div class="vip-D col-xs-12 col-sm-6 col-md-4" >
+      <div class="box-ls">
+      <img class=" img-responsive xiaoguo" src="static/img/icon-4.png" alt="" >
+      <img class=" img-responsive hide qxxiaoguo" src="static/img/icon-4-4.png" alt="" >
       <span class="col-xs-offset-3 col-sm-offset-3 col-md-offset-3">赞助商/产展商</span>
       <p>1.通过线上传播和现场展览展示，让品牌形象遍布媒体网站及大会会场，提升品牌曝光度和认知度；<br>
         2.通过演讲分享，输出企业/团队的技术实力，提升品牌好感度和美誉度；<br>
         3.通过展位与社交活动，为产品/服务吸引精准用户，提升品牌关注度；<br>
         4.麒麟会可以企业会员提供“走进企业”系列活动定制化服务，实现企业间的商务交流、促成商务合作。
       </p>
+      </div>
     </div>
-    <div class="vip-E col-xs-12 col-sm-6 col-md-4 xiaoguo" >
-      <img class=" img-responsive " src="static/img/icon-5.png" alt="" >
-      <img class=" img-responsive hide" src="static/img/icon-5-5.png" alt="" >
+    <div class="vip-E col-xs-12 col-sm-6 col-md-4" >
+      <div class="box-ls">
+      <img class=" img-responsive xiaoguo" src="static/img/icon-5.png" alt="" >
+      <img class=" img-responsive hide qxxiaoguo" src="static/img/icon-5-5.png" alt="" >
       <span class="col-xs-offset-3 col-sm-offset-3 col-md-offset-3">媒体合作伙伴</span>
       <p>1.媒体伙伴可受邀参加GITC大会并进行现场<br>报道；<br>
         2.享有GITC大会官网、会刊、现场的LOGO<br>展示权；<br>
         3.媒体伙伴可参与演讲嘉宾、参会大咖的一<br>对一专访。
       </p>
+      </div>
     </div>
-    <div class="vip-F col-xs-12 col-sm-6 col-md-4 xiaoguo" >
-      <img class=" img-responsive " src="static/img/icon-6.png" alt="" >
-      <img class=" img-responsive hide" src="static/img/icon-6-6.png" alt="" >
+    <div class="vip-F col-xs-12 col-sm-6 col-md-4" >
+      <div class="box-ls">
+      <img class=" img-responsive xiaoguo" src="static/img/icon-6.png" alt="" >
+      <img class=" img-responsive hide qxxiaoguo" src="static/img/icon-6-6.png" alt="" >
       <span class="col-xs-offset-4 col-sm-offset-4 col-md-offset-4">供应商</span>
       <p>1.有机会参与活动主场的运营合作、执行及<br>线上传播；<br>
         2.有权参与麒麟会所组织活动的竞标；<br>
         3.有机会成为GITC大会指定的搭建供应商。
       </p>
+      </div>
     </div>
   </div>
 </div>
@@ -193,73 +244,74 @@
   <img class="img-responsive g-width-100-percent--xs" src="static/img/contact_ph002.jpg" alt="">
 </div>
 <!--表单开始-->
-<div  style="margin: 50px auto;font-size: 14px; width: 80%">
+<div  style="margin: 25px auto;font-size: 14px; width: 75%">
   <form class="form-horizontal">
-
-      <div>
-        <div class="form-group col-xs-12 col-sm-6 col-lg-4 text-left">
-        <label for="name" class="col-sm-3 control-label fonts" style="font-weight: 500;.fonts" name="name">姓名</label>
-        <div class="col-sm-9 maindw">
-          <input type="text" class="form-control" name="name" id="name" >
-          <span class="col-sm-1 mainx">*</span>
-        </div>
-
-      </div>
-        <div class="form-group col-sm-6 col-lg-4 ">
-        <label for="tel" class="col-sm-3 control-label fonts" style="font-weight: 500;font-size: 14px"  name="tel">手机</label>
-        <div class="col-sm-9">
-          <input type="tel" name="tel" maxlength="11" id="tel" class="form-control " >
-          <span class="col-sm-1 mainx">*</span>
-        </div>
-        <!--<span style="position: relative;left: 0;top: 1px;font-size: 19px;color:#00a0e9;">*</span>-->
-      </div>
-        <div class="form-group col-sm-6 col-lg-4">
-        <label for="email" class="col-sm-3 control-label fonts" style="font-weight: 500;font-size: 14px"  name="email">邮箱</label>
-        <div class="col-sm-9 ">
-          <input type="email" name="email" class="form-control" id="email" >
-          <span class="col-sm-1 mainx">*</span>
-        </div>
-        <!--<span style="position: relative;left: 0;top: 1px;font-size: 19px;color:#00a0e9;">*</span>-->
-      </div>
-        <div class="form-group col-sm-6 col-lg-4">
-          <label for="company" class="col-sm-3 control-label fonts" style="font-weight: 500;font-size: 14px" name="company">公司</label>
-          <div class="col-sm-9  ">
-            <input type="text" class="form-control" name="company" id="company" >
-            <span class="col-sm-1 mainx">*</span>
+    <div class="container" style="width: 77%;margin-top: 40px">
+      <div class="row">
+        <div class=" col-xs-12 col-sm-6 col-lg-6">
+          <div style="margin-top: 10px">
+            <laber for="name" class="fonts cas"  name="name" >姓名</laber>
+            <input type="text" name="name" class="form-control sub" >
+            <i class="mainx">*</i>
           </div>
-          <!--<span style="position: relative;left: 0;top: 1px;font-size: 19px;color:#00a0e9;">*</span>-->
         </div>
-        <div class="form-group col-sm-6 col-lg-4">
-        <label for="department" class="col-sm-3 control-label fonts" style="font-weight: 500;font-size: 14px"  name="department">部门</label>
-        <div class="col-sm-9">
-          <input type="text" name="department" class="form-control" id="department" >
-          <span class="col-sm-1 mainx">*</span>
+        <div class=" col-xs-12 col-sm-6 col-lg-6">
+          <div style="margin-top: 10px;">
+            <laber for="name" class="fonts fontr cas"  name="tel" >手机</laber>
+            <input type="text" name="tel" maxlength="11" class="form-control sub" >
+            <i class="mainx">*</i>
+          </div>
         </div>
-        <!--<span style="position: relative;left: 0;top: 1px;font-size: 19px;color:#00a0e9;">*</span>-->
-      </div>
-        <div class="form-group col-sm-6 col-lg-4">
-        <label for="position" class="col-sm-3  control-label fonts" style="font-weight: 500;font-size: 14px;"  name="position">职位</label>
-        <div class="col-sm-9  ">
-          <input type="text" name="position" class="form-control" id="position" >
-          <span class="col-sm-1 mainx">*</span>
+
+        <div class=" col-xs-12 col-sm-6 col-lg-6">
+          <div style="margin-top: 10px">
+            <laber for="name" class="fonts fontr cas"  name="company">公司</laber>
+            <input type="text" name="company" class="form-control sub" >
+            <i class="mainx">*</i>
+          </div>
         </div>
-        <!--<span style="position: relative;left: 0;top: 1px;font-size: 19px;color:#00a0e9;">*</span>-->
+        <div class=" col-xs-12 col-sm-6 col-lg-6">
+          <div style="margin-top: 10px">
+            <laber for="name" class="fonts fontr cas" name="department" >部门</laber>
+            <input type="text" name="department" class="form-control sub" >
+            <i class="mainx">*</i>
+          </div>
+        </div>
+        <div class=" col-xs-12 col-sm-6 col-lg-6">
+          <div style="margin-top: 10px">
+            <laber for="name" class="fonts fontr cas" name="position" >职位</laber>
+            <input type="text" name="position" class="form-control sub" style="width: 65%">
+            <i class="mainx">*</i>
+          </div>
+        </div>
+        <div class=" col-xs-12 col-sm-6 col-lg-6">
+          <div style="margin-top: 10px">
+            <laber for="name" class="fonts fontr cas"  name="emal">邮箱</laber>
+            <input type="text" name="email" class="form-control sub" style="width: 65%">
+            <i class="mainx">*</i>
+          </div>
+        </div>
+
+
+
+
       </div>
 
     </div>
+
     <!--感兴趣的内容 -->
-      <div style="margin: 50px auto;">
-          <label style="color: #00a0e9;font-size: 18px;font-weight: 500;margin-left: 34px;">添加你感兴趣的内容</label>
+      <div style="margin: 30px auto;width: 75%">
+          <label style="color: #00a0e9;font-size: 18px;font-weight: 500;">添加你感兴趣的内容</label>
           <div class="checkbox" id="nbcheckbox">
-            <div class="select-box" style="display: inline-block;">
+            <div class="select-box" style="display: inline-block;padding-right: 15px">
               <div class="mycheckbox">
                 <div class="select-checked checkbox1">
-                  <input type="checkbox" id="interest-1"  status="1" checked="checked" style="display: none" value="讲师" name="interest">
+                  <input type="checkbox" id="interest-1"  status="1" checked="checked" style="display: none;" value="讲师" name="interest">
                 </div>
               </div>
               <span class="fonts">讲师</span>
             </div>
-            <div class="select-box" style="display: inline-block;margin-left: 20px">
+            <div class="select-box" style="display: inline-block;padding-right: 15px">
               <div class="mycheckbox">
                 <div  class="hidden select-checked checkbox1" >
                   <input type="checkbox"  id="interest-2" status="0" style="display: none;" value="个人会员"  name="interest">
@@ -267,7 +319,7 @@
               </div>
               <span class="fonts">个人会员</span>
             </div>
-            <div class="select-box" style="display: inline-block;margin-left: 20px">
+            <div class="select-box" style="display: inline-block;padding-right: 15px">
               <div class="mycheckbox">
                 <div class="hidden select-checked checkbox1" >
                   <input type="checkbox" id="interest-3"   status="0" style="display: none" value="企业会员" name="interest">
@@ -275,7 +327,7 @@
               </div>
               <span class="fonts">企业会员</span>
             </div>
-            <div class="select-box" style="display: inline-block;margin-left: 20px">
+            <div class="select-box" style="display: inline-block;padding-right: 15px">
               <div class="mycheckbox">
                 <div class="hidden select-checked checkbox1" >
                   <input type="checkbox" id="interest-4" status="0" style="display: none" value="赞助商/展商" name="interest">
@@ -283,7 +335,7 @@
               </div>
               <span class="fonts">赞助商/展商</span>
             </div>
-            <div class="select-box" style="display: inline-block;margin-left: 20px">
+            <div class="select-box" style="display: inline-block;padding-right: 15px">
               <div class="mycheckbox">
                 <div class="hidden select-checked checkbox1" >
                   <input type="checkbox" id="interest-5"  status="0" style="display: none" value="媒体合作" name="interest">
@@ -291,7 +343,7 @@
               </div>
               <span class="fonts">媒体合作</span>
             </div>
-            <div class="select-box" style="display: inline-block;margin-left: 20px">
+            <div class="select-box" style="display: inline-block;padding-right: 15px">
               <div class="mycheckbox">
                 <div class="hidden select-checked checkbox1">
                   <input type="checkbox" id="interest-6"  status="0" style="display: none" value="供应商" name="interest">
@@ -299,19 +351,19 @@
               </div>
               <span class="fonts">供应商</span>
             </div>
-            <div class="" style="display: inline-block;margin-left: 20px">
+            <div class="" style="display: inline-block;">
               <div class="mycheckbox select-box">
                 <div  class="hidden select-checked checkbox1">
-                  <input type="checkbox" status="0" style="display: none" kk="1" value="其他" name="interest">
+                  <input  style="display: none" type="checkbox" status="0" kk="1" value="其他" name="interest">
                 </div>
               </div>
               <span>其他</span>
-              <input type="text" placeholder="添加其他内容" status="1" class="other hide" name="interest_other" id="rest">
+              <input style="display: none" type="text" placeholder="添加其他内容" status="1" class="other hide" name="interest_other" id="rest">
             </div>
 
 
-            <div class="detal " style="margin: 30px 0;width: 92%;">
-              <textarea name="suggest" class="form-control" cols="30" rows="10" placeholder="请输入您宝贵意见..." id="suggest"></textarea>
+            <div class="detal " style="margin: 30px 0;width: 93%;">
+              <textarea name="suggest" class="form-control" cols="30" rows="10" placeholder="请输入您的宝贵意见..." id="suggest"></textarea>
               <span style="color: #00a0e9;line-height: 20px;display: inline-block;margin-top: 18px" class="fonts-a">注意：*为必选项，所填信息请务必真实有效</span>
               <button type="button" id="js-ptn" class="btn btn-primary" style="display: block;width: 140px;margin-top: 18px;border: none">提交</button>
             </div>
@@ -324,69 +376,71 @@
 <!--表单结束-->
 <script>
 
-    $('.xiaoguo').mouseover(function () {
-        console.log($(this))
-        $(this).find('.img-responsive').eq(0).addClass('hide');
-        $(this).find('.img-responsive').eq(1).removeClass('hide');
-        $(this).find('span').addClass('ziti')
+    $('.box-ls').mouseover(function () {
+        $(this).parent().find('.img-responsive').eq(0).addClass('hide');
+        $(this).parent().find('.img-responsive').eq(1).removeClass('hide');
+        $(this).parent().find('span').addClass('ziti')
     });
-    $('.xiaoguo').mouseout(function () {
-        console.log($(this))
-        $(this).find('.img-responsive').eq(1).addClass('hide');
-        $(this).find('.img-responsive').eq(0).removeClass('hide');
-        $(this).find('span').removeClass('ziti')
+    $('.box-ls').mouseout(function () {
+        $(this).parent().find('.img-responsive').eq(1).addClass('hide');
+        $(this).parent().find('.img-responsive').eq(0).removeClass('hide');
+        $(this).parent().find('span').removeClass('ziti')
     });
 
     function textdata(that) {
         if ($('#name').val() == '') {
-            alert('请输入姓名／Name');
+            alert('请输入姓名');
             return false;
         }
         else if ($('#tel').val() == '') {
-            alert('请输入手机／Tel');
+            alert('请输入手机');
             return false;
         }
         else if ($('#email').val() =='') {
-            alert('请输入邮箱／E-mail');
+            alert('请输入邮箱');
             return false;
         }
         else if ($('#company').val() == '') {
-            alert('请输入公司／Company');
+            alert('请输入公司');
             return false;
         }
         else if ($('#department').val() =='') {
-            alert('请输入部门／Department');
+            alert('请输入部门');
             return false;
         }
         else if ($('#position').val() =='') {
-            alert('请输入职位／Position');
+            alert('请输入职位');
             return false;
         }else {
             return true
         }
     }
+
     $('.select-box').click(function () {
         var temp = $(this).find('input').attr('status');
         if (temp == '0'){
             $(this).find('.select-checked').removeClass('hidden');
             $(this).find('input').attr('checked',true);
-            $(this).find('input').attr('status',1)
+            $(this).find('input').attr('status',1);
+            /*
             var tt = $(this).find('input[kk="1"]').attr('status');
             if (tt == '1'){
                 $(this).parent().find('input[name="interest_other"]').removeClass('hide')
-            }
+            }*/
 
         }else {
             $(this).find('.select-checked').addClass('hidden');
             $(this).find('input').attr('checked',false);
             $(this).find('input').attr('status',0)
+            /*
             var tt = $(this).find('input[kk="1"]').attr('status');
             if (tt == '0'){
                 $(this).parent().find('input[name="interest_other"]').addClass('hide')
-            }
+            }*/
         }
     })
-    $('#tel').change(function () {
+
+    $('input[name="tel"]').change(function () {
         var key = $(this).val();
         if (key.length == 11){
             if((/^1[3|4|5|7|8][0-9]\d{4,8}$/.test(key))){
@@ -397,13 +451,13 @@
             $(this).parent().parent().addClass('has-error')
         }
     });
-    $('#tel').keydown(function () {
+    $('input[name="tel"]').keydown(function () {
         var key = $(this).val();
         if((/[a-zA-Z]+$/.test(key))){
             $(this).parent().parent().addClass('has-error')
             }
     })
-    $('#email').change(function () {
+    $('input[name="email"]').change(function () {
        var ret = $(this).val();
        var reg=/^(?:\w+\.?)*\w+@(?:\w+\.)+\w+$/.test(ret);
        if(reg){
@@ -414,67 +468,129 @@
 
     })
 </script>
-<footer class="g-bg-color--dark">
-  <div class="g-hor-divider__dashed--white-opacity-lightest">
-    <div class="container g-padding-y-30--xs g-padding-y-50--md">
+<footer class="g-bg-color&#45;&#45;dark">
+  <div class="g-hor-divider__dashed&#45;&#45;white-opacity-lightest">
+    <div class="container g-padding-y-30&#45;&#45;xs g-padding-y-50&#45;&#45;md">
       <div class="row">
-        <div class="col-sm-3 g-margin-b-20--xs g-margin-b-0--md">
-          <ul class="list-unstyled g-ul-li-tb-5--xs g-margin-b-0--xs">
-            <li class="g-font-size-12--xs">赞助大会&展览展示咨询<br>business@kylinclub.org</li>
-            <li class="g-font-size-12--xs">合作单位&合作媒体咨询<br>gitc@kylinclub.org</li>
-            <li class="g-font-size-12--xs">麒麟会会员申请咨询<br>member@kylinclub.org</li>
-            <li class="g-font-size-12--xs">志愿者招募<br>staff@kylinclub.org</li>
-            <li class="g-font-size-12--xs">致电我们<br>010-88323888</li>
+        <div class="col-sm-3 g-margin-b-20&#45;&#45;xs g-margin-b-0&#45;&#45;md">
+          <ul class="list-unstyled g-ul-li-tb-5&#45;&#45;xs g-margin-b-0&#45;&#45;xs">
+            <li class="g-font-size-12&#45;&#45;xs">赞助大会&展览展示咨询<br>business@kylinclub.org</li>
+            <li class="g-font-size-12&#45;&#45;xs">合作单位&合作媒体咨询<br>gitc@kylinclub.org</li>
+            <li class="g-font-size-12&#45;&#45;xs">麒麟会会员申请咨询<br>member@kylinclub.org</li>
+            <li class="g-font-size-12&#45;&#45;xs">志愿者招募<br>staff@kylinclub.org</li>
+            <li class="g-font-size-12&#45;&#45;xs">致电我们<br>010-88323888</li>
           </ul>
         </div>
-        <div class="col-sm-2 col-xs-6 g-margin-b-20--xs g-margin-b-0--md hidden-xs">
-          <ul class="list-unstyled g-ul-li-tb-5--xs g-margin-b-0--xs">
+        <div class="col-sm-2 col-xs-6 g-margin-b-20&#45;&#45;xs g-margin-b-0&#45;&#45;md hidden-xs">
+          <ul class="list-unstyled g-ul-li-tb-5&#45;&#45;xs g-margin-b-0&#45;&#45;xs">
             <li>
-              <a class="g-font-size-12--xs g-color--white-opacity" href="javascript:;" rel="nofollow"><i class="g-padding-r-5--xs ti-facebook"></i> Facebook</a>
+              <a class="g-font-size-12&#45;&#45;xs g-color&#45;&#45;white-opacity" href="javascript:;" rel="nofollow"><i class="g-padding-r-5&#45;&#45;xs ti-facebook"></i> Facebook</a>
             </li>
             <li>
-              <a class="g-font-size-12--xs g-color--white-opacity" href="javascript:;" rel="nofollow"><i class="g-padding-r-5--xs ti-twitter"></i> Twitter</a>
+              <a class="g-font-size-12&#45;&#45;xs g-color&#45;&#45;white-opacity" href="javascript:;" rel="nofollow"><i class="g-padding-r-5&#45;&#45;xs ti-twitter"></i> Twitter</a>
             </li>
             <li>
-              <a class="g-font-size-12--xs g-color--white-opacity" href="javascript:;" rel="nofollow"><i class="g-padding-r-5--xs ti-google"></i> Google+</a>
+              <a class="g-font-size-12&#45;&#45;xs g-color&#45;&#45;white-opacity" href="javascript:;" rel="nofollow"><i class="g-padding-r-5&#45;&#45;xs ti-google"></i> Google+</a>
             </li>
             <li>
-              <a class="g-font-size-12--xs g-color--white-opacity" href="javascript:;" rel="nofollow"><i class="g-padding-r-5--xs ti-youtube"></i> Youtube</a>
+              <a class="g-font-size-12&#45;&#45;xs g-color&#45;&#45;white-opacity" href="javascript:;" rel="nofollow"><i class="g-padding-r-5&#45;&#45;xs ti-youtube"></i> Youtube</a>
             </li>
           </ul>
         </div>
-        <div class="col-sm-2 col-xs-6 g-margin-b-20--xs g-margin-b-0--md hidden-xs">
-          <ul class="list-unstyled g-ul-li-tb-5--xs g-margin-b-0--xs">
-            <li><a class="g-font-size-12--xs g-color--white-opacity" href="index.html">首页</a></li>
-            <li><a class="g-font-size-12--xs g-color--white-opacity" href="sh.html">上海站</a></li>
-            <li><a class="g-font-size-12--xs g-color--white-opacity" href="javascript:;">深圳站</a></li>
-            <li><a class="g-font-size-12--xs g-color--white-opacity" href="javascript:;">成都站</a></li>
-            <li><a class="g-font-size-12--xs g-color--white-opacity" href="javascript:;">北京站</a></li>
-            <li><a class="g-font-size-12--xs g-color--white-opacity" href="http://www.kylinclub.org/" target="_blank">关于主办方</a></li>
-            <li><a class="g-font-size-12--xs g-color--white-opacity" href="contact.html">联系我们</a></li>
+        <div class="col-sm-2 col-xs-6 g-margin-b-20&#45;&#45;xs g-margin-b-0&#45;&#45;md hidden-xs">
+          <ul class="list-unstyled g-ul-li-tb-5&#45;&#45;xs g-margin-b-0&#45;&#45;xs">
+            <li><a class="g-font-size-12&#45;&#45;xs g-color&#45;&#45;white-opacity" href="index.html">首页</a></li>
+            <li><a class="g-font-size-12&#45;&#45;xs g-color&#45;&#45;white-opacity" href="sh.html">上海站</a></li>
+            <li><a class="g-font-size-12&#45;&#45;xs g-color&#45;&#45;white-opacity" href="javascript:;">深圳站</a></li>
+            <li><a class="g-font-size-12&#45;&#45;xs g-color&#45;&#45;white-opacity" href="javascript:;">成都站</a></li>
+            <li><a class="g-font-size-12&#45;&#45;xs g-color&#45;&#45;white-opacity" href="javascript:;">北京站</a></li>
+            <li><a class="g-font-size-12&#45;&#45;xs g-color&#45;&#45;white-opacity" href="http://www.kylinclub.org/" target="_blank">关于主办方</a></li>
+            <li><a class="g-font-size-12&#45;&#45;xs g-color&#45;&#45;white-opacity" href="contact.html">加入我们</a></li>
           </ul>
         </div>
-        <div class="col-md-4 col-md-offset-1 col-sm-5 col-sm-offset-1 s-footer__logo g-padding-y-20--xs g-padding-y-0--md">
-          <a href="/"><h3 class="g-font-size-14--xs g-color--white-opacity text-normal">GITC</h3></a>
+        <div class="col-md-4 col-md-offset-1 col-sm-5 col-sm-offset-1 s-footer__logo g-padding-y-20&#45;&#45;xs g-padding-y-0&#45;&#45;md">
+          <a href="/"><h3 class="g-font-size-14&#45;&#45;xs g-color&#45;&#45;white-opacity text-normal">GITC</h3></a>
           <div class="line hidden-xs"></div>
-          <p class="g-color--white-opacity g-font-size-12--xs">GITC全球互联网技术大会始终走在互联网技术交流分享的最前端，是目前国内规模最大、资源最成熟的技术峰会，同时也是中国互联网一年一度的行业盛事。</p>
+          <p class="g-color&#45;&#45;white-opacity g-font-size-12&#45;&#45;xs">GITC全球互联网技术大会始终走在互联网技术交流分享的最前端，是目前国内规模最大、资源最成熟的技术峰会，同时也是中国互联网一年一度的行业盛事。</p>
         </div>
       </div>
     </div>
   </div>
-  <div class="container g-padding-y-20--xs">
+  <div class="container g-padding-y-20&#45;&#45;xs">
     <div class="row">
       <div class="col-xs-2 hidden-xs"><a href="/">
-        <img class="g-width-100--xs g-height-auto--xs" src="static/img/logo2.png" alt="">
+        <img class="g-width-100&#45;&#45;xs g-height-auto&#45;&#45;xs" src="static/img/logo2.png" alt="">
       </a></div>
-      <div class="col-xs-10 g-text-right--xs">
-        <p class="g-font-size-12--xs g-margin-b-0--xs g-color--white-opacity-light">京CP备14035833号-1 &nbsp; 京公网安备11010200322</p></div>
+      <div class="col-xs-10 g-text-right&#45;&#45;xs">
+        <p class="g-font-size-12&#45;&#45;xs g-margin-b-0&#45;&#45;xs g-color&#45;&#45;white-opacity-light">京CP备14035833号-1 &nbsp; 京公网安备11010200322</p></div>
     </div>
   </div>
 </footer>
 <div id="info-box">
 </div>
 <a href="javascript:void(0);" class="s-back-to-top js__back-to-top"></a>
+
+<script type="text/javascript">
+    $(function () {
+        $('#js-ptn').on('click', function () {
+            var _data = {};
+
+            if ($('input[name="name"]').val() == '') {
+                alert('请输入姓名／Name');
+                return false;
+            }
+            else if ($('input[name="tel"]').val() == '') {
+                alert('请输入手机／Tel');
+                return false;
+            }
+            else if ($('input[name="email"]').val() =='') {
+                alert('请输入邮箱／E-mail');
+                return false;
+            }
+            else if ($('input[name="company"]').val() == '') {
+                alert('请输入公司／Company');
+                return false;
+            }
+            else if ($('input[name="department"]').val() =='') {
+                alert('请输入部门／Department');
+                return false;
+            }
+            else if ($('input[name="position"]').val() =='') {
+                alert('请输入职位／Position');
+                return false;
+            }
+            _data.name = $('input[name="name"]').val();
+            _data.tel = $('input[name="tel"]').val();
+            _data.email = $('input[name="email"]').val();
+            _data.company = $('input[name="company"]').val();
+            _data.department = $('input[name="department"]').val();
+            _data.position = $('input[name="position"]').val();
+            _data.suggest = $('#suggest').val();
+            _data.interest_other = $('input[name="interest_other"]').val()
+            var tmp = ''
+            $(':checkbox[name="interest"]:checked').each(function () {
+                tmp += $(this).val()
+                tmp += ","
+            })
+            _data.interest = tmp
+
+
+
+            $.ajax({
+                async: false,
+                url: 'data/contacts',
+                data: _data,
+                type: "POST",
+                success: function (result) {
+                    alert('提交成功');
+                }, error: function () {
+                    alert('提交失败');
+                }
+            });
+        })
+    });
+</script>
+
 <script type="text/javascript"> var GMM_APP_PATH = ''; </script>
 <script type="text/javascript" src="static/js/jquery.min.js"></script>
 <script type="text/javascript" src="static/js/jquery.migrate.min.js"></script>
@@ -494,66 +610,9 @@
 <script type="text/javascript" src="static/js/swiper.min.js"></script>
 <script type="text/javascript" src="static/js/counter.min.js"></script>
 <script type="text/javascript" src="static/js/parallax.min.js"></script>
-<script type="text/javascript">
-  $(function () {
-      $('#js-ptn').on('click', function () {
-          var _data = {};
 
-          if ($('#name').val() == '') {
-              alert('请输入姓名／Name');
-              return false;
-          }
-          else if ($('#tel').val() == '') {
-              alert('请输入手机／Tel');
-              return false;
-          }
-          else if ($('#email').val() =='') {
-              alert('请输入邮箱／E-mail');
-              return false;
-          }
-          else if ($('#company').val() == '') {
-              alert('请输入公司／Company');
-              return false;
-          }
-          else if ($('#department').val() =='') {
-              alert('请输入部门／Department');
-              return false;
-          }
-          else if ($('#position').val() =='') {
-              alert('请输入职位／Position');
-              return false;
-          }
-          _data.name = $('#name').val();
-          _data.tel = $('#tel').val();
-          _data.email = $('#email').val();
-          _data.company = $('#company').val();
-          _data.department = $('#department').val();
-          _data.position = $('#position').val();
-          _data.suggest = $('#suggest').val();
-          _data.interest_other = $('input[name="interest_other"]').val()
-          var tmp = ''
-          $(':checkbox[name="interest"]:checked').each(function () {
-              tmp += $(this).val()
-              tmp += ","
-          })
-          _data.interest = tmp
-
-
-
-          $.ajax({
-              async: false,
-              url: 'data/contacts',
-              data: _data,
-              type: "POST",
-              success: function (result) {
-                  alert('提交成功');
-              }, error: function () {
-                  alert('提交失败');
-              }
-          });
-      })
-  });
-</script>
+<!--
 <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-591fe0c2662cc83b"></script>
+-->
 </body>
 </html>

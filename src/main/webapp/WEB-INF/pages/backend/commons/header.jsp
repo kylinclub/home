@@ -97,7 +97,7 @@ window.onerror=function(){layer.alert('JS加载出错', {title:'js error',icon: 
                 	<a><i class="fa fa-gears"></i><span class="nav-label"> 其他管理</span><span class="fa arrow"></span></a>
                 			<ul class="nav nav-second-level collapse">
                 					<li id="user1">
-                							<a href="contact_list">联系我们管理</a>
+                							<a href="contact_list">加入我们管理</a>
                 					</li>
                 			</ul>
                 </li>

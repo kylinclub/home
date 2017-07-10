@@ -32,7 +32,7 @@
 				<h3><a href="/2016shanghai/index.html#guide">参会指南</a></h3>
 			</li>
 			<li id="m1" class="m">
-				<h3><a href="/2016shanghai/index.html#contact">联系我们</a></h3>
+				<h3><a href="/2016shanghai/index.html#contact">加入我们</a></h3>
 			</li>
 			<li id="m1" class="buy">
 				<a href="http://mu3eybhf.eventdove.com" class="buy-ticket" target="_blank"></a>
