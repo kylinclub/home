@@ -22,4 +22,20 @@ public class Contact extends BaseContact<Contact> {
 	public void deleteContact(int id) {
 		Db.update("update `contact` set if_delete=true where id =" + id);
 	}
+
+	public java.lang.String toString() {
+		StringBuilder s = new StringBuilder();
+
+		s.append("GITC您好：").append("\n\n").
+				append("我是").append(this.getCompany()).append("的").
+				append(this.getDepartment()).append("部门的").append(this.getPosition()).append("。\n").
+				append("我对GITC的").append(this.getInterest()).append(this.getInterestOther()).
+				append("比较感兴趣。\n").
+				append("我对GITC的建议是:").append(this.getSuggest()).append("。\n\n").
+				append("姓名:").append(this.getName()).append("\n").
+				append("电话:").append(this.getTel()).append("\n").
+				append("邮箱:").append(this.getEmail()).append("\n");
+
+		return s.toString();
+	}
 }

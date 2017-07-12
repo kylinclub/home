@@ -5,6 +5,7 @@ import java.util.*;
 import com.gitc.home.model.*;
 import com.jfinal.core.Controller;
 import com.jfinal.render.Render;
+import com.gitc.home.util.MailUtil;
 
 public class DataController extends Controller{
 	
@@ -146,6 +147,8 @@ public class DataController extends Controller{
 			cu.setAddTime(new Date());
 
 			Contact.dao.saveContact(cu);
+
+			MailUtil.SendToAdmin("GITC管理员通知:\n", cu.toString());
 			renderText("ok");
 		}catch (Exception e) {
 			e.printStackTrace();
