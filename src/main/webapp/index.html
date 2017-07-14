@@ -155,6 +155,8 @@
   background: url(static/img/b7.png);
   background-size: cover
 }
+  .zhancolor{color: #00a0e9!important;}
+  .zhanfont{display: block;font-weight: 600;color: #535353}
 </style>
 
 <body>
@@ -290,14 +292,68 @@
           <br> 促进行业及其技术的交流与发展，构建资源共享，深化宣传与合作，实现多方共赢。
         </p>
       </div>
+      <div class="row g-margin-b-30--xs g-margin-b-60--md col-img-five" style="text-align: center;margin-top: -20px">
+        <div class="col-xs-12 col-sm-10 col-sm-offset-1" >
+          <!--<img class="over" src="static/img/index_bt002.png" alt="">
+          <img class="over" src="static/img/index_bt003.png" alt="">-->
 
-      <div class="row g-margin-b-30--xs g-margin-b-60--md col-img-five">
-        <div class="col-xs-12 col-sm-10 col-sm-offset-1">
-          <a href="sh.html"><img class="over" src="static/img/index_bt001.png" alt=""></a>
-          <img class="over" src="static/img/index_bt002.png" alt="">
-          <img class="over" src="static/img/index_bt003.png" alt="">
-          <img class="over" src="static/img/index_bt004.png" alt="">
-          <img class="over" src="static/img/index_bt005.png" alt="">
+
+            <div style="width: 100% ;position: relative;">
+
+ <div style="position: absolute;left: 28%;top:0;width:100px;height: 260px;z-index: 999999999999999999"></div>
+                <div style="position: absolute;left: 68%;top:0;width:100px;height: 260px;z-index: 999999999999999999"></div>
+          <div class="box-ls" style="position: relative">
+            <div style="width: 33.33%;float: left;position: relative" >
+                <div class="box-1" style="width:33%;height:100%; position: absolute;left: 30%;top: 0;"></div>
+
+                    <a href="sh.html">
+                        <img class="box" src="static/img/shz.jpg" alt="">
+                    </a>
+                    <a href="sh.html">
+                        <img class="box1 hide" src="static/img/shz-blue.jpg" alt="">
+                    </a>
+                    <span class="zhanfont" style="margin-left: -66px;margin-top: -45px">上海站</span>
+                    <span style="display: block;margin-left: -66px;" >2017.6.23-6.24</span>
+
+            </div>
+          </div>
+            <!--<div style="position:absolute;left: 250px;top:50px">
+                <img src="static/img/xt.jpg" alt="" >
+            </div>-->
+
+          <div class="box-ls">
+
+                  <div style="width: 33.33%;float: left;position: relative" class="box-ls">
+
+
+                      <a href="javascript:;" >
+                          <img class="box" src="static/img/bjz.jpg" alt="" style="margin-top: 6px">
+                      </a>
+                      <a href="javascript:;"><img class="box1 hide" src="static/img/bjz-blue.jpg" alt="" style="margin-top: 6px">
+                      </a>
+                      <span class="zhanfont" style="margin-top: -45px">北京站</span>
+                      <span style="display: block" >2017.11.23-11.24</span>
+
+              </div>
+
+          </div>
+            <!--<div>
+                <img src="static/img/xt.jpg" alt="">
+            </div>-->
+          <div class="box-ls">
+
+                  <div style="width: 33.33%;float: left;position: relative" class="box-ls">
+                      <a href="javascript:;"><img class="box" src="static/img/hzz.jpg" alt="" style="margin-top: 6px"></a>
+                      <a href="javascript:;">
+                          <img class="box1 hide" src="static/img/hzz-blue.jpg" alt="" style="margin-top: 6px">
+                      </a>
+                      <span class="zhanfont" style="margin-left: 115px;;margin-top: -45px">杭州站</span>
+                      <span style="display: block;margin-left: 115px" >2017.12</span>
+                      <div class="box-3" style="width:33%;height:100%; position: absolute;left: 50%;top: 0;"></div>
+
+              </div>
+          </div>
+            </div>
         </div>
       </div>
 
@@ -580,9 +636,10 @@
             <ul class="list-unstyled g-ul-li-tb-5--xs g-margin-b-0--xs">
               <li><a class="g-font-size-12--xs g-color--white-opacity" href="index.html">首页</a></li>
               <li><a class="g-font-size-12--xs g-color--white-opacity" href="sh.html">上海站</a></li>
-              <li><a class="g-font-size-12--xs g-color--white-opacity" href="javascript:;">深圳站</a></li>
-              <li><a class="g-font-size-12--xs g-color--white-opacity" href="javascript:;">成都站</a></li>
+              <!--<li><a class="g-font-size-12&#45;&#45;xs g-color&#45;&#45;white-opacity" href="javascript:;">深圳站</a></li>
+              <li><a class="g-font-size-12&#45;&#45;xs g-color&#45;&#45;white-opacity" href="javascript:;">成都站</a></li>-->
               <li><a class="g-font-size-12--xs g-color--white-opacity" href="javascript:;">北京站</a></li>
+              <li><a class="g-font-size-12--xs g-color--white-opacity" href="javascript:;">杭州站</a></li>
               <li><a class="g-font-size-12--xs g-color--white-opacity" href="http://www.kylinclub.org/" target="_blank">关于主办方</a></li>
               <li><a class="g-font-size-12--xs g-color--white-opacity" href="contact.html">联系我们</a></li>
             </ul>
@@ -652,6 +709,18 @@
   <script src="static/js/waypoints.min.js"></script>
   <script type="text/javascript" src="static/js/countUp.js"></script>
   <script>
+      $('.box-ls').mouseover(function () {
+          $(this).find('.box').addClass('hide');
+          $(this).find('.box1').removeClass('hide');
+          $(this).find('span').addClass('zhancolor')
+
+      });
+      $('.box-ls').mouseout(function () {
+          $(this).find('.box1').addClass('hide');
+          $(this).find('.box').removeClass('hide');
+          $(this).find('span').removeClass('zhancolor')
+      });
+
     function startRun() {
       $('.counter1').countUp({
         // delay: 10,

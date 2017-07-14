@@ -73,7 +73,13 @@
             <li><a href="javascript:;" style="margin-left: 60px"><span class="ti-user"></span> 注册</a></li>
             <li><a href="javascript:;">登录</a></li>
             <li><span id="js-space" class="round-btn-space">&nbsp;<br>&nbsp;</span></li>
-            <li><span id="js-ticket" class="round-btn2" style="width: 233px; background-image: url("static/img/hd_bt001.png");"></span></li>
+            <li><span id="js-ticket" class="round-btn2" style="width: 233px; "><</span></li>
+            <!--<li  id="js-ticket" class="round-btn2" style="width: 145px;height: 64px;border: 1px solid red;text-align: center;background: #00a0e9;border-radius: 5px;display: inline-block">
+              <span style="font-size: 14px;color: white;display: inline-block">|购票结束|</span>
+              <i style="font-size: 12px;color: white;background: #00a0e9">敬请关注</i>
+              <b style="font-size: 14px;color: white;display: block ">[11月.北京]</b>
+
+            </li>-->
           </ul>
         </div>
       </div>
@@ -270,9 +276,8 @@
             <ul class="list-unstyled g-ul-li-tb-5--xs g-margin-b-0--xs">
               <li><a class="g-font-size-12--xs g-color--white-opacity" href="index.html">首页</a></li>
               <li><a class="g-font-size-12--xs g-color--white-opacity" href="sh.html">上海站</a></li>
-              <li><a class="g-font-size-12--xs g-color--white-opacity" href="javascript:;">深圳站</a></li>
-              <li><a class="g-font-size-12--xs g-color--white-opacity" href="javascript:;">成都站</a></li>
               <li><a class="g-font-size-12--xs g-color--white-opacity" href="javascript:;">北京站</a></li>
+              <li><a class="g-font-size-12--xs g-color--white-opacity" href="javascript:;">杭州站</a></li>
               <li><a class="g-font-size-12--xs g-color--white-opacity" href="http://www.kylinclub.org/" target="_blank">关于主办方</a></li>
               <li><a class="g-font-size-12--xs g-color--white-opacity" href="contact.html">加入我们</a></li>
             </ul>
@@ -350,7 +355,7 @@
         }
         else {
           $space.width(74);
-          $ticket.html('').css({ width: 145, 'background-image': 'url("static/img/hd_bt002.png")' });
+          $ticket.html('<img src="static/img/gpjs.png" width="145px">').css({});
         }
       }
 
