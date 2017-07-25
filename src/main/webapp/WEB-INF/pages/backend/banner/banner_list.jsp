@@ -62,14 +62,14 @@
 					<div class="ibox-content row">
 						<table class="table table-bordered">
 							<tr><th>图片</th><th>URL</th><th>操作</th></tr>
-							<c:forEach var="banner" items="${banners }">
-								<tr id="banner${banner.id }">
+							<c:forEach var="banner" items="${banners}">
+								<tr id="banner${banner.id}">
 									<td>
 										<img src="..${banner.image }" height="50">
 									</td>
-									<td>${banner.url }</td>
+									<td>${banner.url}</td>
 									<td>
-										<a href="edit_banner/${banner.id}">编辑</a>&nbsp;
+										<a href="edit_banner?id=${banner.id}">编辑</a>&nbsp;
 										<a href="javascript:void(0)" onclick="del(${banner.id})">删除</a>
 									</td>
 								</tr>

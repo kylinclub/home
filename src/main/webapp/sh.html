@@ -5,6 +5,7 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
   <meta http-equiv="x-ua-compatible" content="ie=edge" />
+  <meta name="format-detection" content="telephone=no">
   <title>上海站 - GITC官网</title>
   <meta content="" name="description" />
   <link href="static/css/bootstrap.min.css?v=5a636d7" rel="stylesheet" />
@@ -31,11 +32,58 @@
     .lv-nav a {
       font-size: 15px
     }
+    @media (max-width : 768px){
+      #info-box {
+        position: fixed;
+        display: none;
+        left: 0;
+        top:0;
+        text-align: center;
+        font-size: 12px;
+        z-index: 99999999999999;
+        height: 100%;
+        background-color: rgba(18,43,95,.9);
+
+      }
+      #info-box .box {
+        width: 100%;
+        min-height: 300px;
+        margin-left: 0px;
+        margin-top: 0px;
+        color: #fff;
+        padding: 0px;
+        background-color:rgba(18,43,95,.0);
+      }
+      #info-box .section .cl {
+        float: none;
+        width: 140px;
+        padding-right: 0px;
+        color: #fff;
+        text-align: center;
+        margin: 0 auto;
+      }
+      #info-box .section {
+        position: relative;
+        padding: 0 10%;
+      }
+      #info-box .section img {
+        width: 60px;
+        cursor: pointer;
+        margin: 20px 0 0 10px;
+      }
+    }
+    .amap-touch-toolbar .amap-zoomcontrol {
+      position: absolute;
+      right: -6px;
+      bottom: -68px;
+    }
   </style>
 </head>
 
 <body>
   <header class="navbar-fixed-top s-header js__header-sticky js__header-overlay">
+
+
     <div class="s-header__navbar">
       <div class="s-header__container">
         <div class="visible-xs">
@@ -276,6 +324,8 @@
             <ul class="list-unstyled g-ul-li-tb-5--xs g-margin-b-0--xs">
               <li><a class="g-font-size-12--xs g-color--white-opacity" href="index.html">首页</a></li>
               <li><a class="g-font-size-12--xs g-color--white-opacity" href="sh.html">上海站</a></li>
+              <!--<li><a class="g-font-size-12&#45;&#45;xs g-color&#45;&#45;white-opacity" href="javascript:;">深圳站</a></li>
+              <li><a class="g-font-size-12&#45;&#45;xs g-color&#45;&#45;white-opacity" href="javascript:;">成都站</a></li>-->
               <li><a class="g-font-size-12--xs g-color--white-opacity" href="javascript:;">北京站</a></li>
               <li><a class="g-font-size-12--xs g-color--white-opacity" href="javascript:;">杭州站</a></li>
               <li><a class="g-font-size-12--xs g-color--white-opacity" href="http://www.kylinclub.org/" target="_blank">关于主办方</a></li>
@@ -355,7 +405,7 @@
         }
         else {
           $space.width(74);
-          $ticket.html('<img src="static/img/gpjs.png" width="145px">').css({});
+          $ticket.html('<img src="static/img/gpjs.png" width="145px">').css({ width: 145});
         }
       }
 
@@ -459,6 +509,81 @@
         $('.lv-nav-list').toggle()
       });
     });
+  </script>
+  <script>
+
+      function browserRedirect() {
+          var sUserAgent = navigator.userAgent.toLowerCase();
+          var bIsIpad = sUserAgent.match(/ipad/i) == "ipad";
+          var bIsIphoneOs = sUserAgent.match(/iphone os/i) == "iphone os";
+          var bIsMidp = sUserAgent.match(/midp/i) == "midp";
+          var bIsUc7 = sUserAgent.match(/rv:1.2.3.4/i) == "rv:1.2.3.4";
+          var bIsUc = sUserAgent.match(/ucweb/i) == "ucweb";
+          var bIsAndroid = sUserAgent.match(/android/i) == "android";
+          var bIsCE = sUserAgent.match(/windows ce/i) == "windows ce";
+          var bIsWM = sUserAgent.match(/windows mobile/i) == "windows mobile";
+          if (!(bIsIpad || bIsIphoneOs || bIsMidp || bIsUc7 || bIsUc || bIsAndroid || bIsCE || bIsWM) ){
+
+          }else{
+              $('.row .g-margin-b-48--xs p').html('')
+          }
+      }browserRedirect();
+
+  </script>
+  <script>
+
+      function browserRedirect() {
+          var sUserAgent = navigator.userAgent.toLowerCase();
+          var bIsIpad = sUserAgent.match(/ipad/i) == "ipad";
+          var bIsIphoneOs = sUserAgent.match(/iphone os/i) == "iphone os";
+          var bIsMidp = sUserAgent.match(/midp/i) == "midp";
+          var bIsUc7 = sUserAgent.match(/rv:1.2.3.4/i) == "rv:1.2.3.4";
+          var bIsUc = sUserAgent.match(/ucweb/i) == "ucweb";
+          var bIsAndroid = sUserAgent.match(/android/i) == "android";
+          var bIsCE = sUserAgent.match(/windows ce/i) == "windows ce";
+          var bIsWM = sUserAgent.match(/windows mobile/i) == "windows mobile";
+          if (!(bIsIpad || bIsIphoneOs || bIsMidp || bIsUc7 || bIsUc || bIsAndroid || bIsCE || bIsWM) ){
+
+          }else{
+              $.ajax('data/users?type=speaker&count=100').then(function (v) {
+                  if (0 == v.status) {
+                      var rs = v.data, xml = '', _spilt = $(window).width() > 768 ? 8 : 4;
+                      for (var i = 0; i < rs.length; i++) {
+                          xml += '<p class="js-info' + (i % _spilt == 0 ? ' cll' : '') + '"><img src="' + rs[i].img.substring(1) + '" alt="" class="img-circle" data-info=\'' + JSON.stringify(rs[i]) + '\'><b>'
+                              + rs[i].name + '</b><span>' + rs[i].company + '<br>' + rs[i].title + '</span></p>';
+                      }
+                      $('.swiper-container-people').html(xml);
+                      var $box = $('#info-box');
+                      var timers = null;
+                      $('.js-info img').click(function (event) {
+                          event.stopPropagation();
+                          clearTimeout(timers)
+                          var _data = JSON.parse($(this).attr('data-info'));
+                          var _xml = '<div class="box" id="lp"><div class="section">'
+                              + '<div class="cl"><img src="' + _data.img.substring(1) + '" alt="" class="img-circle"><b>' + _data.name + '</b><span>' + _data.company + '<br>' + _data.title + '</span></div>'
+                              + '<div class="cr">'
+                              + '<b>个人简介</b>'
+                              + '<span class="hr"></span>'
+                              + '<div class="info">' + _data.info + '</div>'
+                              + '</div></div>';
+                          $box.html(_xml);
+                          timers = setTimeout(function () {
+                              $box.css('display', 'block')
+                          }, 1000)
+                      })
+                      $box.click(function (event) {
+                          event.stopPropagation();
+                          clearTimeout(timers);
+                          $box.css('display', 'none')
+                      })
+                      $('#info-box').on('mouseenter',function(event){
+                          event.stopPropagation();
+                      })
+                  }
+              });
+          }
+      }browserRedirect();
+
   </script>
   <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-591fe0c2662cc83b"></script>
 </body>

@@ -438,7 +438,7 @@ public class AdminController extends Controller{
 	}
 	
 	public void edit_banner(){
-		int id = getParaToInt();
+		int id = getParaToInt("id");
 		setAttr("banner", Opt.dao.findById(id));
 		renderJsp("banner/add_banner.jsp");
 	}

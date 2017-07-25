@@ -5,6 +5,7 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
   <meta http-equiv="x-ua-compatible" content="ie=edge" />
+  <meta name="format-detection" content="telephone=no">
   <title>GITC官网首页</title>
   <meta content="" name="description" />
   <meta http-equiv=”X-UA-Compatible” content=”IE=edge,chrome=1″ />
@@ -20,7 +21,8 @@
 <style>
   /*index 页 img图片适配*/
 .clearfix:after{content:'.';display:block;height:0;clear:both;visibility:hidden}
-.clearfix{display:inline-block;}
+
+
 .img-content{
   width: 100%;
   background: red;
@@ -156,7 +158,29 @@
   background-size: cover
 }
   .zhancolor{color: #00a0e9!important;}
-  .zhanfont{display: block;font-weight: 600;color: #535353}
+  .zhanfont{display: block;font-weight: 600;color: #535353;font-size: 12px}
+  .zhanziti{font-size: 12px}
+
+  /*适配轮播*/
+  @media (max-width : 768px){
+    /*加入麒麟会*/
+    .g-font-size-24--xs {
+      font-size: 0.8rem !important;
+      margin-left: 8px;
+      margin-top: 86px;
+      padding-left: 10px;
+    }
+    /*跳动*/
+    .s-btn--md {
+      font-size: 0.8125rem;
+      font-weight: 400;
+      padding: 0.2rem 0.5rem;
+      /* margin-top: 17px; */
+      height: 28px;
+      margin-top: -52px;
+      margin-left: 16px;
+    }
+  }
 </style>
 
 <body>
@@ -292,74 +316,48 @@
           <br> 促进行业及其技术的交流与发展，构建资源共享，深化宣传与合作，实现多方共赢。
         </p>
       </div>
+
       <div class="row g-margin-b-30--xs g-margin-b-60--md col-img-five" style="text-align: center;margin-top: -20px">
         <div class="col-xs-12 col-sm-10 col-sm-offset-1" >
           <!--<img class="over" src="static/img/index_bt002.png" alt="">
           <img class="over" src="static/img/index_bt003.png" alt="">-->
-
-
-            <div style="width: 100% ;position: relative;">
-
- <div style="position: absolute;left: 28%;top:0;width:100px;height: 260px;z-index: 999999999999999999"></div>
-                <div style="position: absolute;left: 68%;top:0;width:100px;height: 260px;z-index: 999999999999999999"></div>
-          <div class="box-ls" style="position: relative">
-            <div style="width: 33.33%;float: left;position: relative" >
-                <div class="box-1" style="width:33%;height:100%; position: absolute;left: 30%;top: 0;"></div>
-
-                    <a href="sh.html">
-                        <img class="box" src="static/img/shz.jpg" alt="">
-                    </a>
-                    <a href="sh.html">
-                        <img class="box1 hide" src="static/img/shz-blue.jpg" alt="">
-                    </a>
-                    <span class="zhanfont" style="margin-left: -66px;margin-top: -45px">上海站</span>
-                    <span style="display: block;margin-left: -66px;" >2017.6.23-6.24</span>
-
+          <div class="box-ls">
+            <div style="width: 33.33%;float: left;">
+              <a href="sh.html">
+                <img class="box" src="static/img/001.jpg" alt="" style="width: 100%;">
+              </a>
+              <a href="sh.html">
+                <img class="box1 hide" src="static/img/002.jpg" alt="" style="width: 100%;">
+              </a>
+              <span class="zhanfont">上海站</span>
+              <span class="zhanziti">2017.6.23-6.24</span>
             </div>
           </div>
-            <!--<div style="position:absolute;left: 250px;top:50px">
-                <img src="static/img/xt.jpg" alt="" >
-            </div>-->
-
           <div class="box-ls">
-
-                  <div style="width: 33.33%;float: left;position: relative" class="box-ls">
-
-
-                      <a href="javascript:;" >
-                          <img class="box" src="static/img/bjz.jpg" alt="" style="margin-top: 6px">
-                      </a>
-                      <a href="javascript:;"><img class="box1 hide" src="static/img/bjz-blue.jpg" alt="" style="margin-top: 6px">
-                      </a>
-                      <span class="zhanfont" style="margin-top: -45px">北京站</span>
-                      <span style="display: block" >2017.11.23-11.24</span>
-
-              </div>
-
-          </div>
-            <!--<div>
-                <img src="static/img/xt.jpg" alt="">
-            </div>-->
-          <div class="box-ls">
-
-                  <div style="width: 33.33%;float: left;position: relative" class="box-ls">
-                      <a href="javascript:;"><img class="box" src="static/img/hzz.jpg" alt="" style="margin-top: 6px"></a>
-                      <a href="javascript:;">
-                          <img class="box1 hide" src="static/img/hzz-blue.jpg" alt="" style="margin-top: 6px">
-                      </a>
-                      <span class="zhanfont" style="margin-left: 115px;;margin-top: -45px">杭州站</span>
-                      <span style="display: block;margin-left: 115px" >2017.12</span>
-                      <div class="box-3" style="width:33%;height:100%; position: absolute;left: 50%;top: 0;"></div>
-
-              </div>
-          </div>
+            <div style="width: 33.33%;float: left" class="box-ls">
+              <a href="javascript:;">
+                <img class="box" src="static/img/003.jpg" alt="" style="width: 100%;">
+              </a>
+              <a href="javascript:;"><img class="box1 hide" src="static/img/004.jpg" alt="" style="width: 100%;">
+              </a>
+              <span class="zhanfont">北京站</span>
+              <span class="zhanziti">2017.11.23-11.24</span>
             </div>
+          </div>
+          <div class="box-ls">
+            <div style="width: 33.33%;float: left" class="box-ls">
+              <a href="javascript:;"><img class="box" src="static/img/005.jpg" alt="" style="width: 100%;"></a>
+              <a href="javascript:;">
+                <img class="box1 hide" src="static/img/006.jpg" alt="" style="width: 100%;">
+              </a>
+              <span class="zhanfont">杭州站</span>
+              <span class="zhanziti">2017.12</span>
+            </div>
+          </div>
         </div>
       </div>
 
-      <!--<div class="g-text-center--xs g-margin-b-40--xs g-margin-b-80--md">
-        <img class="img-responsive g-width-100-percent--xs" src="static/img/index_ph001.jpg" alt="">
-      </div>-->
+
       <div class="img-content ">
         <div class="img-content-img banner-img3">
           <h4>BLOCK TECH PLAYGROUND</h4>
@@ -396,7 +394,7 @@
       <div class="img-content ">
         <div class="img-content-img banner-img5">
           <h4>EXPERT LINEUP</h4>
-          <p>专家整容</p>
+          <p>专家阵容</p>
         </div>
         <div class="img-content-img banner-img4">
           <h4>DISPLAY AREA</h4>
@@ -405,10 +403,9 @@
       </div>
       <div class="box-both-bottom"></div>
     </div>
-
   </div>
 
-  <div class="js__parallax-window">
+  <div class="s-promo-block-v2 js__parallax-window" style="">
     <div class="container g-padding-y-40--xs g-padding-y-100--md">
       <div class="row">
         <div class="col-md-2 col-xs-3 g-margin-b-0--xs g-margin-b-0--lg">
@@ -504,10 +501,9 @@
         <a href="expert.html" class="l-b02">专家顾问团</a>
       </div>
     </div>
-
   </div>
 
-  <div class="s-promo-block-v2 js__parallax-window">
+  <div class="s-promo-block-v4 js__parallax-window">
     <div class="container">
       <div class="row g-hor-centered-row--md">
         <div class="col-md-7 g-hor-centered-row__col g-padding-y-60--xs">
@@ -601,7 +597,6 @@
         </div>
       </div>
     </div>
-
   </div>
   <footer class="g-bg-color--dark">
     <div class="g-hor-divider__dashed--white-opacity-lightest">
@@ -704,6 +699,24 @@
       });
     }
     );
+  </script>
+  <script>
+      function browserRedirect() {
+          var sUserAgent = navigator.userAgent.toLowerCase();
+          var bIsIpad = sUserAgent.match(/ipad/i) == "ipad";
+          var bIsIphoneOs = sUserAgent.match(/iphone os/i) == "iphone os";
+          var bIsMidp = sUserAgent.match(/midp/i) == "midp";
+          var bIsUc7 = sUserAgent.match(/rv:1.2.3.4/i) == "rv:1.2.3.4";
+          var bIsUc = sUserAgent.match(/ucweb/i) == "ucweb";
+          var bIsAndroid = sUserAgent.match(/android/i) == "android";
+          var bIsCE = sUserAgent.match(/windows ce/i) == "windows ce";
+          var bIsWM = sUserAgent.match(/windows mobile/i) == "windows mobile";
+          if (!(bIsIpad || bIsIphoneOs || bIsMidp || bIsUc7 || bIsUc || bIsAndroid || bIsCE || bIsWM) ){
+
+          }else{
+              $('.row .g-margin-b-48--xs p').html('')
+          }
+      }browserRedirect();
   </script>
   <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-591fe0c2662cc83b"></script>
   <script src="static/js/waypoints.min.js"></script>
