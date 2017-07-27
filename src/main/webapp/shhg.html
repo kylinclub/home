@@ -118,7 +118,7 @@
     .a_atuo {
       margin: 0 auto;
       width: 50.52vw;
-      line-height: 2vw;
+      line-height: 1vw;
     }
 
     .swiper_box .swiper-pagination-bullet {
@@ -175,6 +175,7 @@
           <ul class="lv-nav clearfix s-header-left-nav">
             <li><a href="index.html">首页</a></li>
             <li><a href="sh.html">GITC上海站</a></li>
+            <li><a href="shhg.html">精彩回顾</a></li>
             <li><a href="download.html">资料下载</a></li>
             <!-- <li class="lv-nav-flex">
               <a href="javascript:;" id="lvLive"> 现场直播 </a>
@@ -545,16 +546,18 @@
       } browserRedirect();
   </script>
   <script>
-      var swiper = new Swiper('.swiper-containers', {
+        var swiper = new Swiper('.swiper-container', {
         pagination: '.swiper-pagination',
-        loop: true,
-        autoplay: 2500,
         paginationClickable: true,
-        speed: 1000,
-      });
+        // spaceBetween: 30,
+        centeredSlides: true,
+        autoplay: 2500,
+        speed:1000,
+        autoplayDisableOnInteraction: false
+    });
   </script>
-  // <script type="text/javascript" src="static/js/fx.js"></script>
-  <script type="text/javascript" src="/s7.addthis.com/js/300/addthis_widget.js#pubid=ra-591fe0c2662cc83b" async="async"></script>
+  <script type="text/javascript" src="static/js/fx.js"></script>
+ </script>
 </body>
 
 </html>
