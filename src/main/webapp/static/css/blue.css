@@ -662,7 +662,9 @@ ul {
             float: left;
             border: 1px solid #eee;
         }
-
+.fl{
+  float: left
+}
         .app #luckyDrawWrap {
             width: 580px;
             height: 100px;
