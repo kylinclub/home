@@ -127,25 +127,34 @@
       margin: 0 2vw;
       border-radius: 0;
     }
-    .swiper_box .swiper_img1{
+
+    .swiper_box .swiper_img1 {
       background: url(static/img/1.png);
       background-size: cover
     }
-   .swiper_box .swiper_img2{
+
+    .swiper_box .swiper_img2 {
       background: url(static/img/2.png);
       background-size: cover
     }
-    .swiper_box .swiper_img3{
+
+    .swiper_box .swiper_img3 {
       background: url(static/img/3.png);
       background-size: cover
     }
-    .swiper_box .swiper_img4{
+
+    .swiper_box .swiper_img4 {
       background: url(static/img/4.png);
       background-size: cover
     }
-    .swiper_box .swiper_img5{
+
+    .swiper_box .swiper_img5 {
       background: url(static/img/5.png);
       background-size: cover
+    }
+
+    .mar-top {
+      margin-top: 6vw;
     }
   </style>
 </head>
@@ -210,7 +219,7 @@
                 <a class="s-header__nav-menu-link s-header__nav-menu-link-divider" href="index.html">首页</a></li>
               <li class="s-header__nav-menu-item">
                 <a class="s-header__nav-menu-link s-header__nav-menu-link-divider" href="sh.html">GITC上海站</a></li>
-                <li class="s-header__nav-menu-item">
+              <li class="s-header__nav-menu-item">
                 <a class="s-header__nav-menu-link s-header__nav-menu-link-divider" href="shhg.html">精彩回顾</a></li>
               <li class="s-header__nav-menu-item">
                 <a href="download.html" class="s-header__nav-menu-link s-header__nav-menu-link-divider">资料下载</a>
@@ -228,7 +237,7 @@
     </div>
   </header>
 
-  <div><img style="width: 100%;height:100%" src="static/img/2017sh_top.jpg" alt="" /></div>
+  <div><img style="width: 100%;height:100%"  alt="" id="sh_top"/></div>
 
 
   <div class="s-swiper js__swiper-latest">
@@ -279,7 +288,7 @@
       <div style="width:23.75vw;height:27.91vw;" class="fl show_fonts"></div>
     </div>
   </div>
-  <div><img style="width: 100%;height:100%" src="static/img/b.jpg" alt="" /></div>
+  <div><img style="width: 100%;height:100%" src="static/img/logo.jpg" class="mar-top" /></div>
   <!--<div class="g-fullheight--xs g-bg-position--center swiper-slide swiper-slide-active hidden-xs banner-img-sh" style="background-image: url('static/img/sh_bn001.jpg'); margin-right: 50px; transform: translate3d(0px, 0px, 0px) rotateX(0deg) rotateY(0deg); z-index: 1; transition-duration: 0ms;"
     data-swiper-slide-index="1">
   </div>-->
@@ -495,70 +504,88 @@
     } browserRedirect();
   </script>
   <script>
-      function browserRedirect() {
-        var sUserAgent = navigator.userAgent.toLowerCase();
-        var bIsIpad = sUserAgent.match(/ipad/i) == "ipad";
-        var bIsIphoneOs = sUserAgent.match(/iphone os/i) == "iphone os";
-        var bIsMidp = sUserAgent.match(/midp/i) == "midp";
-        var bIsUc7 = sUserAgent.match(/rv:1.2.3.4/i) == "rv:1.2.3.4";
-        var bIsUc = sUserAgent.match(/ucweb/i) == "ucweb";
-        var bIsAndroid = sUserAgent.match(/android/i) == "android";
-        var bIsCE = sUserAgent.match(/windows ce/i) == "windows ce";
-        var bIsWM = sUserAgent.match(/windows mobile/i) == "windows mobile";
-        if (!(bIsIpad || bIsIphoneOs || bIsMidp || bIsUc7 || bIsUc || bIsAndroid || bIsCE || bIsWM)) {
+    function browserRedirect() {
+      var sUserAgent = navigator.userAgent.toLowerCase();
+      var bIsIpad = sUserAgent.match(/ipad/i) == "ipad";
+      var bIsIphoneOs = sUserAgent.match(/iphone os/i) == "iphone os";
+      var bIsMidp = sUserAgent.match(/midp/i) == "midp";
+      var bIsUc7 = sUserAgent.match(/rv:1.2.3.4/i) == "rv:1.2.3.4";
+      var bIsUc = sUserAgent.match(/ucweb/i) == "ucweb";
+      var bIsAndroid = sUserAgent.match(/android/i) == "android";
+      var bIsCE = sUserAgent.match(/windows ce/i) == "windows ce";
+      var bIsWM = sUserAgent.match(/windows mobile/i) == "windows mobile";
+      if (!(bIsIpad || bIsIphoneOs || bIsMidp || bIsUc7 || bIsUc || bIsAndroid || bIsCE || bIsWM)) {
 
-        } else {
-          $.ajax('data/users?type=speaker&count=100').then(function (v) {
-            if (0 == v.status) {
-              var rs = v.data, xml = '', _spilt = $(window).width() > 768 ? 8 : 4;
-              for (var i = 0; i < rs.length; i++) {
-                xml += '<p class="js-info' + (i % _spilt == 0 ? ' cll' : '') + '"><img src="' + rs[i].img.substring(1) + '" alt="" class="img-circle" data-info=\'' + JSON.stringify(rs[i]) + '\'><b>'
-                  + rs[i].name + '</b><span>' + rs[i].company + '<br>' + rs[i].title + '</span></p>';
-              }
-              $('.swiper-container-people').html(xml);
-              var $box = $('#info-box');
-              var timers = null;
-              $('.js-info img').click(function (event) {
-                event.stopPropagation();
-                clearTimeout(timers)
-                var _data = JSON.parse($(this).attr('data-info'));
-                var _xml = '<div class="box" id="lp"><div class="section">'
-                  + '<div class="cl"><img src="' + _data.img.substring(1) + '" alt="" class="img-circle"><b>' + _data.name + '</b><span>' + _data.company + '<br>' + _data.title + '</span></div>'
-                  + '<div class="cr">'
-                  + '<b>个人简介</b>'
-                  + '<span class="hr"></span>'
-                  + '<div class="info">' + _data.info + '</div>'
-                  + '</div></div>';
-                $box.html(_xml);
-                timers = setTimeout(function () {
-                  $box.css('display', 'block')
-                }, 1000)
-              })
-              $box.click(function (event) {
-                event.stopPropagation();
-                clearTimeout(timers);
-                $box.css('display', 'none')
-              })
-              $('#info-box').on('mouseenter', function (event) {
-                event.stopPropagation();
-              })
+      } else {
+        $.ajax('data/users?type=speaker&count=100').then(function (v) {
+          if (0 == v.status) {
+            var rs = v.data, xml = '', _spilt = $(window).width() > 768 ? 8 : 4;
+            for (var i = 0; i < rs.length; i++) {
+              xml += '<p class="js-info' + (i % _spilt == 0 ? ' cll' : '') + '"><img src="' + rs[i].img.substring(1) + '" alt="" class="img-circle" data-info=\'' + JSON.stringify(rs[i]) + '\'><b>'
+                + rs[i].name + '</b><span>' + rs[i].company + '<br>' + rs[i].title + '</span></p>';
             }
-          });
-        }
-      } browserRedirect();
+            $('.swiper-container-people').html(xml);
+            var $box = $('#info-box');
+            var timers = null;
+            $('.js-info img').click(function (event) {
+              event.stopPropagation();
+              clearTimeout(timers)
+              var _data = JSON.parse($(this).attr('data-info'));
+              var _xml = '<div class="box" id="lp"><div class="section">'
+                + '<div class="cl"><img src="' + _data.img.substring(1) + '" alt="" class="img-circle"><b>' + _data.name + '</b><span>' + _data.company + '<br>' + _data.title + '</span></div>'
+                + '<div class="cr">'
+                + '<b>个人简介</b>'
+                + '<span class="hr"></span>'
+                + '<div class="info">' + _data.info + '</div>'
+                + '</div></div>';
+              $box.html(_xml);
+              timers = setTimeout(function () {
+                $box.css('display', 'block')
+              }, 1000)
+            })
+            $box.click(function (event) {
+              event.stopPropagation();
+              clearTimeout(timers);
+              $box.css('display', 'none')
+            })
+            $('#info-box').on('mouseenter', function (event) {
+              event.stopPropagation();
+            })
+          }
+        });
+      }
+    } browserRedirect();
   </script>
   <script>
-        var swiper = new Swiper('.swiper-container', {
+      var swiper = new Swiper('.swiper-container', {
         pagination: '.swiper-pagination',
         paginationClickable: true,
         // spaceBetween: 30,
         centeredSlides: true,
         autoplay: 2500,
-        speed:1000,
+        speed: 1000,
         autoplayDisableOnInteraction: false
-    });
+      });
   </script>
-  <script type="text/javascript" src="/s7.addthis.com/js/300/addthis_widget.js#pubid=ra-591fe0c2662cc83b" async="async"></script>
+  <script>
+    function browserRedirect() {
+      var sUserAgent = navigator.userAgent.toLowerCase();
+      var bIsIpad = sUserAgent.match(/ipad/i) == "ipad";
+      var bIsIphoneOs = sUserAgent.match(/iphone os/i) == "iphone os";
+      var bIsMidp = sUserAgent.match(/midp/i) == "midp";
+      var bIsUc7 = sUserAgent.match(/rv:1.2.3.4/i) == "rv:1.2.3.4";
+      var bIsUc = sUserAgent.match(/ucweb/i) == "ucweb";
+      var bIsAndroid = sUserAgent.match(/android/i) == "android";
+      var bIsCE = sUserAgent.match(/windows ce/i) == "windows ce";
+      var bIsWM = sUserAgent.match(/windows mobile/i) == "windows mobile";
+      if (!(bIsIpad || bIsIphoneOs || bIsMidp || bIsUc7 || bIsUc || bIsAndroid || bIsCE || bIsWM)) {
+        $('#sh_top').attr('src', 'static/img/pc-sh-top.jpg');
+      } else {
+        $('#sh_top').attr('src', 'static/img/shhg-top.jpg');
+      }
+    }
+    browserRedirect();
+  </script>
 </body>
 
 </html>
