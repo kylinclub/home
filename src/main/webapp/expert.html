@@ -175,11 +175,15 @@
 <script type="text/javascript">
   $(function () {
     // /data/users?count=100 get_people.json
-    $.ajax('/data/users?count=100').then(function(v){
+    $.ajax('data/users?count=100').then(function(v){
       if(0==v.status){
         var rs = v.data, xml = '', _spilt = $(window).width()>768?8:4;
         for(var i=0; i<rs.length; i++){
-          xml += '<p class="js-info'+(i%_spilt==0?' cll':'')+'"><img src="'+rs[i].img+'" alt="" class="img-circle" data-info=\''+JSON.stringify(rs[i])+'\'><b>'
+            var imgSrc = rs[i].img;
+            if (imgSrc.indexOf("/") == 0) {
+                imgSrc = imgSrc.substring(1);
+            }
+           xml += '<p class="js-info'+(i%_spilt==0?' cll':'')+'"><img src="'+imgSrc+'" alt="" class="img-circle" data-info=\''+JSON.stringify(rs[i])+'\'><b>'
             +rs[i].name+'</b><span>'+rs[i].company+'<br>'+rs[i].title+'</span></p>';
         }
         $('.swiper-container-people').html(xml);
