@@ -1,16 +1,17 @@
 #!/usr/bin/env bash
 
-cd ~/Applications/tomcat/
+srcPath=/home/michael/IdeaProjects/src/github.com/kylinclub/home
+tomcatPath=/home/michael/Applications/tomcat
 
-./bin/shutdown.sh
+${tomcatPath}/bin/shutdown.sh
 
-rm ./webapps/home.war
-rm -rf ./webapps/home
+rm ${tomcatPath}/webapps/home.war
+rm -rf ${tomcatPath}/webapps/home
 
-cp /Users/michael/workSpaces/home/target/home.war ./webapps/
+cp ${srcPath}/target/home.war ${tomcatPath}/webapps/
 
-./bin/startup.sh
+${tomcatPath}/bin/startup.sh
 
 sleep 3
 
-cp /Users/michael/workSpaces/home/lib/cos-26Dec2008.jar /Users/michael/Applications/tomcat/webapps/home/WEB-INF/lib
+cp ${srcPath}/lib/cos-26Dec2008.jar ${tomcatPath}/webapps/home/WEB-INF/lib
