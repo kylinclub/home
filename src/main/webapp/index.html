@@ -250,7 +250,7 @@
     </div>
   </div>-->
     <div class="swiper-wrapper">
-      <div class="g-fullheight--xs g-bg-position--center swiper-slide">
+      <div class="g-fullheight--xs g-bg-position--center swiper-slide" id="lv_open">
       </div>
       <div class="g-bg-position--center g-fullheight--xs swiper-slide">
         <div class="container"><a style="display: block; " href="sh.html"></a></div>
@@ -708,6 +708,13 @@
     );
   </script>
   <script>
+    $(function(){
+      $('#lv_open').on('click',function(){
+        window.location.href="https://www.bagevent.com/event/768490"
+      })
+    })
+  </script>
+  <script>
       function browserRedirect() {
           var sUserAgent = navigator.userAgent.toLowerCase();
           var bIsIpad = sUserAgent.match(/ipad/i) == "ipad";
@@ -725,7 +732,7 @@
           }
       }browserRedirect();
   </script>
-   <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-591fe0c2662cc83b" async="async"></script>
+   <!-- <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-591fe0c2662cc83b" async="async"></script> -->
   <script src="static/js/waypoints.min.js"></script>
   <script type="text/javascript" src="static/js/countUp.js"></script>
   <script>
